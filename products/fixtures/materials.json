@@ -1,0 +1,341 @@
+[
+  {
+    "pk": 1,
+    "model": "products.material",
+    "fields": {
+      "category": 1,
+      "short_description": "Emergency Preparedness and Response in case of floods.",
+      "full_content": "Learn about early warning systems and flood risk communication.",
+      "pdf_file": "pdfs/floods_1.pdf",
+      "video_url": "https://www.youtube.com/watch?v=bachwkoB2bk",
+      "video_name": "flood_video_1",
+      "pdf_name": "floods_1.pdf"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.material",
+    "fields": {
+      "category": 1,
+      "short_description": "Emergency Preparedness and Response in case of floods.",
+      "full_content": "Discover community resilience strategies for flood-prone areas.",
+      "pdf_file": "pdfs/floods_2.pdf",
+      "video_url": "https://www.youtube.com/watch?v=bachwkoB2bk",
+      "video_name": "flood_video_2",
+      "pdf_name": "floods_2.pdf"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.material",
+    "fields": {
+      "category": 1,
+      "short_description": "Emergency Preparedness and Response in case of floods.",
+      "full_content": "Understand the environmental impact of floods and mitigation techniques.",
+      "pdf_file": "pdfs/floods_3.pdf",
+      "video_url": "https://www.youtube.com/watch?v=bachwkoB2bk",
+      "video_name": "flood_video_3",
+      "pdf_name": "floods_3.pdf"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.material",
+    "fields": {
+      "category": 1,
+      "short_description": "Emergency Preparedness and Response in case of floods.",
+      "full_content": "This material explores flood hazard mapping techniques.",
+      "pdf_file": "pdfs/floods_4.pdf",
+      "video_url": "https://www.youtube.com/watch?v=bachwkoB2bk",
+      "video_name": "flood_video_4",
+      "pdf_name": "floods_4.pdf"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.material",
+    "fields": {
+      "category": 1,
+      "short_description": "Emergency Preparedness and Response in case of floods.",
+      "full_content": "Learn flood evacuation planning and resource management.",
+      "pdf_file": "pdfs/floods_5.pdf",
+      "video_url": "https://www.youtube.com/watch?v=bachwkoB2bk",
+      "video_name": "flood_video_5",
+      "pdf_name": "floods_5.pdf"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.material",
+    "fields": {
+      "category": 1,
+      "short_description": "Emergency Preparedness and Response in case of floods.",
+      "full_content": "Explore climate change implications on flooding events.",
+      "pdf_file": "pdfs/floods_6.pdf",
+      "video_url": "https://www.youtube.com/watch?v=bachwkoB2bk",
+      "video_name": "flood_video_6",
+      "pdf_name": "floods_6.pdf"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.material",
+    "fields": {
+      "category": 1,
+      "short_description": "Emergency Preparedness and Response in case of floods.",
+      "full_content": "Understand structural measures like levees and dams in flood control.",
+      "pdf_file": "pdfs/floods_7.pdf",
+      "video_url": "https://www.youtube.com/watch?v=bachwkoB2bk",
+      "video_name": "flood_video_7",
+      "pdf_name": "floods_7.pdf"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.material",
+    "fields": {
+      "category": 2,
+      "short_description": "Community Resilience and Recovery after forest fires.",
+      "full_content": "Understand fire behavior and risk in forest areas.",
+      "pdf_file": "pdfs/forest_fire_1.pdf",
+      "video_url": "https://www.youtube.com/watch?v=bachwkoB2bk",
+      "video_name": "forest_fire_video_1",
+      "pdf_name": "forest_fire_1.pdf"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.material",
+    "fields": {
+      "category": 2,
+      "short_description": "Community Resilience and Recovery after forest fires.",
+      "full_content": "Learn about forest fire prevention strategies.",
+      "pdf_file": "pdfs/forest_fire_2.pdf",
+      "video_url": "https://www.youtube.com/watch?v=bachwkoB2bk",
+      "video_name": "forest_fire_video_2",
+      "pdf_name": "forest_fire_2.pdf"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "products.material",
+    "fields": {
+      "category": 2,
+      "short_description": "Community Resilience and Recovery after forest fires.",
+      "full_content": "Discover suppression techniques during forest fires.",
+      "pdf_file": "pdfs/forest_fire_3.pdf",
+      "video_url": "https://www.youtube.com/watch?v=bachwkoB2bk",
+      "video_name": "forest_fire_video_3",
+      "pdf_name": "forest_fire_3.pdf"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "products.material",
+    "fields": {
+      "category": 2,
+      "short_description": "Community Resilience and Recovery after forest fires.",
+      "full_content": "Understand post-fire recovery efforts and policies.",
+      "pdf_file": "pdfs/forest_fire_4.pdf",
+      "video_url": "https://www.youtube.com/watch?v=bachwkoB2bk",
+      "video_name": "forest_fire_video_4",
+      "pdf_name": "forest_fire_4.pdf"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "products.material",
+    "fields": {
+      "category": 2,
+      "short_description": "Community Resilience and Recovery after forest fires.",
+      "full_content": "Learn about community engagement in forest fire prevention.",
+      "pdf_file": "pdfs/forest_fire_5.pdf",
+      "video_url": "https://www.youtube.com/watch?v=bachwkoB2bk",
+      "video_name": "forest_fire_video_5",
+      "pdf_name": "forest_fire_5.pdf"
+    }
+  },
+  {
+    "pk": 13,
+    "model": "products.material",
+    "fields": {
+      "category": 2,
+      "short_description": "Community Resilience and Recovery after forest fires.",
+      "full_content": "Discover legal frameworks and policies for forest fire management.",
+      "pdf_file": "pdfs/forest_fire_6.pdf",
+      "video_url": "https://www.youtube.com/watch?v=bachwkoB2bk",
+      "video_name": "forest_fire_video_6",
+      "pdf_name": "forest_fire_6.pdf"
+    }
+  },
+  {
+    "pk": 14,
+    "model": "products.material",
+    "fields": {
+      "category": 3,
+      "short_description": "Disaster Risk Reduction (DRR) for heat waves.",
+      "full_content": "Explore health impacts and mitigation strategies for heat waves.",
+      "pdf_file": "pdfs/heat_wave_1.pdf",
+      "video_url": "https://www.youtube.com/watch?v=bachwkoB2bk",
+      "video_name": "heat_wave_video_1",
+      "pdf_name": "heat_wave_1.pdf"
+    }
+  },
+  {
+    "pk": 15,
+    "model": "products.material",
+    "fields": {
+      "category": 3,
+      "short_description": "Disaster Risk Reduction (DRR) for heat waves.",
+      "full_content": "Learn about urban planning for heat wave adaptation.",
+      "pdf_file": "pdfs/heat_wave_2.pdf",
+      "video_url": "https://www.youtube.com/watch?v=bachwkoB2bk",
+      "video_name": "heat_wave_video_2",
+      "pdf_name": "heat_wave_2.pdf"
+    }
+  },
+  {
+    "pk": 16,
+    "model": "products.material",
+    "fields": {
+      "category": 3,
+      "short_description": "Disaster Risk Reduction (DRR) for heat waves.",
+      "full_content": "Understand emergency services' role during heat waves.",
+      "pdf_file": "pdfs/heat_wave_3.pdf",
+      "video_url": "https://www.youtube.com/watch?v=bachwkoB2bk",
+      "video_name": "heat_wave_video_3",
+      "pdf_name": "heat_wave_3.pdf"
+    }
+  },
+  {
+    "pk": 17,
+    "model": "products.material",
+    "fields": {
+      "category": 3,
+      "short_description": "Disaster Risk Reduction (DRR) for heat waves.",
+      "full_content": "Explore heat wave risk assessment techniques.",
+      "pdf_file": "pdfs/heat_wave_4.pdf",
+      "video_url": "https://www.youtube.com/watch?v=bachwkoB2bk",
+      "video_name": "heat_wave_video_4",
+      "pdf_name": "heat_wave_4.pdf"
+    }
+  },
+  {
+    "pk": 18,
+    "model": "products.material",
+    "fields": {
+      "category": 3,
+      "short_description": "Disaster Risk Reduction (DRR) for heat waves.",
+      "full_content": "Understand public awareness campaigns for heat waves.",
+      "pdf_file": "pdfs/heat_wave_5.pdf",
+      "video_url": "https://www.youtube.com/watch?v=bachwkoB2bk",
+      "video_name": "heat_wave_video_5",
+      "pdf_name": "heat_wave_5.pdf"
+    }
+  },
+  {
+    "pk": 19,
+    "model": "products.material",
+    "fields": {
+      "category": 4,
+      "short_description": "Disaster Risk Assessment for storms.",
+      "full_content": "Learn storm risk mapping and hazard analysis.",
+      "pdf_file": "pdfs/storm_1.pdf",
+      "video_url": "https://www.youtube.com/watch?v=bachwkoB2bk",
+      "video_name": "storm_video_1",
+      "pdf_name": "storm_1.pdf"
+    }
+  },
+  {
+    "pk": 20,
+    "model": "products.material",
+    "fields": {
+      "category": 4,
+      "short_description": "Disaster Risk Assessment for storms.",
+      "full_content": "Discover storm shelter design and safety measures.",
+      "pdf_file": "pdfs/storm_2.pdf",
+      "video_url": "https://www.youtube.com/watch?v=bachwkoB2bk",
+      "video_name": "storm_video_2",
+      "pdf_name": "storm_2.pdf"
+    }
+  },
+  {
+    "pk": 21,
+    "model": "products.material",
+    "fields": {
+      "category": 4,
+      "short_description": "Disaster Risk Assessment for storms.",
+      "full_content": "Understand infrastructure resilience to storms.",
+      "pdf_file": "pdfs/storm_3.pdf",
+      "video_url": "https://www.youtube.com/watch?v=bachwkoB2bk",
+      "video_name": "storm_video_3",
+      "pdf_name": "storm_3.pdf"
+    }
+  },
+  {
+    "pk": 22,
+    "model": "products.material",
+    "fields": {
+      "category": 4,
+      "short_description": "Disaster Risk Assessment for storms.",
+      "full_content": "Explore early warning systems for storms.",
+      "pdf_file": "pdfs/storm_4.pdf",
+      "video_url": "https://www.youtube.com/watch?v=bachwkoB2bk",
+      "video_name": "storm_video_4",
+      "pdf_name": "storm_4.pdf"
+    }
+  },
+  {
+    "pk": 23,
+    "model": "products.material",
+    "fields": {
+      "category": 4,
+      "short_description": "Disaster Risk Assessment for storms.",
+      "full_content": "Learn community storm preparedness techniques.",
+      "pdf_file": "pdfs/storm_5.pdf",
+      "video_url": "https://www.youtube.com/watch?v=bachwkoB2bk",
+      "video_name": "storm_video_5",
+      "pdf_name": "storm_5.pdf"
+    }
+  },
+  {
+    "pk": 24,
+    "model": "products.material",
+    "fields": {
+      "category": 4,
+      "short_description": "Disaster Risk Assessment for storms.",
+      "full_content": "Understand emergency response for storm-affected areas.",
+      "pdf_file": "pdfs/storm_6.pdf",
+      "video_url": "https://www.youtube.com/watch?v=bachwkoB2bk",
+      "video_name": "storm_video_6",
+      "pdf_name": "storm_6.pdf"
+    }
+  },
+  {
+    "pk": 25,
+    "model": "products.material",
+    "fields": {
+      "category": 4,
+      "short_description": "Disaster Risk Assessment for storms.",
+      "full_content": "Explore long-term recovery strategies after storms.",
+      "pdf_file": "pdfs/storm_7.pdf",
+      "video_url": "https://www.youtube.com/watch?v=bachwkoB2bk",
+      "video_name": "storm_video_7",
+      "pdf_name": "storm_7.pdf"
+    }
+  },
+  {
+    "pk": 26,
+    "model": "products.material",
+    "fields": {
+      "category": 4,
+      "short_description": "Disaster Risk Assessment for storms.",
+      "full_content": "Understand the role of insurance in storm recovery.",
+      "pdf_file": "pdfs/storm_8.pdf",
+      "video_url": "https://www.youtube.com/watch?v=bachwkoB2bk",
+      "video_name": "storm_video_8",
+      "pdf_name": "storm_8.pdf"
+    }
+  }
+]
+

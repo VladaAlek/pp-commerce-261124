@@ -1,0 +1,67 @@
+[
+    {
+      "pk": 1,
+      "model": "products.category",
+      "fields": {
+        "name": "floods",
+        "friendly_name": "Floods",
+        "difficulty_level": "Intermediate",
+        "credits": 10,
+        "number_of_lectures": 7,
+        "est_time": 12,
+        "short_description": "Advanced Disaster Risk Reduction (DRR) in case of floods.",
+        "long_description": "Floods - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non sem ut nisi efficitur consequat. Fusce a arcu at erat convallis varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+        "test": true,
+        "logo": "logos/fire-solid.svg"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.category",
+      "fields": {
+        "name": "forest fire",
+        "friendly_name": "Forest Fire",
+        "difficulty_level": "Advanced",
+        "credits": 15,
+        "number_of_lectures": 6,
+        "est_time": 20,
+        "short_description": "Forest Fire - Forest Fire Digital learning for vulnerability analysis in cases of forest fires.",
+        "long_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.",
+        "test": true,
+        "logo": "logos/fire-solid.svg"
+      }
+    },
+    {
+      "pk": 3,
+      "model": "products.category",
+      "fields": {
+        "name": "heat wave",
+        "friendly_name": "Heat Wave",
+        "difficulty_level": "Beginner",
+        "credits": 5,
+        "number_of_lectures": 5,
+        "est_time": 6,
+        "short_description": "Learn about advanced community resilience and recovery strategies in case of heat waves.",
+        "long_description": "Heat Wave - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor.",
+        "test": false,
+        "logo": "logos/sun-solid.svg"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "products.category",
+      "fields": {
+        "name": "storm",
+        "friendly_name": "Storm",
+        "difficulty_level": "Intermediate",
+        "credits": 12,
+        "number_of_lectures": 8,
+        "est_time": 10,
+        "short_description": "Good emergency preparedness and response reduce negative storm consequences.",
+        "long_description": "Storm - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit.",
+        "test": true,
+        "logo": "logos/wind-solid.svg"
+      }
+    }
+  ]
+  
