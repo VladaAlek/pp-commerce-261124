@@ -1,5 +1,9 @@
 from django.db import models
 
+
+class Meta:
+        verbose_name_plural = 'Categories'
+
 class Category(models.Model):
     name = models.CharField(max_length=50)
     friendly_name = models.CharField(max_length=100)
