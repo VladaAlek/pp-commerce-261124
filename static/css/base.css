@@ -2,6 +2,7 @@ html {
     height: 100%;
 }
 
+/* cover photo*/
 body {
     background: url('/media/cover_photo.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -9,6 +10,35 @@ body {
     color: #555;
     font-family: 'Lato';
 }
-.test {
-    font-size: 67px;
+
+/*H-elements on the index page*/ 
+.home-title {
+    font-size: 90px;
+}
+.home-subtitle {
+    font-size: 35px;
+}
+
+
+
+/* overlay for the categories page */
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
+
+/*media queries*/
+
+/*media queries index.html*/
+
+@media (min-width: 450px) {
+    .home-subtitle {
+        font-size: 45px;
+    }
 }
