@@ -8,6 +8,25 @@
 {% block content %}
 <div class="container overlay">
     <h1 class="test">See all our courses</h1>
-    {{ categories }}
+    <div>
+        {% for category in categories %}
+
+        <div>
+            <h2>{{ category.name }}</h2>
+            {{category.logo}}
+        </div>
+
+        <p>{{category.dificalty_level}}</p>
+        <p>{{category.credits}}</p>
+        <p>Number of lectures in this cource: {{category.number_of_lectures}}</p>
+        <p>{{category.est_time}}</p>
+        <p>{{category.short_description}}</p>
+        <p>{{category.long_description}}</p>
+        <p>{{category.test}}</p>
+        <p>{{category}}</p>
+
+        {% endfor %}
+    </div>
 </div>
+
 {% endblock %}
