@@ -12,8 +12,10 @@ body {
 }
 
 /*H-elements on the index page*/ 
-.home-title {
+.home-title,
+.categories-title {
     font-size: 90px;
+    color: red;
 }
 .home-subtitle {
     font-size: 35px;
