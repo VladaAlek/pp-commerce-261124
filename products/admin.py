@@ -11,7 +11,7 @@ class MaterialAdmin(admin.ModelAdmin):
         'category',
     )
 
-    ordering = ('category',)
+    ordering = ('short_description',)
 
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
