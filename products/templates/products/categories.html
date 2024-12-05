@@ -6,27 +6,30 @@
 
 
 {% block content %}
-<div class="container my-5">
-    <h1 class="text-center mb-4 categories-title" >DDR Courses</h1>
-    <div class="row">
-        {% for category in categories %}
-        <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-            <div class="p-3 bg-light border h-100">
-                <h2>{{ category.name }}</h2>
-                <div class="mb-3">
-                    {{ category.logo }}
+
+<div class="categories-overlay">
+    <div class="container my-5">
+        <h1 class="text-center mb-4 categories-title">DDR Courses</h1>
+        <div class="row">
+            {% for category in categories %}
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                <div class="p-3 bg-light border h-100">
+                    <h2>{{ category.name }}</h2>
+                    <div class="mb-3">
+                        <img src="{{ category.logo.url }}" alt="{{ category.name }} Logo" class="img-fluid">
+                    </div>
+                    <p><strong>Difficulty Level:</strong> {{ category.difficulty_level }}</p>
+                    <p><strong>Credits:</strong> {{ category.credits }}</p>
+                    <p><strong>Number of Lectures:</strong> {{ category.number_of_lectures }}</p>
+                    <p><strong>Estimated Time:</strong> {{ category.est_time }}</p>
+                    <p><strong>Short Description:</strong> {{ category.short_description }}</p>
+                    <p><strong>Long Description:</strong> {{ category.long_description }}</p>
+                    <p><strong>Test:</strong> {{ category.test }}</p>
                 </div>
-                <p><strong>Difficulty Level:</strong> {{ category.dificalty_level }}</p>
-                <p><strong>Credits:</strong> {{ category.credits }}</p>
-                <p><strong>Number of Lectures:</strong> {{ category.number_of_lectures }}</p>
-                <p><strong>Estimated Time:</strong> {{ category.est_time }}</p>
-                <p><strong>Short Description:</strong> {{ category.short_description }}</p>
-                <p><strong>Long Description:</strong> {{ category.long_description }}</p>
-                <p><strong>Test:</strong> {{ category.test }}</p>
             </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
 </div>
-{% endblock %}
 
+{% endblock %}
