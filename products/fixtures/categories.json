@@ -3,7 +3,7 @@
       "pk": 1,
       "model": "products.category",
       "fields": {
-        "name": "Floods",
+        "name": "Flood",
         "friendly_name": "Floods",
         "difficulty_level": "Intermediate",
         "credits": 10,
@@ -26,7 +26,7 @@
         "number_of_lectures": 6,
         "est_time": 20,
         "short_description": "Forest Fire - Forest Fire Digital learning for vulnerability analysis in cases of forest fires.",
-        "long_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.",
+        "long_description": "Forest Fire - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.",
         "test": true,
         "logo": "logos/fire-solid.svg"
       }

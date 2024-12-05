@@ -21,13 +21,13 @@
                     <p><strong>Difficulty Level:</strong> {{ category.difficulty_level }}</p>
                     <p><strong>Credits:</strong> {{ category.credits }}</p>
                     <p><strong>Number of Lectures:</strong> {{ category.number_of_lectures }}</p>
-                    <p><strong>Estimated Time:</strong> {{ category.est_time }}</p>
+                    <p><strong>Estimated Time:</strong> {{ category.est_time }} learning hours</p>
                     <p><strong>Short Description:</strong> {{ category.short_description }}</p>
-                    <p><strong>Long Description:</strong> {{ category.long_description }}</p>
+                    <p><strong>Find out more about {{ category.name }}s:</strong> {{ category.long_description }}</p>
                     <p><strong>Test:</strong> {{ category.test }}</p>
                     <div class="text-center">
                         <button class="btn btn-success">
-                            <a href="{% url 'categories' %}" class="text-white text-decoration-none">Explore Course</a>
+                            <a href="#" class="text-white text-decoration-none">Explore Course</a>
                         </button>
                     </div>
             </div>

@@ -44,7 +44,40 @@
   {% block extra_js %}
   {% endblock %}
 
-  <title>Disaster Ready {% block extra_title %}{% endblock %}</title>
+  <title>DisasterReadyOnline - Disaster Management Training for Municipal Workers {% block extra_title %}{% endblock %}
+  </title>
+  <!-- Meta Description -->
+  <meta name="description" content="Online training platform designed by experts to equip
+municipal workers in Germany with essential skills to tackle floods, storms, heat waves, and
+forest fires.">
+  <!-- Keywords for SEO -->
+  <meta name="keywords" content="Disaster Management, Disaster Risk Reduction, DRR, Risk Management/management crisis
+  Climate Change and Resilience, Societal Resilience, Disaster Risk Reduction,Disaster Risk Assessment, Emergency 
+  Preparedness and Response, Community Resilience and Recovery,  Health Impacts of Disasters, Disaster Communication,
+  Vulnerability Analysis, Technology in Disaster Management, Humanitarian Aid and Logistics, E-learning, 
+  Virtual learning, Remote education, Distance learning, Blended learning, Online training, Web-based learning,
+  Digital instruction, Municipal Worker Training, Flood Preparedness, Storm Response, Heat Wave Safety, 
+  Forest Fire Management, Germany, E-learning, Consulting">
+  <!-- Author -->
+  <meta name="author" content="Disaster Ready Online Team">
+  <!-- Open Graph Meta Tags for Social Media Sharing -->
+  <meta property="og:title" content="DisasterReadyOnline - Disaster Management Training for
+Municipal Workers">
+  <meta property="og:description" content="Join our online training platform to gain essential
+skills in managing floods, storms, heat waves, and forest fires. Tailored for municipal workers in
+Germany.">
+  <meta property="og:image" content="URL-to-your-thumbnail-image.jpg">
+  <meta property="og:url" content="https://www.disasterreadyonline.com">
+  <meta property="og:type" content="website">
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DisasterReadyOnline - Disaster Management Training for
+Municipal Workers">
+  <meta name="twitter:description" content="Our expert-led online platform provides
+municipal workers with the latest skills for tackling natural disasters in Germany.">
+  <meta name="twitter:image" content="URL-to-your-thumbnail-image.jpg">
+  <!-- Favicon -->
+  <link rel="icon" href="/images/leaf-solid.svg" type="image/x-icon">
 </head>
 
 <body>
@@ -115,7 +148,8 @@
               <ul class="list-inline list-unstyled text-center text-lg-end my-0 d-flex">
                 <!-- User Options Dropdown -->
                 <li class="list-inline-item dropdown">
-                  <a class="text-black nav-link" href="#" id="user-options" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="text-black nav-link" href="#" id="user-options" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     <div class="text-center">
                       <div><i class="fas fa-user fa-lg"></i></div>
                       <p class="my-0">My Account</p>
@@ -123,18 +157,18 @@
                   </a>
                   <div class="dropdown-menu border-0" aria-labelledby="user-options">
                     {% if request.user.is_authenticated %}
-                      {% if request.user.is_superuser %}
-                        <a href="#" class="dropdown-item">Product Management</a>
-                      {% endif %}
-                      <a href="#" class="dropdown-item">My Profile</a>
-                      <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                    {% if request.user.is_superuser %}
+                    <a href="#" class="dropdown-item">Product Management</a>
+                    {% endif %}
+                    <a href="#" class="dropdown-item">My Profile</a>
+                    <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                     {% else %}
-                      <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                      <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                    <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                    <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
                     {% endif %}
                   </div>
                 </li>
-            
+
                 <!-- Shopping Bag -->
                 <li class="list-inline-item">
                   <a class="{% if grand_total %}text-primary fw-bold{% else %}text-black{% endif %} nav-link" href="#">
@@ -142,9 +176,9 @@
                       <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                       <p class="my-0">
                         {% if grand_total %}
-                          ${{ grand_total|floatformat:2 }}
+                        ${{ grand_total|floatformat:2 }}
                         {% else %}
-                          $0.00
+                        $0.00
                         {% endif %}
                       </p>
                     </div>
@@ -152,7 +186,7 @@
                 </li>
               </ul>
             </div>
-            
+
           </ul>
         </div>
       </div>
