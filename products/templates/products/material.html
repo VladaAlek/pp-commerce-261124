@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+
+
+
+{% block content %}
+
+<div>
+    <div>
+        <h1>{{ category.name }} Materials</h1>
+    </div>
+    {% for material in materials %}
+    <p>material.short_description</p>
+    {% endfor %}
+
+
+{% endblock %}

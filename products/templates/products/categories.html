@@ -27,7 +27,7 @@
                     <p><strong>Test:</strong> {{ category.test }}</p>
                     <div class="text-center">
                         <button class="btn btn-success">
-                            <a href="#" class="text-white text-decoration-none">Explore Course</a>
+                            <a href="{% url 'materials' category.id %}" class="text-white text-decoration-none">Explore Course</a>
                         </button>
                     </div>
             </div>
