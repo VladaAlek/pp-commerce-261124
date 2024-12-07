@@ -15,6 +15,8 @@ class Category(models.Model):
     long_description = models.TextField(max_length=1000)
     test = models.BooleanField(default=False)
     logo = models.ImageField(upload_to='logos/', null=True, blank=True)
+    price = models.IntegerField(null=True, blank=True)
+    starting_date = models.CharField(max_length=100, null=True, blank=True)
 
     def __str__(self):
         return self.name

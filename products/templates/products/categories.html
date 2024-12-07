@@ -14,7 +14,7 @@
             {% for category in categories %}
             <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
                 <div class="p-3 bg-light border h-100">
-                    <div class="d-flex justify-content-between align-items-center mb-3 bg-success p-3">
+                    <div class="d-flex justify-content-between align-items-center mb-3 bg-success p-3 courses-title">
                         <h2 class="mb-0">{{ category.name }}</h2>
                         <img src="{{ category.logo.url }}" alt="{{ category.name }} Logo" class="img-fluid ms-3" style="max-height: 50px;">
                     </div>
@@ -25,6 +25,13 @@
                     <p><strong>Short Description:</strong> {{ category.short_description }}</p>
                     <p><strong>Find out more about {{ category.name }}s:</strong> {{ category.long_description }}</p>
                     <p><strong>Test:</strong> {{ category.test }}</p>
+                    <div class="categories-price-date">
+                        <p><strong>Price:</strong> {{ category.starting_date }}</p>
+                        <p><strong>Price:</strong> {{ category.price }} <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-euro" viewBox="0 0 16 16">
+                            <path d="M4 9.42h1.063C5.4 12.323 7.317 14 10.34 14c.622 0 1.167-.068 1.659-.185v-1.3c-.484.119-1.045.17-1.659.17-2.1 0-3.455-1.198-3.775-3.264h4.017v-.928H6.497v-.936q-.002-.165.008-.329h4.078v-.927H6.618c.388-1.898 1.719-2.985 3.723-2.985.614 0 1.175.05 1.659.177V2.194A6.6 6.6 0 0 0 10.341 2c-2.928 0-4.82 1.569-5.244 4.3H4v.928h1.01v1.265H4v.928z"/>
+                          </svg></p>
+                    </div>
+                    
                     <div class="text-center">
                         <button class="btn btn-success">
                             <a href="{% url 'materials' category.id %}" class="text-white text-decoration-none">Explore Course</a>

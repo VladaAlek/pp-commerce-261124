@@ -21,6 +21,16 @@ body {
     font-size: 35px;
 }
 
+/*all categories template*/
+
+.courses-title {
+    height: 106px;
+}
+
+.categories-price-date {
+    background-color: gainsboro;
+    width: inherit;
+}
 
 
 /* overlay for the categories page */

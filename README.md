@@ -18,6 +18,8 @@
 
 ### Icon's Source 
 - [Font Awsome](https://fontawesome.com "fontawesome.com")
+- [Bootstrap](https://icons.getbootstrap.com/icons/currency-euro/ "Bootstrap")
+
 
 ## Software Resources Used
 - [Uizard.io](https://app.uizard.io/ "uizard.io") was utilised for wireframing.
