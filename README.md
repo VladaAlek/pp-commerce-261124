@@ -12,6 +12,9 @@ This e-commerce project is focused on providing a user with learning material in
  - profile page
  - money transfer component
 
+### Design Proces
+
+- [Category and Material models](docs/images/erd_category_material_models.png) in products app
 
 ## Technologies Used:
  - Python 3.2.0
