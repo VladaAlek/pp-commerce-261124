@@ -24,6 +24,7 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('', include('home.urls')),
     path('categories/', include('products.urls')),
+    path('bag/', include('bag.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 #handler404 = 'boutique_ado.views.handler404'
