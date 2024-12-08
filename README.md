@@ -1,6 +1,18 @@
 # Disaster Ready
 
 
+This e-commerce project is focused on providing a user with learning material in the **Disaster Risk Reduction**field. It is an increasingly popular, multidisciplinary research area between natural and social sciences. Its multi-faceted results are implemented in everyday confrontations with natural hazards by numerous practitioners across the globe. The need to disseminate practical and theoretical knowledge about **DRR** grows with rapid changes in the natural and social environment. Hence, there are numerous potential users of this course. For practical reasons, this time the project is limited to German-speaking countries *German, Austria and Switzerland*, the three countries that are exposed to *floods*, *stormy weather conditions*, *forest fires*, and *heat weaves* as the four most relevant natural disasters in this part of Europe.
+
+### Sites main structure
+ - log in/log out - on this topic more in the Authentication section below
+ - navigation bar
+ - landing page
+ - all courses view
+ - content of individual courses
+ - profile page
+ - money transfer component
+
+
 ## Technologies Used:
  - Python 3.2.0
  - Django 3.2.25
