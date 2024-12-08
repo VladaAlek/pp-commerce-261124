@@ -123,10 +123,11 @@ municipal workers with the latest skills for tackling natural disasters in Germa
                 Courses
               </a>
               <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
-                <li><a class="dropdown-item" href="#">Floods</a></li>
-                <li><a class="dropdown-item" href="#">Category 2</a></li>
-                <li><a class="dropdown-item" href="#">Category 3</a></li>
-                <li><a class="dropdown-item" href="#">Category 4</a></li>
+                <li><a class="dropdown-item" href="{% url 'categories' %}">All Courses</a></li>
+                <li><a class="dropdown-item" href="{% url 'materials' category_id=1 %}">Floods</a></li>
+                <li><a class="dropdown-item" href="{% url 'materials' category_id=2 %}">Forest Fire</a></li>
+                <li><a class="dropdown-item" href="{% url 'materials' category_id=3 %}">Heat Wave</a></li>
+                <li><a class="dropdown-item" href="{% url 'materials' category_id=4 %}">Storm</a></li>
               </ul>
             </li>
 
@@ -138,8 +139,8 @@ municipal workers with the latest skills for tackling natural disasters in Germa
               </a>
               <ul class="dropdown-menu" aria-labelledby="navigationDropdown">
                 <li><a class="dropdown-item" href="{% url 'home' %}">Home</a></li>
-                <li><a class="dropdown-item" href="{% url 'categories' %}">Courses</a></li>
-                <li><a class="dropdown-item" href="#">Page 3</a></li>
+                <li><a class="dropdown-item" href="">Courses</a></li>
+                <li><a class="dropdown-item" href="">Page 3</a></li>
               </ul>
             </li>
 
