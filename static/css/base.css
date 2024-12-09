@@ -21,6 +21,10 @@ body {
     font-size: 35px;
 }
 
+.discount-border-line {
+    border: 1px solid red;
+}
+
 /*all categories template*/
 
 .courses-title {
