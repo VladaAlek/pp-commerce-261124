@@ -51,10 +51,19 @@ body {
 
 /*materials page*/
 
-#materials-subtitle-field {
+
+.head-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  #materials-subtitle-field {
     background-color: black;
-    width: 50%;
-    margin: 0 auto;
+    /*width: 50%;
+    margin: 0 auto;*/
 }
 
 .material-buttons {

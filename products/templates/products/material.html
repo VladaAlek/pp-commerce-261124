@@ -5,11 +5,20 @@
 <div class="container mt-5">
     <div class="text-center mb-4">
         <h1 class="display-5">{{ category.name }}s Materials</h1>
-        <div id="materials-subtitle-field" class="text-center">
-            <!--add appropriate logo-->
-            <p class="lead text-muted text-white p-3 fs-4">{{ category.short_description }}</p>
-            <button>Buy this course</button>
-            <!--restile this button to be bigger and to stay on the right side-->
+        <div class="text-center flex-row head-section">
+            <div class="bg-danger">
+                {% if category.logo %}
+                <img src="{{ category.logo.url }}" alt="{{ category.name }} Logo" class="img-fluid ms-3" style="max-height: 30px;">
+                {% else %}
+                <img src="{% static 'images/default-logo.svg' %}" alt="Default Logo" class="img-fluid ms-3" style="max-height: 30px;">
+                {% endif %}
+            </div>
+            <div id="materials-subtitle-field">
+                <p class="lead text-muted text-white p-3 fs-4">{{ category.short_description }}</p>
+            </div>
+            <div>
+                <a href="">Buy This Course</a>
+            </div>
         </div>
     </div>
     <div class="row">
@@ -27,7 +36,8 @@
                         <span><strong>PDF:</strong> {{ material.get_pdf_name }}</span>
                         {% endif %}
                         {% if material.pdf_file %}
-                        <a href="{{ material.pdf_file.url }}" class="btn btn-secondary btn-sm material-buttons" target="">Download
+                        <a href="{{ material.pdf_file.url }}" class="btn btn-secondary btn-sm material-buttons"
+                            target="">Download
                             PDF</a>
                         {% endif %}
                     </div>
@@ -38,7 +48,8 @@
                         <span><strong>Video:</strong> {{ material.video_name }}</span>
                         {% endif %}
                         {% if material.video_url %}
-                        <a href="{{ material.video_url }}" class="btn btn-primary btn-sm material-buttons" target="">Watch
+                        <a href="{{ material.video_url }}" class="btn btn-primary btn-sm material-buttons"
+                            target="">Watch
                             Video</a>
                         {% endif %}
                     </div>
