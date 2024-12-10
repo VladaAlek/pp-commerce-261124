@@ -57,6 +57,10 @@ body {
     margin: 0 auto;
 }
 
+.material-buttons {
+    width: 113px;
+}
+
 /*media queries*/
 
 /*media queries index.html*/

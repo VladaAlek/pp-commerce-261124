@@ -27,7 +27,7 @@
                         <span><strong>PDF:</strong> {{ material.get_pdf_name }}</span>
                         {% endif %}
                         {% if material.pdf_file %}
-                        <a href="{{ material.pdf_file.url }}" class="btn btn-secondary btn-sm" target="">Download
+                        <a href="{{ material.pdf_file.url }}" class="btn btn-secondary btn-sm material-buttons" target="">Download
                             PDF</a>
                         {% endif %}
                     </div>
@@ -38,7 +38,7 @@
                         <span><strong>Video:</strong> {{ material.video_name }}</span>
                         {% endif %}
                         {% if material.video_url %}
-                        <a href="{{ material.video_url }}" class="btn btn-primary btn-sm" target="">Watch
+                        <a href="{{ material.video_url }}" class="btn btn-primary btn-sm material-buttons" target="">Watch
                             Video</a>
                         {% endif %}
                     </div>
