@@ -49,6 +49,13 @@ body {
 	z-index: -1;
 }
 
+/*materials page*/
+
+#materials-subtitle-field {
+    background-color: black;
+    width: 50%;
+    margin: 0 auto;
+}
 
 /*media queries*/
 
