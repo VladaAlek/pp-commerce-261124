@@ -8,7 +8,7 @@ def view_bag(request):
 
 def add_to_bag(request, item_id):
     """ Add a quantity of the specified course to the shopping bag """
-    quantity = int(request.POST.get('quantity', 1))  # Default quantity to 1 if not provided
+    quantity = int(request.POST.get('quantity', 1)) 
     redirect_url = request.POST.get('redirect_url')
     bag = request.session.get('bag', {})
 
@@ -17,5 +17,5 @@ def add_to_bag(request, item_id):
     else:
         bag[item_id] = quantity
 
-    request.session['bag'] = bag  # Update the session with the new bag data
+    request.session['bag'] = bag
     return redirect(redirect_url)

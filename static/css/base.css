@@ -58,6 +58,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-grow: 1;
+    width: 50%;
   }
 
   #materials-subtitle-field {
@@ -68,6 +69,11 @@ body {
 
 .material-buttons {
     width: 113px;
+}
+
+.material-logo-div {
+    width: auto;
+    height: auto;
 }
 
 /*media queries*/

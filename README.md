@@ -46,13 +46,14 @@ This e-commerce project is focused on providing a user with learning material in
 - [HEROKU](https://www.heroku.com/ "HEROKU cloud platform") used to deploy and manage the applications.
 
 
-### Testing responsivness
+### Testing Responsivness
 #### All Courses
  - testing ["Categories Page" XL and L](docs/images/testing_courses_lg.png);
  - testing [ "Categories Page" M](docs/images/testing_courses_md.png);
  - testing [ "Categories Page" SM](docs/images/testing_courses_sm.png);
 
-
+### Testing Add Courses Functionality
+- [Initial Testing](docs/images/testing_add_course_functionality.png)
 ### Image Source
  - [Flickr.com](https://www.flickr.com/photos/apfelauge/25528764266/in/photolist-ETTAd3-aruDcd-oybpY8-ars18K-ars1Sr-ars1qM-arrZ2e-arrZeB-arrZpV-ars1ye-aruDB3-arrYTK-aruD1A-2kypz9o-aruE9b-eHdPys-2kxmpUV-98weQw-9aL4ZS-98t6mT-2n6BFgN-2qhpUcR-9a6i7e-rGaTjQ-dFkWsU-ahaC5Z-eBNHfs-5sEf1V-6aFqEa-2nURaUe-7Qxk4N-2kxMii3-4NXPkq-4NXY91-4NXQMA-4NYfnC-4NXSyE-4NY3jU-4NU8rH-JkiUrD-QhphK4-4NY8um-4NY8Sh-4NY4iC-4NTA6K-4NTU7H-i8tXAS-4NXTYY-4NTTLr-4NXXk1/ "flickr.com")
 
