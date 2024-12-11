@@ -8,18 +8,34 @@
         <div class="text-center flex-row head-section">
             <div class="bg-danger">
                 {% if category.logo %}
-                <img src="{{ category.logo.url }}" alt="{{ category.name }} Logo" class="img-fluid ms-3" style="max-height: 30px;">
+                <img src="{{ category.logo.url }}" alt="{{ category.name }} Logo" class="img-fluid ms-3"
+                    style="max-height: 30px;">
                 {% else %}
-                <img src="{% static 'images/default-logo.svg' %}" alt="Default Logo" class="img-fluid ms-3" style="max-height: 30px;">
+                <img src="{% static 'images/default-logo.svg' %}" alt="Default Logo" class="img-fluid ms-3"
+                    style="max-height: 30px;">
                 {% endif %}
             </div>
             <div id="materials-subtitle-field">
                 <p class="lead text-muted text-white p-3 fs-4">{{ category.short_description }}</p>
             </div>
-            <div>
-                <a href="">Buy This Course</a>
-            </div>
         </div>
+        <!---->
+        <form class="form" action="{% url 'add_to_bag' category.id %}" method="POST">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-12">
+                    <a href="{% url 'categories' %}" class="btn btn-outline-dark mt-5">
+                        <span class="me-2">
+                            <i class="fas fa-chevron-left"></i>
+                        </span>
+                        <span class="text-uppercase">Keep Exploring</span>
+                    </a>
+                    <input type="submit" class="btn btn-success text-uppercase mt-5" value="Add This Course to the Bag">
+                </div>
+                <input type="hidden" name="redirect_url" value="{{ request.path }}">
+            </div>
+        </form>
+        <!---->
     </div>
     <div class="row">
         {% for material in materials %}
