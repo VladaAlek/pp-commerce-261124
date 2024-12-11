@@ -1,12 +1,27 @@
 from decimal import Decimal
 from django.conf import settings
+from django.shortcuts import get_object_or_404
+from products.models import Category
 
 def bag_contents(request):
     bag_items = []
     total = 0
     product_count = 0
     discount = 0
+    bag = request.session.get('bag', {})
 
+
+    for item_id, quantity in bag.items():
+        course = get_object_or_404(Category, pk=item_id)
+        total += course.price
+        product_count += 1
+        bag_items.append({
+            'item_id': item_id,
+            'quantity': quantity,
+            'product': course,
+    })
+
+    
     if total > settings.DISCOUNT_TRESHOLD:
         discount = total * Decimal(settings.STANDART_DISCOUNT_PERCENTAGE / 100)
         discounted_total = total - discount
