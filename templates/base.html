@@ -174,11 +174,11 @@ municipal workers with the latest skills for tackling natural disasters in Germa
 
                 <!-- Shopping Bag -->
                 <li class="list-inline-item">
-                  <a class="{% if grand_total %}text-primary fw-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
+                  <a class="{% if total %}custom-black fw-bold{% else %}text-success{% endif %} nav-link" href="{% url 'view_bag' %}">
                     <div class="text-center">
                       <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                       <p class="my-0">
-                        {% if grand_total %}
+                        {% if total %}
                         ${{ total|floatformat:2 }}
                         {% else %}
                         $0.00

@@ -11,6 +11,12 @@ body {
     font-family: 'Lato';
 }
 
+/*Navbar styling*/ 
+
+.custom-black {
+    color: black !important;
+}
+
 /*H-elements on the index page*/ 
 .home-title,
 .categories-title {
