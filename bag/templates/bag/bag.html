@@ -21,6 +21,7 @@
                             <thead class="text-black">
                                 <tr>
                                     <th scope="col"></th>
+                                    <th scope="col">Course</th>
                                     <th scope="col">Price</th>
                                     <th scope="col">Qty</th>
                                     <th scope="col">Subtotal</th>
@@ -31,6 +32,9 @@
                                 <tr>
                                     <td class="p-3 w-25">
                                         <img class="img-fluid rounded bag-logo-div" src="{{ item.product.logo.url }}" alt="{{ item.product.name }} logo">
+                                    </td>
+                                    <td class="py-3">
+                                        <p class="my-0"><em>{{ item.product.name}}</em></p>
                                     </td>                                    
                                     <td class="py-3">
                                         <p class="my-0">${{ item.product.price }}</p>
