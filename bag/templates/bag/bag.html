@@ -30,8 +30,8 @@
                             {% for item in bag_items %}
                                 <tr>
                                     <td class="p-3 w-25">
-                                        <img class="img-fluid rounded" src="{{ item.product.category.logo.url }}" alt="{{ item.product.category.name }} logo">
-                                    </td>
+                                        <img class="img-fluid rounded" src="{{ item.product.logo.url }}" alt="{{ item.product.name }} logo">
+                                    </td>                                    
                                     <td class="py-3">
                                         <p class="my-0">${{ item.product.price }}</p>
                                     </td>
