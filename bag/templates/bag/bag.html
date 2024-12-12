@@ -20,7 +20,6 @@
                         <table class="table table-sm table-borderless">
                             <thead class="text-black">
                                 <tr>
-                                    <th scope="col">Product Info</th>
                                     <th scope="col"></th>
                                     <th scope="col">Price</th>
                                     <th scope="col">Qty</th>
@@ -49,9 +48,10 @@
                                     <h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
                                     <h6>Delivery: ${{ delivery|floatformat:2 }}</h6>
                                     <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
-                                    {% if free_delivery_delta > 0 %}
+                                    {% if discount_delta > 0 %}
                                         <p class="mb-1 text-danger">
                                             You could get {{ STANDART_DISCOUNT_PERCENTAGE }} discount by spending just over <strong>${{ DISCOUNT_TRESHOLD }}</strong>!
+                                            It takes only <strong>{{ discount_delta }}</strong>$ to reach this limit!
                                         </p>
                                     {% endif %}
                                 </td>

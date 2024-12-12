@@ -8,6 +8,7 @@ def bag_contents(request):
     total = 0
     product_count = 0
     discount = 0
+    discount_delta = 0
     bag = request.session.get('bag', {})
 
 
@@ -25,6 +26,7 @@ def bag_contents(request):
     if total > settings.DISCOUNT_TRESHOLD:
         discount = total * Decimal(settings.STANDART_DISCOUNT_PERCENTAGE / 100)
         discounted_total = total - discount
+        discount_delta = total - discount_delta
     else:
         discounted_total = total
 
