@@ -71,3 +71,6 @@ This e-commerce project is focused on providing a user with learning material in
 
 Keep this as a template
 [Next Only](docs/images/testing_allauth.png); [Prev Next](docs/images/testing_allauth.png); 
+
+## Important Note
+ - [Shopping Bag](https://github.com/users/VladaAlek/projects/16/) project not visible in the project`s repo

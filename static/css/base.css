@@ -70,6 +70,15 @@ body {
 }
 
 
+.remove-item {
+    text-decoration: none;
+}
+
+.remove-item:hover {
+    color: rgb(25, 135, 84) !important;
+    cursor: pointer;
+}
+
 /*materials page*/
 
 
