@@ -58,8 +58,10 @@
                                     <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
                                     {% if discount_delta > 0 %}
                                         <p class="mb-1 text-danger">
-                                            You could get {{ STANDART_DISCOUNT_PERCENTAGE }} discount by spending just over <strong>${{ DISCOUNT_TRESHOLD }}</strong>!
-                                            It takes only <strong>{{ discount_delta }}</strong>$ to reach this limit!
+                                            You could get <strong>{{ STANDART_DISCOUNT_PERCENTAGE }}</strong> <i class="fa-solid fa-percent"></i> discount by spending just over <strong><i class="fa-solid fa-dollar-sign"></i>
+                                            {{ DISCOUNT_TRESHOLD }}</strong>! <br>
+                                            It takes only <strong><i class="fa-solid fa-dollar-sign"></i>
+                                            {{ discount_delta }}</strong> to reach this limit!
                                         </p>
                                     {% endif %}
                                 </td>
@@ -94,4 +96,25 @@
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+
+<script type="text/javascript">
+
+    // Remove item and reload on click
+    $('.remove-item').click(function(e) {
+        var csrfToken = "{{ csrf_token }}";
+        var itemId = $(this).attr('id').split('remove_')[1];
+        var size = $(this).data('product_size');
+        var url = `/bag/remove/${itemId}/`;
+        var data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
+
+        $.post(url, data)
+         .done(function() {
+             location.reload();
+         });
+    })
+</script>
 {% endblock %}
