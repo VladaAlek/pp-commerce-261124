@@ -127,11 +127,12 @@ municipal workers with the latest skills for tackling natural disasters in Germa
               </a>
               <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
                 <li><a class="dropdown-item" href="{% url 'categories' %}">All Courses</a></li>
-                <li><a class="dropdown-item" href="{% url 'materials' category_id=1 %}">Floods</a></li>
-                <li><a class="dropdown-item" href="{% url 'materials' category_id=2 %}">Forest Fire</a></li>
-                <li><a class="dropdown-item" href="{% url 'materials' category_id=3 %}">Heat Wave</a></li>
-                <li><a class="dropdown-item" href="{% url 'materials' category_id=4 %}">Storm</a></li>
+                <li><a class="dropdown-item" href="{% url 'individual_category' category_id=1 %}">Floods</a></li>
+                <li><a class="dropdown-item" href="{% url 'individual_category' category_id=2 %}">Forest Fire</a></li>
+                <li><a class="dropdown-item" href="{% url 'individual_category' category_id=3 %}">Heat Wave</a></li>
+                <li><a class="dropdown-item" href="{% url 'individual_category' category_id=4 %}">Storm</a></li>
               </ul>
+
             </li>
 
             <!-- Navigation Dropdown -->
@@ -175,7 +176,8 @@ municipal workers with the latest skills for tackling natural disasters in Germa
 
                 <!-- Shopping Bag -->
                 <li class="list-inline-item">
-                  <a class="{% if total %}custom-black fw-bold{% else %}text-success{% endif %} nav-link" href="{% url 'view_bag' %}">
+                  <a class="{% if total %}custom-black fw-bold{% else %}text-success{% endif %} nav-link"
+                    href="{% url 'view_bag' %}">
                     <div class="text-center">
                       <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                       <p class="my-0">

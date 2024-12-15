@@ -14,6 +14,21 @@ def all_categories(request):
     return render(request, 'products/categories.html', context)
 
 
+def individual_category(request, category_id):
+    """ A view to show individual category """
+
+    # Get the category
+    category = get_object_or_404(Category, pk=category_id)
+
+    context = {
+        'category': category,
+    }
+
+    return render(request, 'products/individual_category.html', context)
+
+    
+
+
 def category_detail(request, category_id):
     """ A view to show the materials in a specific category """
     
