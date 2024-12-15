@@ -44,6 +44,17 @@ body {
 }
 
 
+/* one category template*/
+
+.individual-category-price-date {
+    background-color: gainsboro;
+}
+
+.course-overview-content {
+    opacity: 0.9;
+}
+
+
 /* overlay for the categories page */
 
 .overlay {

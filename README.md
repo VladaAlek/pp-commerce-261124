@@ -52,6 +52,13 @@ This e-commerce project is focused on providing a user with learning material in
  - testing [ "Categories Page" M](docs/images/testing_courses_md.png);
  - testing [ "Categories Page" SM](docs/images/testing_add_course_functionality_shopping_bag.png);
 
+ #### Individual Course
+ - testing [ "Category Page" SM - 1](docs/images/responsivnes_individual_course_sm.png);
+ - testing [ "Category Page" SM - 2](docs/images/responsivnes_individual_course_sm_1.png);
+ - testing [ "Category Page" MD - 1](docs/images/responsivnes_individual_course_md_1.png);
+ - testing [ "Category Page" MD - 2](docs/images/responsivnes_individual_course_md_2.png);
+ - testing [ "Category Page" LG - Bug](docs/images/responsivnes_individual_course_lg_bug.png);
+
 #### Bag
 - testing ["Bag" XL and L](docs/images/testing_bag_big_size.png);
 - testing ["Bag" XL and L rotated](docs/images/testing_bag_big_size_rotated.png);

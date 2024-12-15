@@ -28,7 +28,6 @@ def individual_category(request, category_id):
 
     
 
-
 def category_detail(request, category_id):
     """ A view to show the materials in a specific category """
     
