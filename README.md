@@ -62,6 +62,8 @@ This e-commerce project is focused on providing a user with learning material in
 - testing ["Bag" Reverse functionality bug](docs/images/testing_reverse_functionality.png);
 - testing ["Bag" Solving Reverse functionality bug 1](docs/images/solving_reverse_functionality_1.png);
 - testing ["Bag" Solving Reverse functionality bug 2](docs/images/solving_reverse_functionality_2.png);
+- testing ["Bag" Bag Icon not visible when bag is empty](docs/images/testing_bag_not_visible.png);
+- testing ["Bag" Bag Icon visible when bag is not empty](docs/images/testing_bag_visible.png);
 
 ### Testing Add Courses Functionality
 
