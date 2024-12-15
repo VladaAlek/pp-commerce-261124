@@ -58,6 +58,10 @@ This e-commerce project is focused on providing a user with learning material in
 - testing ["Bag" M](docs/images/testing_bag_medium_size.png);
 - testing ["Bag" M rotated](docs/images/testing_bag_medium_size_rotated.png);
 - testing ["Bag" SM with bug](docs/images/testing_bag_small_size_bug.png);
+- testing ["Bag" Trashold functionality](docs/images/testing_trashold_functionality.png);
+- testing ["Bag" Reverse functionality bug](docs/images/testing_reverse_functionality.png);
+- testing ["Bag" Solving Reverse functionality bug 1](docs/images/solving_reverse_functionality_1.png);
+- testing ["Bag" Solving Reverse functionality bug 2](docs/images/solving_reverse_functionality_2.png);
 
 ### Testing Add Courses Functionality
 
