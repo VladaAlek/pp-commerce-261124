@@ -30,7 +30,7 @@
                         </span>
                         <span class="text-uppercase">Keep Exploring</span>
                     </a>
-                    <input type="submit" class="btn btn-success text-uppercase mt-5" value="Add This Course to the Bag">
+                    <input type="submit" class="btn btn-success text-uppercase mt-5 add-course-button" id="add-course-button" value="Add This Course to the Bag">
                 </div>
                 <input type="hidden" name="redirect_url" value="{{ request.path }}">
             </div>
@@ -77,4 +77,7 @@
         {% endfor %}
     </div>
 </div>
+{% endblock %}
+
+{% block postloadjs %}
 {% endblock %}
