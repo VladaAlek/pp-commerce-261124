@@ -229,17 +229,19 @@ municipal workers with the latest skills for tackling natural disasters in Germa
 
   {% block postloadjs %}
   <script>
-    document.getElementById("add-course-button").onclick = function() {
-      var toastElList = [].slice.call(document.querySelectorAll('.toast'))
-      var toastList = toastElList.map(function(toastEl) {
-        return new bootstrap.Toast(toastEl)
-      })
-      toastList.forEach(toast => toast.show())
-    }
-    </script>
+    const toastElList = document.querySelectorAll('.toast')
+    const toastList = [...toastElList].map(toastEl => {
+    let toast = new bootstrap.Toast(toastEl)
+    toast.show();
+    console.log('execute toast');
+    return toast
+  }
+  )
+  </script>
   {% endblock %}
 
 
+  
 </body>
 
 </html>
