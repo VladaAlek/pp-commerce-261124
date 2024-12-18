@@ -12,19 +12,24 @@ def view_bag(request):
 def add_to_bag(request, item_id):
     """ Add a quantity of the specified course to the shopping bag """
 
-    category = get_object_or_404(Category, pk= item_id)
-    quantity = int(request.POST.get('quantity', 1)) 
+    category = get_object_or_404(Category, pk=item_id)
+    quantity = int(request.POST.get('quantity', 1))
     redirect_url = request.POST.get('redirect_url')
     bag = request.session.get('bag', {})
+    message_shown = request.session.get('message_shown', {})
 
     if item_id in bag:
         bag[item_id] += quantity
     else:
         bag[item_id] = quantity
-        messages.success(request, f'Added {category.name} to your bag')
+        if str(item_id) in message_shown:
+            messages.warning(request, f'You cannot ad {category.name} course in your bag twice.')
+        else:
+            messages.success(request, f'Added {category.name} course to your bag.')
+            message_shown[str(item_id)] = True  # Mark message as shown for this item
 
     request.session['bag'] = bag
-    print(request.session['bag'])
+    request.session['message_shown'] = message_shown
     return redirect(redirect_url)
 
 
@@ -36,7 +41,7 @@ def remove_from_bag(request, item_id):
         if item_id in bag:
             bag.pop(item_id)
             request.session['bag'] = bag
-            messages.warning(request, f'You removed {category.name} course from your bag')
+            messages.info(request, f'You removed {category.name} course from your bag')
             
            
         return HttpResponse(status=200)
