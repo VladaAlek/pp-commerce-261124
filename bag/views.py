@@ -33,19 +33,26 @@ def add_to_bag(request, item_id):
     return redirect(redirect_url)
 
 
+
 def remove_from_bag(request, item_id):
     """Remove the item from the shopping bag"""
-    category = get_object_or_404(Category, pk= item_id)
+    category = get_object_or_404(Category, pk=item_id)
     try:
         bag = request.session.get('bag', {})
+        message_shown = request.session.get('message_shown', {})
+
         if item_id in bag:
             bag.pop(item_id)
             request.session['bag'] = bag
+            if str(item_id) in message_shown: # search for the specific course id
+                message_shown.pop(str(item_id))  # Reset message for this item
+                request.session['message_shown'] = message_shown # reset variable message_shown
+
             messages.info(request, f'You removed {category.name} course from your bag')
-            
            
         return HttpResponse(status=200)
     except Exception as e:
         messages.error(request, f'Error removing category {e} from your bag')
         print(e)
         return HttpResponse(status=500)
+
