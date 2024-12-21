@@ -29,12 +29,14 @@
                         </span>
                         <span class="text-uppercase">Keep Exploring</span>
                     </a>
-                    <input type="submit" class="btn btn-success text-uppercase mt-5 add-course-button" id="add-course-button" value="Add This Course to the Bag">
+                    <input type="submit" class="btn btn-success text-uppercase mt-5 add-course-button"
+                        id="add-course-button" value="Add This Course to the Bag">
                 </div>
                 <input type="hidden" name="redirect_url" value="{{ request.path }}">
             </div>
         </form>
     </div>
+    {% if category.id in purchased_courses %}
     <div class="row">
         {% for material in materials %}
         <div class="col-md-6 mb-4">
@@ -49,14 +51,10 @@
                         {% if material.pdf_name %}
                         <span><strong>PDF:</strong> {{ material.get_pdf_name }}</span>
                         {% endif %}
-                        {% if category.id in purchased_courses %}
                         {% if material.pdf_file %}
                         <a href="{{ material.pdf_file.url }}" class="btn btn-secondary btn-sm material-buttons"
                             target="">Download
                             PDF</a>
-                        {% endif %}
-                        {% else %}
-                        <p>You need to purchase this course to access the materials.</p>
                         {% endif %}
                     </div>
                     {% endif %}
@@ -72,12 +70,13 @@
                         {% endif %}
                     </div>
                     {% endif %}
-
                 </div>
             </div>
         </div>
         {% endfor %}
     </div>
+    {% else %}
+    <p class="text-danger mt-5">You need to purchase this course to access the materials.</p>
+    {% endif %}
 </div>
 {% endblock %}
-

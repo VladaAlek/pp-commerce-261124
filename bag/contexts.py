@@ -11,7 +11,7 @@ def bag_contents(request):
         discount_delta = 0
         bag = request.session.get('bag', {})
         purchased_courses = request.session.get('purchased_courses', {})
-        category = request.session.get('category', {})
+
 
         for item_id, quantity in bag.items():
             course = get_object_or_404(Category, pk=item_id)
