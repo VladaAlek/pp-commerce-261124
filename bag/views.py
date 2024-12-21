@@ -23,7 +23,7 @@ def add_to_bag(request, item_id):
     else:
         bag[item_id] = quantity
         if str(item_id) in message_shown:
-            messages.warning(request, f'You cannot ad {category.name} course in your bag twice.')
+            messages.warning(request, f'You cannot add {category.name} course in your bag twice.')
         else:
             messages.success(request, f'Added {category.name} course to your bag.')
             message_shown[str(item_id)] = True  # Mark message as shown for this item
