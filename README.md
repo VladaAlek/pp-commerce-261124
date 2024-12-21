@@ -80,10 +80,11 @@ This e-commerce project is focused on providing a user with learning material in
 
 ### Testing Toasts
 
-- [Add Course Toast](docs/images/Toast_Success_Add.png)
--  [Add Course Toast Bug](docs/images/Toast_Success_Add_Bug.png) Bad user experiance noticed: add course messege emerges multiple time
+- [Add Course Toast](docs/images/Toast_Success_Add.png); [Add Course Toast SM](docs/images/toast_success_sm.png)
+- [Add Course Toast Bug](docs/images/Toast_Success_Add_Bug.png) Bad user experiance noticed: add course messege emerges multiple times
 - [Add Course Refactored Bug](docs/images/Toast_Warning_Twice.png) Good user experince requires to inform the user that he cannot add the same product two times
-- [Delete Course](docs/images/Toast_Warning_Delete.png)
+- [Warning Course Toast SM](docs/images/toast_warning_sm.png)
+- [Delete Course](docs/images/Toast_Warning_Delete.png); [Delete Course Toast SM](docs/images/toast_allert_sm.png)
 - message.error in the delete view was not tested
 - [external source material -seaching for the ID value in the Courses](https://stackoverflow.com/questions/59738782/check-if-id-in-string-exists-in-another-list)
 
