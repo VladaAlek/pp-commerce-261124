@@ -45,7 +45,9 @@ This e-commerce project is focused on providing a user with learning material in
 - "Projects", "Milestones" and "Issues" functions inbeded in GitHub utilized to apply AGILE concepts
 - [HEROKU](https://www.heroku.com/ "HEROKU cloud platform") used to deploy and manage the applications.
 
+## Deployment
 
+- it was necessary to reestablish IDE (Gitpod) - [Django](docs/images/django_requirements_21_12_24.png); [Pillow](docs/images/pillow_requirements_21_12_24.png); [Allauth](docs/images/allauth_requirements_21_12_24.png);
 ### Testing Responsivness
 #### All Courses
  - testing ["Categories Page" XL and L](docs/images/testing_courses_lg.png);
