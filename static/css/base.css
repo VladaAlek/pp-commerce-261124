@@ -55,6 +55,15 @@ body {
 }
 
 
+/* Material.html */
+
+.purchase-divs {
+    width: 142px;
+    padding: 1px;
+    text-align: center;
+}
+
+
 /* overlay for the categories page */
 
 .overlay {
