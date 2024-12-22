@@ -17,6 +17,7 @@ def add_to_bag(request, item_id):
     redirect_url = request.POST.get('redirect_url')
     bag = request.session.get('bag', {})
     message_shown = request.session.get('message_shown', {})
+    purchased_courses = request.session.get('purchased_courses', [])
 
     if item_id in bag:
         bag[item_id] += quantity
