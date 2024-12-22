@@ -10,6 +10,7 @@ def bag_contents(request):
     discount = 0
     discount_delta = 0
     bag = request.session.get('bag', {})
+    purchased_courses = request.session.get('purchased_courses', [])
 
     for item_id, quantity in bag.items():
         course = get_object_or_404(Category, pk=item_id)
@@ -40,5 +41,6 @@ def bag_contents(request):
         'discount_delta': discount_delta,
         'STANDART_DISCOUNT_PERCENTAGE': settings.STANDART_DISCOUNT_PERCENTAGE,
         'DISCOUNT_TRESHOLD': settings.DISCOUNT_TRESHOLD,
+        'purchased_courses': purchased_courses,
     }
     return context
