@@ -1,7 +1,9 @@
 asgiref==3.8.1
-Django==3.2.25
+crispy-bootstrap5==2024.10
+Django==4.2.17
 django-allauth==0.54.0
-django-crispy-forms==1.14.0
+django-bootstrap-v5==1.0.11
+django-crispy-forms==2.3
 oauthlib==3.2.2
 pillow==11.0.0
 PyJWT==2.10.1

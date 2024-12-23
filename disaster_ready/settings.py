@@ -50,6 +50,8 @@ INSTALLED_APPS = [
 
     #Other
     'crispy_forms',
+    'crispy_bootstrap5',
+    'bootstrap5',
 ]
 
 MIDDLEWARE = [
@@ -64,7 +66,9 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'disaster_ready.urls'
 
-CRISPY_TEMPLATE_PACK = 'bootstrap5'
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
+
 
 TEMPLATES = [
     {
