@@ -93,6 +93,7 @@ This e-commerce project is focused on providing a user with learning material in
 ### Testing Checkout Models and Admin Page
 - [Checkout Admin](docs/images/admin_order_view.png)
 - [Checkout Admin Add Courses](docs/images/admin_order_view_add_products.png)
+- External Code Sources: [Crispy Bootstrap5 Documentation](https://django-bootstrap-v5.readthedocs.io/en/latest/installation.html "django-bootstrap-v5");  [Stack Overflow](https://stackoverflow.com/questions/71641974/implementing-django-bootstrap-crispy-forms-into-default-signup-login-pages "Stack Overflow.com")
 
 
 ### Image Source

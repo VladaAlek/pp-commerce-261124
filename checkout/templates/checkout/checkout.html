@@ -6,14 +6,6 @@
     <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
 
-{% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
-{% endblock %}
-
 {% block content %}
     <div class="overlay"></div>
     <div class="container">
@@ -50,11 +42,11 @@
                         </div>
                         <div class="col-7">
                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                            <p class="my-0 small">Size: {% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
+                            <p class="my-0 small">starting Date: {% if item.product.has_starting_date %}{{ item.starting_date|upper }}{% else %}N/A{% endif %}</p>
                             <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
                         </div>
                         <div class="col-3 text-end">
-                            <p class="my-0 small text-muted">${{ item.product.price }}</p>
+                            <p class="my-0 small text-muted">${{ item.product.price |upper }}</p>
                         </div>
                     </div>
                 {% endfor %}
