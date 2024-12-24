@@ -30,6 +30,11 @@ DEBUG = True
 ALLOWED_HOSTS = ['8000-vladaalek-ppcommerce261-wrincp7m7v8.ws-eu117.gitpod.io']
 
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-vladaalek-ppcommerce261-wrincp7m7v8.ws-eu117.gitpod.io',
+]
+
+
 # Application definition
 
 INSTALLED_APPS = [
