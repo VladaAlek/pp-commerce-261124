@@ -16,6 +16,12 @@ This e-commerce project is focused on providing a user with learning material in
 
 - [Category and Material models](docs/images/erd_category_material_models.png) in products app
 
+- [Checkout Order Model](docs/images/checkout_order_model.png) in checkout app;
+- [Checkout OrderLineItem_model Model](docs/images/checkout_OrderLineItem_model.png) in checkout app;
+- [Checkout OrderLineItem_model Model Refactoring](docs/images/checkout_OrderLineItem_model_refactoring.png) in checkout app;
+
+- External Code Sources: [Crispy Bootstrap5 Documentation](https://django-bootstrap-v5.readthedocs.io/en/latest/installation.html "django-bootstrap-v5");  [Stack Overflow](https://stackoverflow.com/questions/71641974/implementing-django-bootstrap-crispy-forms-into-default-signup-login-pages "Stack Overflow.com")
+
 ## Technologies Used:
  - Python 3.2.0
  - Django 3.2.25
@@ -93,8 +99,6 @@ This e-commerce project is focused on providing a user with learning material in
 ### Testing Checkout Models and Admin Page
 - [Checkout Admin](docs/images/admin_order_view.png)
 - [Checkout Admin Add Courses](docs/images/admin_order_view_add_products.png)
-- External Code Sources: [Crispy Bootstrap5 Documentation](https://django-bootstrap-v5.readthedocs.io/en/latest/installation.html "django-bootstrap-v5");  [Stack Overflow](https://stackoverflow.com/questions/71641974/implementing-django-bootstrap-crispy-forms-into-default-signup-login-pages "Stack Overflow.com")
-
 
 ### Image Source
  - [Flickr.com](https://www.flickr.com/photos/apfelauge/25528764266/in/photolist-ETTAd3-aruDcd-oybpY8-ars18K-ars1Sr-ars1qM-arrZ2e-arrZeB-arrZpV-ars1ye-aruDB3-arrYTK-aruD1A-2kypz9o-aruE9b-eHdPys-2kxmpUV-98weQw-9aL4ZS-98t6mT-2n6BFgN-2qhpUcR-9a6i7e-rGaTjQ-dFkWsU-ahaC5Z-eBNHfs-5sEf1V-6aFqEa-2nURaUe-7Qxk4N-2kxMii3-4NXPkq-4NXY91-4NXQMA-4NYfnC-4NXSyE-4NY3jU-4NU8rH-JkiUrD-QhphK4-4NY8um-4NY8Sh-4NY4iC-4NTA6K-4NTU7H-i8tXAS-4NXTYY-4NTTLr-4NXXk1/ "flickr.com")
