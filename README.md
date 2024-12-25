@@ -43,9 +43,7 @@ This e-commerce project is focused on providing a user with learning material in
 
 
 ## Software Resources Used
-- [Uizard.io](https://app.uizard.io/ "uizard.io") was utilised for wireframing.
-- [Faststone Image Viewer](https://www.faststone.org/ "Faststone Image Viewer") was utilised for image resizing and photo editing.
-- [Markdown Editor](https://markdown-editor.github.io/ "Markdown Editor")
+
 - Git Version control was managed using Git, with commits executed via the Gitpod terminal and pushes directed to GitHub.
 - GitHub The project's code is stored on GitHub after being pushed from Git.
 - "Projects", "Milestones" and "Issues" functions inbeded in GitHub utilized to apply AGILE concepts
@@ -101,6 +99,12 @@ This e-commerce project is focused on providing a user with learning material in
 - [Checkout Admin Add Courses](docs/images/admin_order_view_add_products.png)
 - [Checkout Template Incomplete Rendering](docs/images/check_out_template_incomplete.png)
 - [Checkout Template Complete Rendering](docs/images/check_out_template_complete.png)
+
+### Checkout Responsivnes
+- [Checkout SM 1](docs/images/check_out_template_SM_1.png); [Checkout SM 2](docs/images/check_out_template_SM_2.png)
+- [Checkout MD 1](docs/images/check_out_template_MD_1.png); [Checkout MD 2](docs/images/check_out_template_MD_2.png)
+- [Checkout LG](docs/images/check_out_template_LG.png)
+
 
 
 ### Image Source
