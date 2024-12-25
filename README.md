@@ -105,6 +105,9 @@ This e-commerce project is focused on providing a user with learning material in
 - [Checkout MD 1](docs/images/check_out_template_MD_1.png); [Checkout MD 2](docs/images/check_out_template_MD_2.png)
 - [Checkout LG](docs/images/check_out_template_LG.png)
 
+### Checkout Logo Rendering Bug
+- [Logo Rendering Bug](docs/images/checkout_organisation_logo_bug.png)
+
 
 
 ### Image Source
