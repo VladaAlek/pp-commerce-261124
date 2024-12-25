@@ -1,0 +1,14 @@
+.checkout-logo-container {
+    background-color:rgb(25, 135, 84);
+    width: 69px;
+    height: 69px;
+    cursor: pointer;
+}
+
+.checkout-logo-container:hover {
+    background-color:rgb(109, 143, 127);
+}
+.checkout-logo-img {
+    width: 60.98px;
+    height: 60.98px;
+}

@@ -30,11 +30,11 @@
                 </div>
             </div>
             {% for item in bag_items %}
-            <div class="row">
-                <div class="col-2 mb-1">
-                    <a href="{% url 'categories' %}">
+            <div class="row mb-4">
+                <div class="col-2 mb-1 ms-1 p-1 checkout-logo-container">
+                    <a href="{% url 'individual_category' category_id=item.product.id %}">
                         {% if item.product.logo %}
-                        <img class="w-100" src="{{ item.product.logo.url }}" alt="{{ item.product.name }}">
+                        <img class="w-100 checkout-logo-img" src="{{ item.product.logo.url }}" alt="{{ item.product.name }}">
                         {% else %}
                         <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
                         {% endif %}
