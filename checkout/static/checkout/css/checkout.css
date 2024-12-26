@@ -1,3 +1,6 @@
+/* styling order summary*/
+
+
 .checkout-logo-container {
     background-color:rgb(25, 135, 84);
     width: 69px;
@@ -11,4 +14,17 @@
 .checkout-logo-img {
     width: 60.98px;
     height: 60.98px;
+}
+
+/*styling checkout form*/
+
+.fieldset-label {
+    position: relative;
+    right: .5rem;
+}
+
+#payment-form .form-control,
+#card-element {
+    color: #000;
+    border: 1px solid #000;
 }
