@@ -112,6 +112,7 @@ This e-commerce project is focused on providing a user with learning material in
 - [Checkout Wrong Bank Number](docs/images/Card_Input_Form_Wrong_Banknumber.png)
 - [Checkout Dummy Bank Number](docs/images/Card_Input_Form_Dummy_Banknumber.png)
 - [Checkout Style Bug](docs/images/Card_Input_Style_Bug.png)
+- [Checkout Input Validation Error](docs/images/Card_Input_Validation_Error.png)
 
 
 ### Checkout Logo Rendering Bug
