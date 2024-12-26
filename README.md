@@ -105,6 +105,15 @@ This e-commerce project is focused on providing a user with learning material in
 - [Checkout MD 1](docs/images/check_out_template_MD_1.png); [Checkout MD 2](docs/images/check_out_template_MD_2.png)
 - [Checkout LG](docs/images/check_out_template_LG.png)
 
+### Checkout Card Input Form Initial Test
+
+- [Checkout Inspect JS](docs/images/Card_Input_Form_JS.png)
+- [Checkout Template](docs/images/Card_Input_Form_Template.png)
+- [Checkout Wrong Bank Number](docs/images/Card_Input_Form_Wrong_Banknumber.png)
+- [Checkout Dummy Bank Number](docs/images/Card_Input_Form_Dummy_Banknumber.png)
+- [Checkout Style Bug](docs/images/Card_Input_Style_Bug.png)
+
+
 ### Checkout Logo Rendering Bug
 - [Logo Rendering Bug](docs/images/checkout_organisation_logo_bug.png)
 

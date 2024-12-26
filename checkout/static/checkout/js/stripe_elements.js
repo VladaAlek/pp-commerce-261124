@@ -24,5 +24,5 @@ var style = {
 };
 
 // Create and mount the card element
-var card = elements.create('card', { style: style });
+var card = elements.create('card', {style: style});
 card.mount('#card-element');
