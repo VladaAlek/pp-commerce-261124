@@ -114,6 +114,11 @@ This e-commerce project is focused on providing a user with learning material in
 - [Checkout Style Bug](docs/images/Card_Input_Style_Bug.png)
 - [Checkout Input Validation Error](docs/images/Card_Input_Validation_Error.png)
 
+### Checkout Payment Intent
+- [Terminal Report](docs/images/Payment%20Intent%20Terminal%20Report.png)
+- [Terminal Report Status Field](docs/images/Payment%20Intent%20Terminal%20Report%20Status.png)
+- [Payment Intent Succeeded Stripe Report](docs/images/Payment%20Intent%20Succeeded.png)
+
 
 ### Checkout Logo Rendering Bug
 - [Logo Rendering Bug](docs/images/checkout_organisation_logo_bug.png)
