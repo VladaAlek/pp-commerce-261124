@@ -10,11 +10,7 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.RemoveField(
-            model_name='orderlineitem',
-            name='quantity',
-        ),
-        migrations.AddField(
+            migrations.AddField(
             model_name='orderlineitem',
             name='starting_date',
             field=models.CharField(blank=True, max_length=100, null=True),
