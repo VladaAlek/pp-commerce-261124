@@ -22,14 +22,14 @@ def bag_contents(request):
             'product': course,
         })
 
-    if total > settings.DISCOUNT_TRESHOLD:
+    if total > settings.DISCOUNT_THRESHOLD:
         discount = total * Decimal(settings.STANDART_DISCOUNT_PERCENTAGE / 100)
         discounted_total = total - discount
         grand_total = discounted_total
     else:
         discounted_total = total
         grand_total = total
-        discount_delta = settings.DISCOUNT_TRESHOLD - total
+        discount_delta = settings.DISCOUNT_THRESHOLD - total
 
     context = {
         'bag_items': bag_items,
@@ -40,7 +40,7 @@ def bag_contents(request):
         'grand_total': grand_total,
         'discount_delta': discount_delta,
         'STANDART_DISCOUNT_PERCENTAGE': settings.STANDART_DISCOUNT_PERCENTAGE,
-        'DISCOUNT_TRESHOLD': settings.DISCOUNT_TRESHOLD,
+        'DISCOUNT_THRESHOLD': settings.DISCOUNT_THRESHOLD,
         'purchased_courses': purchased_courses,
     }
     return context
