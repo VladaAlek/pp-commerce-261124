@@ -119,6 +119,12 @@ This e-commerce project is focused on providing a user with learning material in
 - [Terminal Report Status Field](docs/images/Payment%20Intent%20Terminal%20Report%20Status.png)
 - [Payment Intent Succeeded Stripe Report](docs/images/Payment%20Intent%20Succeeded.png)
 
+### Checkout Payment Form Data
+- [testing Payment Form Data](docs/images/checkout_success.png)
+- [testing Payment Form Data](docs/images/checkout_success_stripe_developers.png)
+- [testing Payment Form Data](docs/images/checkout_success_stripe_developers_details.png)
+- [testing Payment Form Data](docs/images/checkout_terminal.png)
+
 
 ### Checkout Logo Rendering Bug
 - [Logo Rendering Bug](docs/images/checkout_organisation_logo_bug.png)
