@@ -120,10 +120,12 @@ This e-commerce project is focused on providing a user with learning material in
 - [Payment Intent Succeeded Stripe Report](docs/images/Payment%20Intent%20Succeeded.png)
 
 ### Checkout Payment Form Data
-- [testing Payment Form Data](docs/images/checkout_success.png)
-- [testing Payment Form Data](docs/images/checkout_success_stripe_developers.png)
-- [testing Payment Form Data](docs/images/checkout_success_stripe_developers_details.png)
-- [testing Payment Form Data](docs/images/checkout_terminal.png)
+- [testing Payment Form Data Template](docs/images/checkout_success.png)
+- [testing Payment Form Data Stripe](docs/images/checkout_success_stripe_developers.png)
+- [testing Payment Form Data Stripe Deteils](docs/images/checkout_success_stripe_developers_details.png)
+- [testing Payment Form Data Terminal](docs/images/checkout_terminal.png)
+- [testing Payment Form Data Admin](docs/images/checkout_admin.png)
+- [testing Payment Form Data Admin Changed Order](docs/images/checkout_admin_changed_order.png)
 
 
 ### Checkout Logo Rendering Bug

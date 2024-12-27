@@ -3,7 +3,7 @@ import uuid
 from django.db import models
 from django.db.models import Sum
 from django.conf import settings
-
+from decimal import Decimal
 from products.models import Category, Material
 
 
@@ -37,7 +37,7 @@ class Order(models.Model):
         """
         self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum'] or 0
         if self.order_total > settings.DISCOUNT_THRESHOLD:
-            self.discount_cost = self.order_total * (settings.DISCOUNT_PERCENTAGE / 100)
+            self.discount_cost = self.order_total * (Decimal(settings.STANDART_DISCOUNT_PERCENTAGE) / 100)
         else:
             self.discount_cost = 0
         self.grand_total = self.order_total - self.discount_cost
@@ -75,7 +75,6 @@ class OrderLineItem(models.Model):
     def __str__(self):
         return f'Course {self.product.friendly_name} on order {self.order.order_number}'
 
-# /////////////////
 
     
 
