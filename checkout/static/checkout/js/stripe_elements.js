@@ -1,12 +1,15 @@
-// Retrieve the public key and client secret from the DOM
-var stripePublicKey = document.getElementById('id_stripe_public_key').textContent.trim().slice(1, -1);
-var clientSecret = document.getElementById('id_client_secret').textContent.trim().slice(1, -1);
+/*
+    Core logic/payment flow for this comes from here:
+    https://stripe.com/docs/payments/accept-a-payment
 
-// Initialize Stripe and its elements
+    CSS from here: 
+    https://stripe.com/docs/stripe-js
+*/
+
+var stripePublicKey = document.getElementById('id_stripe_public_key').textContent.slice(1, -1);
+var clientSecret = document.getElementById('id_client_secret').textContent.slice(1, -1);
 var stripe = Stripe(stripePublicKey);
 var elements = stripe.elements();
-
-// Define the style for the card element
 var style = {
     base: {
         color: '#000',
@@ -22,11 +25,8 @@ var style = {
         iconColor: '#dc3545'
     }
 };
-
-// Create and mount the card element
 var card = elements.create('card', {style: style});
 card.mount('#card-element');
-
 
 // Handle realtime validation errors on the card element
 card.addEventListener('change', function (event) {
@@ -45,32 +45,40 @@ card.addEventListener('change', function (event) {
 });
 
 // Handle form submit
-
 var form = document.getElementById('payment-form');
 
-form.addEventListener('submit', function (ev) {
+form.addEventListener('submit', function(ev) {
     ev.preventDefault();
-
     card.update({ 'disabled': true });
-    document.getElementById('submit-button').disabled = true;
+    document.getElementById('submit-button').setAttribute('disabled', true);
+
+    const toggleVisibility = (id) => {
+        const element = document.getElementById(id);
+        element.style.display = element.style.display === 'none' || !element.style.display ? 'block' : 'none';
+    };
+
+    toggleVisibility('payment-form');
+    toggleVisibility('loading-overlay');
 
     stripe.confirmCardPayment(clientSecret, {
         payment_method: {
             card: card,
         }
-    }).then(function (result) {
+    }).then(function(result) {
         if (result.error) {
             var errorDiv = document.getElementById('card-errors');
             var html = `
                 <span class="icon" role="alert">
-                    <i class="fas fa-times"></i>
+                <i class="fas fa-times"></i>
                 </span>
                 <span>${result.error.message}</span>`;
-            
             errorDiv.innerHTML = html;
 
+            toggleVisibility('payment-form');
+            toggleVisibility('loading-overlay');
+            
             card.update({ 'disabled': false });
-            document.getElementById('submit-button').disabled = false;
+            document.getElementById('submit-button').removeAttribute('disabled');
         } else {
             if (result.paymentIntent.status === 'succeeded') {
                 form.submit();
