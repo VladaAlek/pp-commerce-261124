@@ -99,3 +99,9 @@ select option[value=""] {
     margin: 0;
     height: 100%;
 }
+
+/*styling checkout success*/
+
+.checkout-success-hr {
+    color: rgb(25, 135, 84);
+}

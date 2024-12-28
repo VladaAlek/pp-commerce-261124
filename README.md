@@ -52,6 +52,8 @@ This e-commerce project is focused on providing a user with learning material in
 ## Deployment
 
 - it was necessary to reestablish IDE (Gitpod) - [Django](docs/images/django_requirements_21_12_24.png); [Pillow](docs/images/pillow_requirements_21_12_24.png); [Allauth](docs/images/allauth_requirements_21_12_24.png);
+- 28. 12. 24. Gitpod IDE became unfuctional - unpushed changes lost and reinstalling of requirements and reestablishment of the settings parameters was neccessary
+
 ### Testing Responsivness
 #### All Courses
  - testing ["Categories Page" XL and L](docs/images/testing_courses_lg.png);
