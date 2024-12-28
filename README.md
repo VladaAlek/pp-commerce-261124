@@ -129,6 +129,10 @@ This e-commerce project is focused on providing a user with learning material in
 - [testing Payment Form Data Admin](docs/images/checkout_admin.png)
 - [testing Payment Form Data Admin Changed Order](docs/images/checkout_admin_changed_order.png)
 
+### Testing Checkout Success Template Responsivness
+- [SM 1](docs/images/Order%20Confirmation%20SM.png); [SM 2](docs/images/Order%20Confirmation%20SM%202.png); [SM 3](docs/images/Order%20Confirmation%20SM%203.png);
+- [MD 1](docs/images/Order%20Confirmation%20MD.png); [MD 2](docs/images/Order%20Confirmation%20MD%202.png); [MD 3](docs/images/Order%20Confirmation%20MD%203.png);
+- [LG 1](docs/images/Order%20Confirmation%20LG.png); [LG 2](docs/images/Order%20Confirmation%20LG%201.png);
 
 ### Checkout Logo Rendering Bug
 - [Logo Rendering Bug](docs/images/checkout_organisation_logo_bug.png)
