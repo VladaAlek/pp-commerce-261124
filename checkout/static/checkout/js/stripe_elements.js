@@ -54,7 +54,8 @@ form.addEventListener('submit', function (ev) {
     document.getElementById('payment-form').classList.toggle('hidden');
     document.getElementById('loading-overlay').classList.toggle('hidden');
 
-    var saveInfo = document.getElementById('id-save-info').checked;
+    var saveInfoElement = document.getElementById('id-save-info');
+    var saveInfo = saveInfoElement ? saveInfoElement.checked : false;
     // From using {% csrf_token %} in the form
     var csrfToken = document.querySelector('input[name="csrfmiddlewaretoken"]').value;
     var postData = {

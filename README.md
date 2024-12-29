@@ -139,6 +139,9 @@ This e-commerce project is focused on providing a user with learning material in
 - [MD 1](docs/images/Order%20Confirmation%20MD.png); [MD 2](docs/images/Order%20Confirmation%20MD%202.png); [MD 3](docs/images/Order%20Confirmation%20MD%203.png);
 - [LG 1](docs/images/Order%20Confirmation%20LG.png); [LG 2](docs/images/Order%20Confirmation%20LG%201.png);
 
+### Testing Form Data Cashing Template
+[Terminal](docs/images/form_data_cashing_terminal.png); [Template](docs/images/form_data_cashing_template.png);
+
 ### Checkout Logo Rendering Bug
 - [Logo Rendering Bug](docs/images/checkout_organisation_logo_bug.png)
 
