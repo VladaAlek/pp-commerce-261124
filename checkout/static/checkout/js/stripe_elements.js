@@ -47,66 +47,79 @@ card.addEventListener('change', function (event) {
 // Handle form submit
 var form = document.getElementById('payment-form');
 
-form.addEventListener('submit', function(ev) {
+form.addEventListener('submit', function (ev) {
     ev.preventDefault();
     card.update({ 'disabled': true });
     document.getElementById('submit-button').setAttribute('disabled', true);
+    document.getElementById('payment-form').classList.toggle('hidden');
+    document.getElementById('loading-overlay').classList.toggle('hidden');
 
-    const toggleVisibility = (id) => {
-        const element = document.getElementById(id);
-        element.style.display = element.style.display === 'none' || !element.style.display ? 'block' : 'none';
+    var saveInfo = document.getElementById('id-save-info').checked;
+    // From using {% csrf_token %} in the form
+    var csrfToken = document.querySelector('input[name="csrfmiddlewaretoken"]').value;
+    var postData = {
+        'csrfmiddlewaretoken': csrfToken,
+        'client_secret': clientSecret,
+        'save_info': saveInfo,
     };
+    var url = '/checkout/cache_checkout_data/';
 
-    toggleVisibility('payment-form');
-    toggleVisibility('loading-overlay');
-
-    stripe.confirmCardPayment(clientSecret, {
-        payment_method: {
-            card: card,
-            billing_details: {
-                name: form.full_name.value.trim(),
-                phone: form.phone_number.value.trim(),
-                email: form.email.value.trim(),
-                address: {
-                    line1: form.street_address1.value.trim(),
-                    line2: form.street_address2.value.trim(),
-                    city: form.town_or_city.value.trim(),
-                    country: form.country.value.trim(),
-                    state: form.county.value.trim()
+    fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(postData).toString()
+    })
+        .then(function () {
+            stripe.confirmCardPayment(clientSecret, {
+                payment_method: {
+                    card: card,
+                    billing_details: {
+                        name: form.full_name.value.trim(),
+                        phone: form.phone_number.value.trim(),
+                        email: form.email.value.trim(),
+                        address: {
+                            line1: form.street_address1.value.trim(),
+                            line2: form.street_address2.value.trim(),
+                            city: form.town_or_city.value.trim(),
+                            country: form.country.value.trim(),
+                            state: form.county.value.trim(),
+                        }
+                    }
+                },
+                shipping: {
+                    name: form.full_name.value.trim(),
+                    phone: form.phone_number.value.trim(),
+                    address: {
+                        line1: form.street_address1.value.trim(),
+                        line2: form.street_address2.value.trim(),
+                        city: form.town_or_city.value.trim(),
+                        country: form.country.value.trim(),
+                        postal_code: form.postcode.value.trim(),
+                        state: form.county.value.trim(),
+                    }
+                },
+            }).then(function (result) {
+                if (result.error) {
+                    var errorDiv = document.getElementById('card-errors');
+                    var html = `
+                        <span class="icon" role="alert">
+                        <i class="fas fa-times"></i>
+                        </span>
+                        <span>${result.error.message}</span>`;
+                    errorDiv.innerHTML = html;
+                    document.getElementById('payment-form').classList.toggle('hidden');
+                    document.getElementById('loading-overlay').classList.toggle('hidden');
+                    card.update({ 'disabled': false });
+                    document.getElementById('submit-button').removeAttribute('disabled');
+                } else {
+                    if (result.paymentIntent.status === 'succeeded') {
+                        form.submit();
+                    }
                 }
-            }
-        },
-        shipping: {
-            name: form.full_name.value.trim(),
-            phone: form.phone_number.value.trim(),
-            address: {
-                line1: form.street_address1.value.trim(),
-                line2: form.street_address2.value.trim(),
-                city: form.town_or_city.value.trim(),
-                country: form.country.value.trim(),
-                postal_code: form.postcode.value.trim(),
-                state: form.county.value.trim()
-            }
-        }
-    }).then(function(result) {
-        if (result.error) {
-            var errorDiv = document.getElementById('card-errors');
-            var html = `
-                <span class="icon" role="alert">
-                <i class="fas fa-times"></i>
-                </span>
-                <span>${result.error.message}</span>`;
-            errorDiv.innerHTML = html;
-
-            toggleVisibility('payment-form');
-            toggleVisibility('loading-overlay');
-            
-            card.update({ 'disabled': false });
-            document.getElementById('submit-button').removeAttribute('disabled');
-        } else {
-            if (result.paymentIntent.status === 'succeeded') {
-                form.submit();
-            }
-        }
-    });
+            });
+        })
+        .catch(function () {
+            // just reload the page, the error will be in django messages
+            location.reload();
+        });
 });
