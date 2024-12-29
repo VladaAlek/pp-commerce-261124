@@ -1,11 +1,11 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
-from django.views.decorators.http import require_POST 
+from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
 
 from .forms import OrderForm
 from .models import Order, OrderLineItem
-from products.models import Category
+from products.models import Product
 from bag.contexts import bag_contents
 
 import stripe
@@ -46,25 +46,39 @@ def checkout(request):
             'street_address2': request.POST['street_address2'],
             'county': request.POST['county'],
         }
-        # saving form data
         order_form = OrderForm(form_data)
         if order_form.is_valid():
-            order = order_form.save()
+            order = order_form.save(commit=False)
+            pid = request.POST.get('client_secret').split('_secret')[0]
+            order.stripe_pid = pid
+            order.original_bag = json.dumps(bag)
+            order.save()
             for item_id, item_data in bag.items():
                 try:
-                    category = Category.objects.get(id=item_id) 
-                    order_line_item = OrderLineItem(
-                        order=order,
-                        product=category, 
-                    )
-                    order_line_item.save()
-                except Category.DoesNotExist:
+                    product = Product.objects.get(id=item_id)
+                    if isinstance(item_data, int):
+                        order_line_item = OrderLineItem(
+                            order=order,
+                            product=product,
+                            quantity=item_data,
+                        )
+                        order_line_item.save()
+                    else:
+                        for size, quantity in item_data['items_by_size'].items():
+                            order_line_item = OrderLineItem(
+                                order=order,
+                                product=product,
+                                quantity=quantity,
+                                product_size=size,
+                            )
+                            order_line_item.save()
+                except Product.DoesNotExist:
                     messages.error(request, (
                         "One of the products in your bag wasn't found in our database. "
                         "Please call us for assistance!")
                     )
                     order.delete()
-                    return redirect(reverse('categories'))
+                    return redirect(reverse('view_bag'))
 
             request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse('checkout_success', args=[order.order_number]))
@@ -75,7 +89,7 @@ def checkout(request):
         bag = request.session.get('bag', {})
         if not bag:
             messages.error(request, "There's nothing in your bag at the moment")
-            return redirect(reverse('categories'))
+            return redirect(reverse('products'))
 
         current_bag = bag_contents(request)
         total = current_bag['grand_total']
@@ -100,6 +114,7 @@ def checkout(request):
     }
 
     return render(request, template, context)
+
 
 def checkout_success(request, order_number):
     """
