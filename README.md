@@ -155,6 +155,9 @@ This e-commerce project is focused on providing a user with learning material in
 ### Checkout Logo Rendering Bug
 - [Logo Rendering Bug](docs/images/checkout_organisation_logo_bug.png)
 
+### Testing Profile App
+
+- [Basic Profile Template](docs/images/Profile_Template.png)
 
 
 ### Image Source
