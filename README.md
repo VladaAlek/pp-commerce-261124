@@ -18,7 +18,8 @@ This e-commerce project is focused on providing a user with learning material in
 
 - [Checkout Order Model](docs/images/checkout_order_model.png) in checkout app;
 - [Checkout OrderLineItem_model Model](docs/images/checkout_OrderLineItem_model.png) in checkout app;
-- [Checkout OrderLineItem_model Model Refactoring](docs/images/checkout_OrderLineItem_model_refactoring.png) in checkout app;
+- [Checkout OrderLineItem_model Model Refactoring](docs/images/checkout_OrderLineItem_model_refactoring.png) in **Checkout app**;
+- [User Profile Model](docs/images/UserProfile_model.png) in **Profiles app**;
 
 - External Code Sources: [Crispy Bootstrap5 Documentation](https://django-bootstrap-v5.readthedocs.io/en/latest/installation.html "django-bootstrap-v5");  [Stack Overflow](https://stackoverflow.com/questions/71641974/implementing-django-bootstrap-crispy-forms-into-default-signup-login-pages "Stack Overflow.com")
 
@@ -26,6 +27,7 @@ This e-commerce project is focused on providing a user with learning material in
  - Python 3.2.0
  - Django 3.2.25
  - Bootstrap 5
+ - Stripe
 
 ### Authentication
 - django-allauth==0.54.0
