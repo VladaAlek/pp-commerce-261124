@@ -12,8 +12,8 @@ class UserProfile(models.Model):
     delivery information and order history
     """
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    default_organisation = models.CharField(max_length=40, null=False, blank=True)
-    default_prev_user = models.BooleanField(default=False, null=False, blank=True)
+    default_organisation = models.CharField(max_length=40)
+    default_prev_user = models.BooleanField(default=False)
     default_phone_number = models.CharField(max_length=20, null=True, blank=True)
     default_country = CountryField(blank_label='Country *', null=True, blank=True)
     default_postcode = models.CharField(max_length=20, null=True, blank=True)
