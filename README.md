@@ -159,6 +159,10 @@ This e-commerce project is focused on providing a user with learning material in
 
 - [Basic Profile Template](docs/images/Profile_Template.png); [User Account Data visible in Profile Template Test](docs/images/Profile_Template_Test.png);
 - [rendering Form Profile Template](docs/images/Profile_Form_Template_Test.png);
+- [Update Delivery Info User Profile 1](docs/images/Update_Profile_Form_Template_Test_Documentation.png);
+- [Update Delivery Info User Profile SM](docs/images/Update_Profile_Form_Template_Test.png);
+- [Update Delivery Info User Profile MD](docs/images/Update_Profile_Form_Template_Test_MD.png);
+- [Update Delivery Info User Profile LG](docs/images/Update_Profile_Form_Template_Test_LG.png);
 
 ### Image Source
  - [Flickr.com](https://www.flickr.com/photos/apfelauge/25528764266/in/photolist-ETTAd3-aruDcd-oybpY8-ars18K-ars1Sr-ars1qM-arrZ2e-arrZeB-arrZpV-ars1ye-aruDB3-arrYTK-aruD1A-2kypz9o-aruE9b-eHdPys-2kxmpUV-98weQw-9aL4ZS-98t6mT-2n6BFgN-2qhpUcR-9a6i7e-rGaTjQ-dFkWsU-ahaC5Z-eBNHfs-5sEf1V-6aFqEa-2nURaUe-7Qxk4N-2kxMii3-4NXPkq-4NXY91-4NXQMA-4NYfnC-4NXSyE-4NY3jU-4NU8rH-JkiUrD-QhphK4-4NY8um-4NY8Sh-4NY4iC-4NTA6K-4NTU7H-i8tXAS-4NXTYY-4NTTLr-4NXXk1/ "flickr.com")
