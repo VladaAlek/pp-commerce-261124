@@ -157,7 +157,7 @@ This e-commerce project is focused on providing a user with learning material in
 
 ### Testing Profile App
 
-- [Basic Profile Template](docs/images/Profile_Template.png); [Basic Profile Template Test](docs/images/Profile_Template_Test.png);
+- [Basic Profile Template](docs/images/Profile_Template.png); [User Account Data visible in Profile Template Test](docs/images/Profile_Template_Test.png);
 
 
 ### Image Source
