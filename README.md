@@ -179,6 +179,12 @@ This e-commerce project is focused on providing a user with learning material in
 - [Save Info Checked Order History 1](docs/images/Save%20Info%20Checked%20Order%20History%201.png);
 - [Save Info Checked Order History 2](docs/images/Save%20Info%20Checked%20Order%20History%202.png);
 
+
+### Bugs
+#### Resolved Bug Issues
+- [Grand Total not visible in Navbar for the amounts > 1500](docs/images/bugs/bug_grand_total_navbar.png);
+- [Grand Total not visible - resolved](docs/images/bugs/bug_grand_total_navbar_resolved.png);
+
 ### Image Source
  - [Flickr.com](https://www.flickr.com/photos/apfelauge/25528764266/in/photolist-ETTAd3-aruDcd-oybpY8-ars18K-ars1Sr-ars1qM-arrZ2e-arrZeB-arrZpV-ars1ye-aruDB3-arrYTK-aruD1A-2kypz9o-aruE9b-eHdPys-2kxmpUV-98weQw-9aL4ZS-98t6mT-2n6BFgN-2qhpUcR-9a6i7e-rGaTjQ-dFkWsU-ahaC5Z-eBNHfs-5sEf1V-6aFqEa-2nURaUe-7Qxk4N-2kxMii3-4NXPkq-4NXY91-4NXQMA-4NYfnC-4NXSyE-4NY3jU-4NU8rH-JkiUrD-QhphK4-4NY8um-4NY8Sh-4NY4iC-4NTA6K-4NTU7H-i8tXAS-4NXTYY-4NTTLr-4NXXk1/ "flickr.com")
  
