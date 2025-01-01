@@ -169,6 +169,7 @@ This e-commerce project is focused on providing a user with learning material in
 - [Order History Initial Stage](docs/images/order%20history%20good.png);
 - [Order History after updating form](docs/images/order%20history%20010125.png);
 - [Order Confirmation Updated](docs/images/order%20history%20010125.png);
+- [Order Confirmation Whole Screen](docs/images/order%20confirmation%20whole%20screen.png);
 - [Order Confirmation Bug](docs/images/order%20confirmation%20010125.png); It was not possible to change the profile data.
 
 ### Image Source
