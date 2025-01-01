@@ -81,7 +81,8 @@
                         </p>
                     </div>
                     <div class="col-md-8 text-md-end">
-                        <p class="small mb-0">{{ item.quantity }} x <i class="bi bi-currency-euro"></i>{{ item.product.price }} each</p>
+                        <p class="small mb-0">{{ item.quantity }} x <i
+                                class="bi bi-currency-euro"></i>{{ item.product.price }} each</p>
                     </div>
                 </div>
                 {% endfor %}
@@ -207,14 +208,25 @@
             </div>
         </div>
     </div>
-
-    <div class="row mt-4">
-        <div class="col-12 col-lg-7 mx-auto text-center">
-            <a href="{% url 'categories' %}" class="btn btn-dark my-2">
-                <i class="fas fa-gifts me-2"></i>
-                <span class="text-uppercase">Check Our Other Courses!</span>
+    <div class="row">
+        <div class="col-12 col-lg-7 text-end">
+            {% if from_profile %}
+            <a href="{% url 'profile' %}" class="btn btn-dark rounded-0 my-2">
+                <span class="icon me-2">
+                    <i class="fas fa-angle-left"></i>
+                </span>
+                <span class="text-uppercase">Back to Profile</span>
             </a>
+            {% else %}
+            <a href="{% url 'categories' %}" class="btn btn-dark rounded-0 my-2">
+                <span class="icon me-2">
+                    <i class="fas fa-gifts"></i>
+                </span>
+                <span class="text-uppercase">Now check our courses!</span>
+            </a>
+            {% endif %}
         </div>
     </div>
+
 </div>
 {% endblock %}
