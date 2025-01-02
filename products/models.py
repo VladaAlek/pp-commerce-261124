@@ -24,7 +24,7 @@ class Category(models.Model):
 
 class Material(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
-    short_description = models.TextField(max_length=255)
+    material_title = models.TextField(max_length=255)
     full_content = models.TextField()
     pdf_file = models.FileField(upload_to='pdfs/', null=True, blank=True)
     video_url = models.URLField(max_length=200, null=True, blank=True)
