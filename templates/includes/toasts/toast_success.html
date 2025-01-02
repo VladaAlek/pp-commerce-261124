@@ -6,9 +6,13 @@
         <button type="button" class="btn-close text-dark" data-bs-dismiss="toast" aria-label="Close"></button>
     </div>
     <div class="toast-body bg-white">
-        {{ message }}        
+        {{ message }}
     </div>
     <div class="col-3 my-1">
-        <img class="w-100" src="{{ item.category.image.url }}">
+        {% if item.category.logo %}
+        <img class="w-100" src="{{ item.category.logo.url }}" alt="{{ item.category.name}}">
+        {% else %}
+        <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.category.name}}">
+        {% endif %}
     </div>
 </div>
