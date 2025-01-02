@@ -190,6 +190,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+
+
 DISCOUNT_THRESHOLD = 1500
 STANDART_DISCOUNT_PERCENTAGE = 10
 STRIPE_CURRENCY = 'eur'

@@ -48,7 +48,7 @@
         "short_description": "Learn about advanced community resilience and recovery strategies in case of heat waves.",
         "long_description": "To mitigate heat waves, prioritize urban cooling strategies like green roofs and shaded areas, improve public access to cooling centers, raise awareness about hydration and heat risks, and implement early warning systems to protect vulnerable populations.",
         "test": false,
-        "logo": "logos/sun--solid.svg",
+        "logo": "logos/sun-solid.svg",
         "starting_date": "Second Monday in July",
         "price": 400
       }

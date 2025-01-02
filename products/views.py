@@ -1,6 +1,7 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from .models import Category, Material
 from .forms import CategoryForm, MaterialForm
+from django.contrib import messages
 
 
 
@@ -66,7 +67,9 @@ def add_product(request):
         else:
             messages.error(request, 'Failed to add product. Please ensure the form is valid.')
     else:
-        form = ProductForm()
+        category_form = CategoryForm()
+        material_form = MaterialForm()
+
             
     template = 'products/add_product.html'
     context = {
