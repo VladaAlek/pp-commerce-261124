@@ -18,7 +18,8 @@
             <div class="col-12 col-md-6">
                 <form method="POST" action="{% url 'add_product' %}" class="mb-4" enctype="multipart/form-data">
                     {% csrf_token %}
-                    {{ form | crispy }}
+                    {{ category_form | crispy }}
+                    {{ material_form | crispy }}
                     <div class="d-flex justify-content-end">
                         <a class="btn btn-outline-dark rounded-0 me-2" href="{% url 'categories' %}">Cancel</a>
                         <button class="btn btn-dark rounded-0" type="submit">Add Product</button>
