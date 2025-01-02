@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Category, Material
+from .forms import ProductForm
 
 
 def all_categories(request):
@@ -43,4 +44,16 @@ def category_detail(request, category_id):
     }
 
     return render(request, 'products/material.html', context)
+
+
+
+def add_product(request):
+    """ Add a product to the store """
+    form = ProductForm()
+    template = 'products/add_product.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
 
