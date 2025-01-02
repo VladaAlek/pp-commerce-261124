@@ -182,6 +182,12 @@ This e-commerce project is focused on providing a user with learning material in
 
 ### Products Form
 - [Add products form - **Only category model values visible**](docs/images/products%20form/add%20products%20form%20only%20category%20model%20values.png);
+- [Add products form - **Category and Material models values visible**](docs/images/products%20form/add%20products%20form%20category%20and%20material%20models%20values%20.png) the shortcomming: short description value present two times;
+- [Add products form - **Category and Material models values visible - upper part**](docs/images/products%20form/add%20products%20form%20category%20and%20material%20models%20values%20upper%20part.png);
+- [Add products form - **Category and Material models values visible - lower part**](docs/images/products%20form/add%20products%20form%20category%20and%20material%20models%20values%20lower%20part.png);
+- [Add products form - **Responsivness SM**](docs/images/products%20form/add%20products%20form%20SM.png);
+- [Add products form - **Responsivness MD**](docs/images/products%20form/add%20products%20form%20MD.png);
+- [Add products form - **Responsivness LG**](docs/images/products%20form/add%20products%20form%20LG.png);
 
 
 ### Bugs
