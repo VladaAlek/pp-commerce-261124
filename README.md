@@ -180,6 +180,10 @@ This e-commerce project is focused on providing a user with learning material in
 - [Save Info Checked Order History 2](docs/images/Save%20Info%20Checked%20Order%20History%202.png);
 
 
+### Products Form
+- [Add products form - **Only category model values visible**](docs/images/products%20form/add%20products%20form%20only%20category%20model%20values.png);
+
+
 ### Bugs
 #### Resolved Bug Issues
 - [Grand Total not visible in Navbar for the amounts > 1500](docs/images/bugs/bug_grand_total_navbar.png);
