@@ -95,7 +95,7 @@ def edit_course(request, category_id):
             category_form.save()
             material_formset.save()
             messages.success(request, 'Successfully updated course and materials!')
-            return redirect(reverse('product_detail', args=[category.id]))
+            return redirect(reverse('edit_course', args=[category.id]))
         else:
             messages.error(request, 'Failed to update. Please ensure the forms are valid.')
     else:
