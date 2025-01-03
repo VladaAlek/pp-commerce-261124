@@ -193,6 +193,7 @@ This e-commerce project is focused on providing a user with learning material in
 - [Add products form - **error message**](docs/images/products%20form/add%20products%20error.png);
 - [Add products form - **rendering added course in categories template**](docs/images/products%20form/added%20course%20rendered%20in%20cagetories%20template.png);
 - [Add products form - **rendering added course in materials template**](docs/images/products%20form/added%20course%20rendered%20in%20materials%20template.png);
+- [Add products form - **Product management link in navbar functional**](docs/images/products%20form/Product%20management%20link%20in%20navbar%20functional.png);
 
 
 
