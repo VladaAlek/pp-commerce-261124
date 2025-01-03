@@ -14,6 +14,8 @@ This e-commerce project is focused on providing a user with learning material in
 
 ### Design Proces
 
+#### Models
+
 - [Category and Material models](docs/images/erd_category_material_models.png) in products app
 
 - [Checkout Order Model](docs/images/checkout_order_model.png) in checkout app;
@@ -23,11 +25,45 @@ This e-commerce project is focused on providing a user with learning material in
 
 - External Code Sources: [Crispy Bootstrap5 Documentation](https://django-bootstrap-v5.readthedocs.io/en/latest/installation.html "django-bootstrap-v5");  [Stack Overflow](https://stackoverflow.com/questions/71641974/implementing-django-bootstrap-crispy-forms-into-default-signup-login-pages "Stack Overflow.com")
 
+#### Mockups
+
+Considering the IC-nature of the project, the basic philosopy aplied in this project is to delivere uniform, tabelar structure of how the data for individual courses or learning material is presented. The **general approach** is presented bellow:
+
+- [SM](docs/images/mockup/mockup_SM-1.png);
+- [MD](docs/images/mockup/mockup_MD-1.png);
+- [LG](docs/images/mockup/mockup_LG-1.png);
+
 ## Technologies Used:
  - Python 3.2.0
  - Django 3.2.25
  - Bootstrap 5
  - Stripe
+
+### Software Resources Used
+
+### Icon's Source 
+- [Font Awsome](https://fontawesome.com "fontawesome.com")
+- [Bootstrap](https://icons.getbootstrap.com/icons/currency-euro/ "Bootstrap")
+
+## Navigation
+
+here are documented some of the major **navigation possibilities** provided to final user
+
+- [Index Page](docs/images/navigation/navigation%20to%20index%20page.png);
+- [All Courses 1](docs/images/navigation/navigation%20all%20courses%20view%20LG.png);
+- [All Courses 2](docs/images/navigation/navigation%20all%20courses%20view%20LG%202.png);
+- [All Courses - Bag View](docs/images/navigation/navigation%20all%20courses%20from%20shopping%20bag%20view%20LG%203.png);
+- [All Courses - Individual Course](docs/images/navigation/navigation%20to%20all%20and%20individiual%20courses.png);
+- [All Courses - Dropping Menu](docs/images/navigation/navigation%20to%20all%20courses%20from%20Navigate%20dropping%20menu%20in%20the%20navbar.png);
+- [Individual Course - Structure](docs/images/navigation/navigation%20to%20individual%20course%20structure%20page.png);
+- [Individual Course - Content](docs/images/navigation/);
+
+- **TODO** document all links by searching the link tags in templates
+
+## Superuser's features
+
+- Superuser can enter the **admin page**. There, it can monitor or adjust the 1. user's status, 2. content of the courses, 3. payment/ordering proccess. The CRUD operations are present.
+- Superuser has acces to the **product form** in which it can execute CRUD operations
 
 ### Authentication
 - django-allauth==0.54.0
@@ -37,11 +73,7 @@ This e-commerce project is focused on providing a user with learning material in
 - [testing "My Account" section 3](docs/images/loginTesting-3.png);
 
 
-### Software Resources Used
 
-### Icon's Source 
-- [Font Awsome](https://fontawesome.com "fontawesome.com")
-- [Bootstrap](https://icons.getbootstrap.com/icons/currency-euro/ "Bootstrap")
 
 
 ## Software Resources Used
