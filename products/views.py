@@ -2,6 +2,9 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from .models import Category, Material
 from .forms import CategoryForm, MaterialForm
 from django.contrib import messages
+from django.forms import modelformset_factory
+MaterialFormSet = modelformset_factory(Material, form=MaterialForm, extra=0, can_delete=True)
+
 
 
 
@@ -80,3 +83,30 @@ def add_product(request):
     return render(request, template, context)
 
 
+def edit_course(request, category_id):
+    """ Edit a course and its materials in the store """
+    category = get_object_or_404(Category, pk=category_id)
+    materials = Material.objects.filter(category=category)
+
+    if request.method == 'POST':
+        category_form = CategoryForm(request.POST, request.FILES, instance=category)
+        material_formset = MaterialFormSet(request.POST, request.FILES, queryset=materials)
+        if category_form.is_valid() and material_formset.is_valid():
+            category_form.save()
+            material_formset.save()
+            messages.success(request, 'Successfully updated course and materials!')
+            return redirect(reverse('product_detail', args=[category.id]))
+        else:
+            messages.error(request, 'Failed to update. Please ensure the forms are valid.')
+    else:
+        category_form = CategoryForm(instance=category)
+        material_formset = MaterialFormSet(queryset=materials)
+
+    template = 'products/edit_product.html'
+    context = {
+        'category_form': category_form,
+        'material_formset': material_formset,
+        'category': category,
+    }
+
+    return render(request, template, context)
