@@ -190,6 +190,10 @@ This e-commerce project is focused on providing a user with learning material in
 - [Add products form - **Responsivness MD**](docs/images/products%20form/add%20products%20form%20MD.png);
 - [Add products form - **Responsivness LG**](docs/images/products%20form/add%20products%20form%20LG.png);
 
+- [Add products form - **success message**](docs/images/products%20form/add%20products%20success.png);
+- [Add products form - **error message**](docs/images/products%20form/add%20products%20error.png);
+
+
 
 ### Bugs
 #### Resolved Bug Issues

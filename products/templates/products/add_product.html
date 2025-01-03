@@ -1,6 +1,11 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'products/css/products.css' %}">
+{% endblock %}
+
+
 
 {% block content %}
     <div class="overlay"></div>
@@ -9,7 +14,8 @@
             <div class="col-12 col-md-6">
                 <hr class="mb-4">
                 <h2 class="logo-font mb-4">Product Management</h2>
-                <h5 class="text-muted">Add a Product</h5>
+                <hr class="mb-4">
+                <h5 class="text-muted">Add Course</h5>
                 <hr class="mb-4">
             </div>
         </div>
@@ -19,6 +25,11 @@
                 <form method="POST" action="{% url 'add_product' %}" class="mb-4" enctype="multipart/form-data">
                     {% csrf_token %}
                     {{ category_form | crispy }}
+                    <div>
+                        <hr class="mb-4">
+                        <h5 class="text-muted">Add Learning Material</h5>
+                        <hr class="mb-4">
+                    </div>
                     {{ material_form | crispy }}
                     <div class="d-flex justify-content-end">
                         <a class="btn btn-outline-dark rounded-0 me-2" href="{% url 'categories' %}">Cancel</a>
