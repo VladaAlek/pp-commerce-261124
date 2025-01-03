@@ -189,16 +189,20 @@ This e-commerce project is focused on providing a user with learning material in
 - [Add products form - **Responsivness SM**](docs/images/products%20form/add%20products%20form%20SM.png);
 - [Add products form - **Responsivness MD**](docs/images/products%20form/add%20products%20form%20MD.png);
 - [Add products form - **Responsivness LG**](docs/images/products%20form/add%20products%20form%20LG.png);
-
 - [Add products form - **success message**](docs/images/products%20form/add%20products%20success.png);
 - [Add products form - **error message**](docs/images/products%20form/add%20products%20error.png);
+- [Add products form - **rendering added course in categories template**](docs/images/products%20form/added%20course%20rendered%20in%20cagetories%20template.png);
+- [Add products form - **rendering added course in materials template**](docs/images/products%20form/added%20course%20rendered%20in%20materials%20template.png);
 
 
 
 ### Bugs
 #### Resolved Bug Issues
+1
 - [Grand Total not visible in Navbar for the amounts > 1500](docs/images/bugs/bug_grand_total_navbar.png);
 - [Grand Total not visible - resolved](docs/images/bugs/bug_grand_total_navbar_resolved.png);
+2
+- [default URLnoimage file rendered when custom image file not provided](docs/images/bugs/default%20URLnoimage%20file%20rendered%20when%20custom%20image%20file%20not%20provided.png);
 
 ### Image Source
  - [Flickr.com](https://www.flickr.com/photos/apfelauge/25528764266/in/photolist-ETTAd3-aruDcd-oybpY8-ars18K-ars1Sr-ars1qM-arrZ2e-arrZeB-arrZpV-ars1ye-aruDB3-arrYTK-aruD1A-2kypz9o-aruE9b-eHdPys-2kxmpUV-98weQw-9aL4ZS-98t6mT-2n6BFgN-2qhpUcR-9a6i7e-rGaTjQ-dFkWsU-ahaC5Z-eBNHfs-5sEf1V-6aFqEa-2nURaUe-7Qxk4N-2kxMii3-4NXPkq-4NXY91-4NXQMA-4NYfnC-4NXSyE-4NY3jU-4NU8rH-JkiUrD-QhphK4-4NY8um-4NY8Sh-4NY4iC-4NTA6K-4NTU7H-i8tXAS-4NXTYY-4NTTLr-4NXXk1/ "flickr.com")
