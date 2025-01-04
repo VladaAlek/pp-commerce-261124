@@ -238,8 +238,16 @@ here are documented some of the major **navigation possibilities** provided to f
 1
 - [Grand Total not visible in Navbar for the amounts > 1500](docs/images/bugs/bug_grand_total_navbar.png);
 - [Grand Total not visible - resolved](docs/images/bugs/bug_grand_total_navbar_resolved.png);
+
 2
 - [default URLnoimage file rendered when custom image file not provided](docs/images/bugs/default%20URLnoimage%20file%20rendered%20when%20custom%20image%20file%20not%20provided.png);
+
+3
+
+- [all views failed](docs/images/bugs/all%20views%20retriving%20404%20eror.png);
+EXTERNAL SOURCES:
+    - [Stack Overflow](https://stackoverflow.com/questions/67215329/why-am-i-getting-error-404-in-my-django-project-when-everything-seems-correct "Stack Overflow.com");
+    - [Stack Overflow](https://stackoverflow.com/questions/68050309/why-do-i-get-an-404-error-in-part-4-of-the-django-tutorial-writing-you-first-dj "Stack Overflow.com");
 
 ### Image Source
  - [Flickr.com](https://www.flickr.com/photos/apfelauge/25528764266/in/photolist-ETTAd3-aruDcd-oybpY8-ars18K-ars1Sr-ars1qM-arrZ2e-arrZeB-arrZpV-ars1ye-aruDB3-arrYTK-aruD1A-2kypz9o-aruE9b-eHdPys-2kxmpUV-98weQw-9aL4ZS-98t6mT-2n6BFgN-2qhpUcR-9a6i7e-rGaTjQ-dFkWsU-ahaC5Z-eBNHfs-5sEf1V-6aFqEa-2nURaUe-7Qxk4N-2kxMii3-4NXPkq-4NXY91-4NXQMA-4NYfnC-4NXSyE-4NY3jU-4NU8rH-JkiUrD-QhphK4-4NY8um-4NY8Sh-4NY4iC-4NTA6K-4NTU7H-i8tXAS-4NXTYY-4NTTLr-4NXXk1/ "flickr.com")
@@ -250,3 +258,7 @@ Keep this as a template
 
 ## Important Note
  - [Shopping Bag](https://github.com/users/VladaAlek/projects/16/) project not visible in the project`s repo
+
+
+
+https://stackoverflow.com/questions/67215329/why-am-i-getting-error-404-in-my-django-project-when-everything-seems-correct

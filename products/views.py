@@ -85,7 +85,7 @@ def add_product(request):
 
 def edit_course(request, category_id):
     """ Edit a course and its materials in the store """
-    category = get_object_or_404(Category, pk=category_id)
+    category = Category.objects.get(Category, pk=category_id)
     materials = Material.objects.filter(category=category)
 
     if request.method == 'POST':
@@ -114,7 +114,7 @@ def edit_course(request, category_id):
 
 def delete_course(request, category_id):
     """ Delete a course from the store """
-    course = get_object_or_404(Category, pk=category_id)
+    course = Category.objects.get(Category, pk=category_id)
     course.delete()
     messages.success(request, 'Course deleted!')
     return redirect(reverse('categories'))
