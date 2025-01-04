@@ -1,16 +1,57 @@
 # Disaster Ready
 
 
-This e-commerce project is focused on providing a user with learning material in the **Disaster Risk Reduction**field. It is an increasingly popular, multidisciplinary research area between natural and social sciences. Its multi-faceted results are implemented in everyday confrontations with natural hazards by numerous practitioners across the globe. The need to disseminate practical and theoretical knowledge about **DRR** grows with rapid changes in the natural and social environment. Hence, there are numerous potential users of this course. For practical reasons, this time the project is limited to German-speaking countries *German, Austria and Switzerland*, the three countries that are exposed to *floods*, *stormy weather conditions*, *forest fires*, and *heat weaves* as the four most relevant natural disasters in this part of Europe.
+This e-commerce project is focused on providing a user with learning material in the **Disaster Risk Reduction** field. It is an increasingly popular, multidisciplinary research area between natural and social sciences. Its multi-faceted results are implemented in everyday confrontations with natural hazards by numerous practitioners across the globe. The need to disseminate practical and theoretical knowledge about **DRR** grows with rapid changes in the natural and social environment. Hence, there are numerous potential users of this course. For practical reasons, this time the project is limited to German-speaking countries *German, Austria and Switzerland*, the three countries that are exposed to *floods*, *stormy weather conditions*, *forest fires*, and *heat weaves* as the four most relevant natural disasters in this part of Europe.
 
 ### Sites main structure
- - log in/log out - on this topic more in the Authentication section below
+ - log in/log out - see more in the Authentication section below
  - navigation bar
  - landing page
  - all courses view
  - content of individual courses
+ - course content managment as admin - See section Superuser's features bellow
  - profile page
  - money transfer component
+
+## Navigation
+
+here are documented some of the major **navigation possibilities** provided to final user
+
+- [Index Page](docs/images/navigation/navigation%20to%20index%20page.png);
+- [All Courses 1](docs/images/navigation/navigation%20all%20courses%20view%20LG.png);
+- [All Courses 2](docs/images/navigation/navigation%20all%20courses%20view%20LG%202.png);
+- [All Courses - Bag View](docs/images/navigation/navigation%20all%20courses%20from%20shopping%20bag%20view%20LG%203.png);
+- [All Courses - Individual Course](docs/images/navigation/navigation%20to%20all%20and%20individiual%20courses.png);
+- [All Courses - Dropping Menu](docs/images/navigation/navigation%20to%20all%20courses%20from%20Navigate%20dropping%20menu%20in%20the%20navbar.png);
+- [Individual Course - Structure](docs/images/navigation/navigation%20to%20individual%20course%20structure%20page.png);
+- [Individual Course - Content](docs/images/navigation/);
+
+- **TODO** document all links by searching the link tags in templates
+
+## Superuser's features
+
+- Superuser can enter the **admin page**. There, it can monitor or adjust the 1. user's status, 2. content of the courses, 3. payment/ordering proccess. The CRUD operations are present.
+- Superuser has acces to the **product form** in which it can execute CRUD operations
+
+### Authentication
+- django-allauth==0.54.0
+- [testing allauth](docs/images/testing_allauth.png);
+- [testing "My Account" section 1](docs/images/loginTesting-1.png);
+- [testing "My Account" section 2](docs/images/loginTesting-2.png);
+- [testing "My Account" section 3](docs/images/loginTesting-3.png);
+
+
+### Exploring and Selecting/Manageing Courses
+
+Being informed about the courses offered in this project is crucial. Upon landing on the index page, the user can click the Explore Courses button. There, it can learn more about the basic structure of the *individual courses*. The basic logos are shown in the head section so that the particular courses are visually different from others. By clicking the Explore Course button, the page rendering the content of each course's *learning material* is visible. It is a combination of textual material and PDF and video material. In this stage of development, only the two latter are hidden from the user until the course fee is paid.  *Add this course to the bag" is centrally located and activates the *Bag* view.
+
+This page offers a tabular overview of selected courses, their quantity, price, and discount (if activated). By wish, the *remove* link allows the user to eliminate the undesired course from the bag. Finally, the *Keep Exploring* link invites users to learn more about other courses and eventually add them to the shopping basket. 
+
+
+### Discount
+If more then 1500 euro are spent, 10% discount is offered on the index page. If this option is acitaved, the reduced price is visible in navabar, in the Shopping Bag anc Checkout templates, shopping confirmation details
+
+
 
 ### Design Proces
 
@@ -45,32 +86,6 @@ Considering the IC-nature of the project, the basic philosopy aplied in this pro
 - [Font Awsome](https://fontawesome.com "fontawesome.com")
 - [Bootstrap](https://icons.getbootstrap.com/icons/currency-euro/ "Bootstrap")
 
-## Navigation
-
-here are documented some of the major **navigation possibilities** provided to final user
-
-- [Index Page](docs/images/navigation/navigation%20to%20index%20page.png);
-- [All Courses 1](docs/images/navigation/navigation%20all%20courses%20view%20LG.png);
-- [All Courses 2](docs/images/navigation/navigation%20all%20courses%20view%20LG%202.png);
-- [All Courses - Bag View](docs/images/navigation/navigation%20all%20courses%20from%20shopping%20bag%20view%20LG%203.png);
-- [All Courses - Individual Course](docs/images/navigation/navigation%20to%20all%20and%20individiual%20courses.png);
-- [All Courses - Dropping Menu](docs/images/navigation/navigation%20to%20all%20courses%20from%20Navigate%20dropping%20menu%20in%20the%20navbar.png);
-- [Individual Course - Structure](docs/images/navigation/navigation%20to%20individual%20course%20structure%20page.png);
-- [Individual Course - Content](docs/images/navigation/);
-
-- **TODO** document all links by searching the link tags in templates
-
-## Superuser's features
-
-- Superuser can enter the **admin page**. There, it can monitor or adjust the 1. user's status, 2. content of the courses, 3. payment/ordering proccess. The CRUD operations are present.
-- Superuser has acces to the **product form** in which it can execute CRUD operations
-
-### Authentication
-- django-allauth==0.54.0
-- [testing allauth](docs/images/testing_allauth.png);
-- [testing "My Account" section 1](docs/images/loginTesting-1.png);
-- [testing "My Account" section 2](docs/images/loginTesting-2.png);
-- [testing "My Account" section 3](docs/images/loginTesting-3.png);
 
 
 
