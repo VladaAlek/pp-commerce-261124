@@ -33,9 +33,9 @@
                 </div>
             </div>
             {% for item in bag_items %}
-            <div class="row mb-4 align-items-center">
+            <div class="row mb-4 align-items-center p-1">
                 <!-- Logo -->
-                <div class="col-2 checkout-logo-container p-1">
+                <div class="col-2 checkout-logo-container p-2">
                     <a href="{% url 'individual_category' category_id=item.product.id %}">
                         {% if item.product.logo %}
                         <img class="w-100 checkout-logo-img" src="{{ item.product.logo.url }}" alt="{{ item.product.name }}">
