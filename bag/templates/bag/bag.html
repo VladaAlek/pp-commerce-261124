@@ -2,119 +2,133 @@
 {% load static %}
 
 
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'bag/css/bag.css' %}">
+{% endblock %}
+
+
+
 {% block content %}
-    <div class="overlay"></div>
-    <div class="container mb-2 mt-4">
-        <div class="row">
-            <div class="col text-center">
-                <hr>
-                <h2 class="logo-font mb-4">Shopping Bag</h2>
-                <hr>
-            </div>
-        </div>
-
-        <div class="row bag-row">
-            <div class="col">
-                {% if bag_items %}
-                    <div class="table-responsive rounded">
-                        <table class="table table-sm table-borderless">
-                            <thead class="text-black">
-                                <tr>
-                                    <th scope="col"></th>
-                                    <th scope="col">Course</th>
-                                    <th scope="col">Price</th>
-                                    <th scope="col">Qty</th>
-                                    <th scope="col">Subtotal</th>
-                                </tr>
-                            </thead>
-
-                            {% for item in bag_items %}
-                                <tr>
-                                    <td class="p-3 w-25">
-                                        <img class="img-fluid rounded bag-logo-div" src="{{ item.product.logo.url }}" alt="{{ item.product.name }} logo">
-                                    </td>
-                                    <td class="py-3">
-                                        <p class="my-0"><em>{{ item.product.name}}</em></p>
-                                    </td>                                    
-                                    <td class="py-3">
-                                        <p class="my-0">${{ item.product.price }}</p>
-                                    </td>
-                                    <td class="py-3 w-25">
-                                        <p class="my-0">{{ item.quantity }}</p>
-                                    </td>
-                                    <td class="py-3">
-                                        <p class="my-0">${{ item.product.price }}</p>
-                                    </td>
-                                    <td>
-                                        <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><small>Remove</small></a>
-                                    </td>  
-                                </tr>
-                                
-                            {% endfor %}
-                            <tr>
-                                <td colspan="5" class="pt-5 text-end">
-                                    <h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
-                                    <h6>Discount: ${{ discount|floatformat:2 }}</h6>
-                                    <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
-                                    {% if discount_delta > 0 %}
-                                        <p class="mb-1 text-danger">
-                                            You could get <strong>{{ STANDART_DISCOUNT_PERCENTAGE }}</strong> <i class="fa-solid fa-percent"></i> discount by spending just over <strong><i class="fa-solid fa-dollar-sign"></i>
-                                            {{ DISCOUNT_TRESHOLD }}</strong>! <br>
-                                            It takes only <strong><i class="fa-solid fa-dollar-sign"></i>
-                                            {{ discount_delta }}</strong> to reach this limit!
-                                        </p>
-                                    {% endif %}
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="5" class="text-end">
-                                    <a href="{% url 'categories' %}" class="btn btn-outline-dark rounded-0 btn-lg">
-                                        <span class="icon">
-                                            <i class="fas fa-chevron-left"></i>
-                                        </span>
-                                        <span class="text-uppercase">Keep Shopping</span>
-                                    </a>
-                                    <a href="{% url 'checkout' %}" class="btn btn-dark rounded-0 btn-lg">
-                                        <span class="text-uppercase">Secure Checkout</span>
-                                        <span class="icon">
-                                            <i class="fas fa-lock"></i>
-                                        </span>
-                                    </a>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                {% else %}
-                    <p class="lead mb-5 empty-bag-notification">Your bag is empty.</p>
-                    <a href="{% url 'categories' %}" class="btn btn-outline-dark rounded-0 btn-lg">
-                        <span class="icon">
-                            <i class="fas fa-chevron-left"></i>
-                        </span>
-                        <span class="text-uppercase">Keep Shopping</span>
-                    </a>
-                {% endif %}
-            </div>
+<div class="overlay"></div>
+<div class="container mb-2 mt-4">
+    <div class="row">
+        <div class="col text-center">
+            <hr>
+            <h2 class="logo-font mb-4">Shopping Bag</h2>
+            <hr>
         </div>
     </div>
+
+    <div class="row bag-row">
+        <div class="col">
+            {% if bag_items %}
+            <div class="table-responsive rounded">
+                <table class="table table-sm table-borderless">
+                    <thead class="text-black">
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Course</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Qty</th>
+                            <th scope="col">Subtotal</th>
+                        </tr>
+                    </thead>
+
+                    {% for item in bag_items %}
+                    <tr>
+                        <td class="p-3 w-25">
+                            <a href="{% url 'individual_category' category_id=item.product.id %}"><img
+                                    class="img-fluid rounded bag-logo-div" src="{{ item.product.logo.url }}"
+                                    alt="{{ item.product.name }} logo"></a>
+
+                        </td>
+                        <td class="py-3">
+                            <p class="my-0"><em>{{ item.product.name}}</em></p>
+                        </td>
+                        <td class="py-3">
+                            <p class="my-0">${{ item.product.price }}</p>
+                        </td>
+                        <td class="py-3 w-25">
+                            <p class="my-0">{{ item.quantity }}</p>
+                        </td>
+                        <td class="py-3">
+                            <p class="my-0">${{ item.product.price }}</p>
+                        </td>
+                        <td>
+                            <a class="remove-item text-danger float-right"
+                                id="remove_{{ item.item_id }}"><small>Remove</small></a>
+                        </td>
+                    </tr>
+
+                    {% endfor %}
+                    <tr>
+                        <td colspan="5" class="pt-5 text-end">
+                            <h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
+                            <h6>Discount: ${{ discount|floatformat:2 }}</h6>
+                            <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
+                            {% if discount_delta > 0 %}
+                            <p class="mb-1 text-danger">
+                                You could get <strong>{{ STANDART_DISCOUNT_PERCENTAGE }}</strong> <i
+                                    class="fa-solid fa-percent"></i> discount by spending just over <strong><i
+                                        class="fa-solid fa-dollar-sign"></i>
+                                    {{ DISCOUNT_TRESHOLD }}</strong>! <br>
+                                It takes only <strong><i class="fa-solid fa-dollar-sign"></i>
+                                    {{ discount_delta }}</strong> to reach this limit!
+                            </p>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" class="text-end">
+                            <a href="{% url 'categories' %}" class="btn btn-outline-dark rounded-0 btn-lg">
+                                <span class="icon">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                                <span class="text-uppercase">Keep Shopping</span>
+                            </a>
+                            <a href="{% url 'checkout' %}" class="btn btn-dark rounded-0 btn-lg">
+                                <span class="text-uppercase">Secure Checkout</span>
+                                <span class="icon">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            {% else %}
+            <p class="lead mb-5 empty-bag-notification">Your bag is empty.</p>
+            <a href="{% url 'categories' %}" class="btn btn-outline-dark rounded-0 btn-lg">
+                <span class="icon">
+                    <i class="fas fa-chevron-left"></i>
+                </span>
+                <span class="text-uppercase">Keep Shopping</span>
+            </a>
+            {% endif %}
+        </div>
+    </div>
+</div>
 {% endblock %}
 
 {% block postloadjs %}
 {{ block.super }}
 
 <script type="text/javascript">
-
     // Remove item and reload on click
-    $('.remove-item').click(function(e) {
+    $('.remove-item').click(function (e) {
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
         var size = $(this).data('product_size');
         var url = `/bag/remove/${itemId}/`;
-        var data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
+        var data = {
+            'csrfmiddlewaretoken': csrfToken,
+            'product_size': size
+        };
 
         $.post(url, data)
-         .done(function() {
-             location.reload();
-         });
+            .done(function () {
+                location.reload();
+            });
     })
 </script>
 {% endblock %}

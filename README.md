@@ -45,7 +45,7 @@ here are documented some of the major **navigation possibilities** provided to f
 
 Being informed about the courses offered in this project is crucial. Upon landing on the index page, the user can click the Explore Courses button. There, it can learn more about the basic structure of the *individual courses*. The basic logos are shown in the head section so that the particular courses are visually different from others. By clicking the Explore Course button, the page rendering the content of each course's *learning material* is visible. It is a combination of textual material and PDF and video material. In this stage of development, only the two latter are hidden from the user until the course fee is paid.  *Add this course to the bag" is centrally located and activates the *Bag* view.
 
-This page offers a tabular overview of selected courses, their quantity, price, and discount (if activated). By wish, the *remove* link allows the user to eliminate the undesired course from the bag. Finally, the *Keep Exploring* link invites users to learn more about other courses and eventually add them to the shopping basket. 
+This page offers a tabular overview of selected courses, their quantity, price, and discount (if activated). By wish, the *remove* link allows the user to eliminate the undesired course from the bag. Logos of individual courses serve as links, too. Finally, the *Keep Exploring* link invites users to learn more about other courses and eventually add them to the shopping basket. To finalize the shopping activites, the checkout button is on disposal
 
 
 ### Discount
