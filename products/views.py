@@ -3,8 +3,7 @@ from .models import Category, Material
 from .forms import CategoryForm, MaterialForm
 from django.contrib import messages
 from django.forms import modelformset_factory
-MaterialFormSet = modelformset_factory(Material, form=MaterialForm, extra=0, can_delete=True)
-
+import random
 
 
 
@@ -51,33 +50,54 @@ def category_detail(request, category_id):
     return render(request, 'products/material.html', context)
 
 
-
-def add_product(request):
-    """ Add a product and its materials to the store """
+def add_course(request):
+    """ Add a category/course to the store """
     category_form = CategoryForm()
-    material_form = MaterialForm()
-
+    category_id = None  
     if request.method == 'POST':
-        category_form = CategoryForm(request.POST, request.FILES)
-        material_form = MaterialForm(request.POST, request.FILES)
-        if category_form.is_valid() and material_form.is_valid():
-            category = category_form.save()
-            material = material_form.save(commit=False)
-            material.category = category
-            material.save()
-            messages.success(request, 'Successfully added product!')
-            return redirect(reverse('add_product'))
+        form = CategoryForm(request.POST, request.FILES)
+        if form.is_valid():
+            new_category = form.save()
+            category_id = new_category.id  # Get category_id after saving
+            messages.success(request, 'Successfully added online course!')
+            return redirect(reverse('add_material', args=[category_id]))  # Redirect with category_id
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(request, 'Failed to add online course. Please ensure the form is valid.')
     else:
-        category_form = CategoryForm()
-        material_form = MaterialForm()
+        form = CategoryForm()
 
-            
+        
     template = 'products/add_product.html'
     context = {
         'category_form': category_form,
+        'category_id': category_id,
+    }
+
+    return render(request, template, context)
+
+
+def add_material(request, category_id):
+    """ Add a material to the online course """
+    category = get_object_or_404(Category, pk=category_id) 
+    material_form = MaterialForm() 
+    
+    if request.method == 'POST':
+        form = MaterialForm(request.POST, request.FILES)
+        if form.is_valid():
+            material = form.save(commit=False)
+            material.category = category
+            material.save()
+            messages.success(request, 'Successfully added online material!')
+            return redirect(reverse('categories'))
+        else:
+            messages.error(request, 'Failed to add material to the course. Please ensure the form is valid.')
+    else:
+        form = MaterialForm()
+        
+    template = 'products/add_material.html'
+    context = {
         'material_form': material_form,
+        'category_id': category_id,
     }
 
     return render(request, template, context)

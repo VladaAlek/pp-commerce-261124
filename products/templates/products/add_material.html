@@ -13,20 +13,20 @@
         <div class="row">
             <div class="col-12 col-md-6">
                 <hr class="mb-4">
-                <h2 class="logo-font mb-4">Product Management</h2>
+                <h2 class="logo-font mb-4">DDR Online Course Management</h2>
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6">     
                 <hr class="mb-4">
-                <h5 class="text-muted">Add Course</h5>
+                <h5 class="text-muted">Add Learning Material</h5>
                 <hr class="mb-4">
-                <form method="POST" action="{% url 'add_course' %}" class="mb-4" enctype="multipart/form-data">
+                <form method="POST" action="{% url 'add_material' category_id=category_id %}" class="mb-4" enctype="multipart/form-data">
                     {% csrf_token %}
-                    {{ category_form | crispy }}
+                    {{ material_form | crispy }}
                     <div class="d-flex justify-content-end">
                         <a class="btn btn-outline-dark rounded-0 me-2" href="{% url 'categories' %}">Cancel</a>
-                        <button class="btn btn-dark rounded-0" type="submit">Add Course</button>
+                        <button class="btn btn-dark rounded-0" type="submit">Add Material</button>
                     </div>
                 </form>
             </div>
