@@ -136,6 +136,7 @@ Considering the IC-nature of the project, the basic philosopy aplied in this pro
 - [Multiple Items Testing](docs/images/testing_add_course_functionality_multiple_courses.png)
 - [Multiple Items Testing](docs/images/testing_add_course_functionality_multiple_courses.png)
 
+
 ### Testing Toasts
 
 - [Add Course Toast](docs/images/Toast_Success_Add.png); [Add Course Toast SM](docs/images/toast_success_sm.png)
@@ -228,7 +229,8 @@ Considering the IC-nature of the project, the basic philosopy aplied in this pro
 - [Save Info Checked Order History 2](docs/images/Save%20Info%20Checked%20Order%20History%202.png);
 
 
-### Products Form
+### Products Form - Initial Development
+
 - [Add products form - **Only category model values visible**](docs/images/products%20form/add%20products%20form%20only%20category%20model%20values.png);
 - [Add products form - **Category and Material models values visible**](docs/images/products%20form/add%20products%20form%20category%20and%20material%20models%20values%20.png) the shortcomming: short description value present two times;
 - [Add products form - **Category and Material models values visible**](docs/images/products%20form/add%20products%20material%20title.png) refactored code: short_description replaced with material_title value;
@@ -247,6 +249,13 @@ Considering the IC-nature of the project, the basic philosopy aplied in this pro
 - [Add products form - **edit courses and materials - success 2**](docs/images/products%20form/edit%20courses%20and%20materials%20success%202.png);
 - [Add products form - **edit courses and materials - error**](docs/images/products%20form/edit%20courses%20and%20materials%20error.png);
 
+### Products Form - After Refactoring code
+
+The initial view *add_product* didnt allow to add the learning material content to the newly formed course in one template [**image**](docs/images/products%20form/bug%20adding%20course%20and%20material%20simultaniously%20impossible.png) because it was not created yet!
+The refactored code includes two templates: *add_products* and *add_material*:
+- [Add courses form - success](docs/images/products%20form/successfull%20added%20online%20course.png);
+- [Add learning material form - success](docs/images/products%20form/successfull%20added%20online%20material.png);
+- We could't made the forms failing, hence the 'error messages' have not been tested.
 
 
 ### Bugs
@@ -265,7 +274,14 @@ EXTERNAL SOURCES:
     - [Stack Overflow](https://stackoverflow.com/questions/67215329/why-am-i-getting-error-404-in-my-django-project-when-everything-seems-correct "Stack Overflow.com");
     - [Stack Overflow](https://stackoverflow.com/questions/68050309/why-do-i-get-an-404-error-in-part-4-of-the-django-tutorial-writing-you-first-dj "Stack Overflow.com");
 
-### Image Source
+
+#### Resolved Bug Issues
+
+1
+
+- [Added courses not rendering corectly](docs/images/bugs/bug_added%20courses%20not%20rendering%20corectly.png);
+
+### Image's Sources
  - [Flickr.com](https://www.flickr.com/photos/apfelauge/25528764266/in/photolist-ETTAd3-aruDcd-oybpY8-ars18K-ars1Sr-ars1qM-arrZ2e-arrZeB-arrZpV-ars1ye-aruDB3-arrYTK-aruD1A-2kypz9o-aruE9b-eHdPys-2kxmpUV-98weQw-9aL4ZS-98t6mT-2n6BFgN-2qhpUcR-9a6i7e-rGaTjQ-dFkWsU-ahaC5Z-eBNHfs-5sEf1V-6aFqEa-2nURaUe-7Qxk4N-2kxMii3-4NXPkq-4NXY91-4NXQMA-4NYfnC-4NXSyE-4NY3jU-4NU8rH-JkiUrD-QhphK4-4NY8um-4NY8Sh-4NY4iC-4NTA6K-4NTU7H-i8tXAS-4NXTYY-4NTTLr-4NXXk1/ "flickr.com")
  
 
