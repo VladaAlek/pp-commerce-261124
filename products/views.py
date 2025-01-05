@@ -4,7 +4,7 @@ from .forms import CategoryForm, MaterialForm
 from django.contrib import messages
 from django.forms import modelformset_factory
 import random
-
+MaterialFormSet = modelformset_factory(Material, fields='__all__')
 
 
 def all_categories(request):
@@ -105,7 +105,7 @@ def add_material(request, category_id):
 
 def edit_course(request, category_id):
     """ Edit a course and its materials in the store """
-    category = Category.objects.get(Category, pk=category_id)
+    category = get_object_or_404(Category, pk=category_id)
     materials = Material.objects.filter(category=category)
 
     if request.method == 'POST':

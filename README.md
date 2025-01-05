@@ -274,8 +274,12 @@ EXTERNAL SOURCES:
     - [Stack Overflow](https://stackoverflow.com/questions/67215329/why-am-i-getting-error-404-in-my-django-project-when-everything-seems-correct "Stack Overflow.com");
     - [Stack Overflow](https://stackoverflow.com/questions/68050309/why-do-i-get-an-404-error-in-part-4-of-the-django-tutorial-writing-you-first-dj "Stack Overflow.com");
 
+4
 
-#### Resolved Bug Issues
+- Organisation Logo visible in the navbar
+
+
+#### Unresolved Bug Issues
 
 1
 

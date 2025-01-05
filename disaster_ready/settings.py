@@ -27,11 +27,11 @@ SECRET_KEY = 'django-insecure-=2fh2i7ev2vr&ax7t%pkbqg+4f$=qq81ymjgf$!6i1_oy9j7)%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-vladaalek-ppcommerce261-xrmzjvfrduu.ws-eu117.gitpod.io']
+ALLOWED_HOSTS = ['8000-coral-harrier-tfa79yqc0yt.ws-eu117.gitpod.io']
 
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-vladaalek-ppcommerce261-wrincp7m7v8.ws-eu117.gitpod.io',
+    'https://8000-coral-harrier-tfa79yqc0yt.ws-eu117.gitpod.io',
 ]
 
 
