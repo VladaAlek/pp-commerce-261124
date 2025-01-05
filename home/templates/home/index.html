@@ -5,7 +5,7 @@
 
 
 {% block content %}
-<div class="container d-flex flex-column align-items-center justify-content-center">
+<div class="container d-flex flex-column align-items-center justify-content-center mt-3 min-vh-100">
     <button class="btn btn-success my-3">
         <a href="{% url 'categories' %}" class="text-white text-decoration-none">Explore Online Courses</a>
     </button>
@@ -13,12 +13,11 @@
         <h1 class="text-center my-5 text-danger home-title">Disaster Ready</h1>
     </div>
     <div>
-        <h3 class="text-center mt-5 text-danger home-subtitle"><strong>Distance Learning</strong> for <strong>Disaster Risk Reduction</strong> in Germany</h3>
+        <h3 class="text-center mt-5 text-danger home-subtitle"><span>Distance Learning</span> for <span>Disaster Risk Reduction in Germany</span></h3>
     </div>
-</div>
-<div id="delivery-banner" class="row text-center my-4">
-    <div class="col bg-black text-white discount-border-line">
-      <h3 class="logo-font my-3">{{STANDART_DISCOUNT_PERCENTAGE}} <i class="bi bi-percent"></i> discount for purchusing courses over ${{ DISCOUNT_THRESHOLD }}!</h3>
+    <div><em>Only online training tailored for municipalities</em></div>
+    <div class="text-center my-4">
+        <h3 class="logo-font my-3">{{STANDART_DISCOUNT_PERCENTAGE}} <i class="bi bi-percent"></i> discount for purchusing online courses over &euro;{{ DISCOUNT_THRESHOLD }}!</h3>
     </div>
 </div>
 {% endblock %}
