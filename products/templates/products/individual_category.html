@@ -50,7 +50,12 @@
             </svg>
         </p>
     </div>
-
+    {% if request.user.is_superuser %}
+    <small class="ml-3">
+        <a href="{% url 'edit_course' category.id %}">Edit</a> |
+        <a class="text-danger" href="{% url 'delete_course' category.id %}">Delete</a>
+    </small>
+    {% endif %}
     <div class="text-center">
         <button class="btn btn-success mt-2">
             <a href="{% url 'materials' category.id %}" class="text-white text-decoration-none">Explore Course</a>

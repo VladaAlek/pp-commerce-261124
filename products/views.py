@@ -134,7 +134,7 @@ def edit_course(request, category_id):
 
 def delete_course(request, category_id):
     """ Delete a course from the store """
-    course = Category.objects.get(Category, pk=category_id)
+    course = get_object_or_404(Category, pk=category_id)
     course.delete()
-    messages.success(request, 'Course deleted!')
+    messages.success(request, 'Course {{ category.name }}deleted!')
     return redirect(reverse('categories'))
