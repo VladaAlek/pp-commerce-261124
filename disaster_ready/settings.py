@@ -62,9 +62,8 @@ INSTALLED_APPS = [
     'bootstrap5',
 ]
 
-CSRF_TRUSTED_ORIGINS = [
-    "https://8000-vladaalek-ppcommerce261-xrmzjvfrduu.ws-eu117.gitpod.io"
-]
+
+CSRF_TRUSTED_ORIGINS = ["https://*.herokuapp.com", "https://*.codeinstitute-ide.net", "https://*.gitpod.io"]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
