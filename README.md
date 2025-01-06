@@ -102,7 +102,8 @@ Considering the IC-nature of the project, the basic philosopy aplied in this pro
 ## Deployment
 
 - it was necessary to reestablish IDE (Gitpod) - [Django](docs/images/django_requirements_21_12_24.png); [Pillow](docs/images/pillow_requirements_21_12_24.png); [Allauth](docs/images/allauth_requirements_21_12_24.png);
-- 28. 12. 24. Gitpod IDE became unfuctional - unpushed changes lost and reinstalling of requirements and reestablishment of the settings parameters was neccessary
+- 28. 12. 2024. Gitpod IDE became unfuctional - unpushed changes lost and reinstalling of requirements and reestablishment of the settings parameters was neccessary
+- 05. 01. 2025.  Gitpod IDE became unfuctional - new workspace opened, which might affect some features becauese it was not enough time to test and document all project's elements again
 
 ### Testing Responsivness
 #### All Courses
@@ -258,6 +259,13 @@ The refactored code includes two templates: *add_products* and *add_material*:
 - We could't made the forms failing, hence the 'error messages' have not been tested.
 
 
+
+### About page
+
+- [LG](docs/images/about_page_lg.png);
+
+
+
 ### Bugs
 #### Resolved Bug Issues
 1
@@ -284,6 +292,11 @@ EXTERNAL SOURCES:
 1
 
 - [Added courses not rendering corectly](docs/images/bugs/bug_added%20courses%20not%20rendering%20corectly.png);
+
+2 
+
+- [Bug navbar links blocked when signin open](docs/images/bugs/bug_navbar_links_blocked_when_signin_open.png);
+
 
 ### Image's Sources
  - [Flickr.com](https://www.flickr.com/photos/apfelauge/25528764266/in/photolist-ETTAd3-aruDcd-oybpY8-ars18K-ars1Sr-ars1qM-arrZ2e-arrZeB-arrZpV-ars1ye-aruDB3-arrYTK-aruD1A-2kypz9o-aruE9b-eHdPys-2kxmpUV-98weQw-9aL4ZS-98t6mT-2n6BFgN-2qhpUcR-9a6i7e-rGaTjQ-dFkWsU-ahaC5Z-eBNHfs-5sEf1V-6aFqEa-2nURaUe-7Qxk4N-2kxMii3-4NXPkq-4NXY91-4NXQMA-4NYfnC-4NXSyE-4NY3jU-4NU8rH-JkiUrD-QhphK4-4NY8um-4NY8Sh-4NY4iC-4NTA6K-4NTU7H-i8tXAS-4NXTYY-4NTTLr-4NXXk1/ "flickr.com")
