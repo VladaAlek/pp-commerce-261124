@@ -65,7 +65,12 @@ def checkout(request):
                             product=product,
                             quantity=item_data,
                         )
-                        order_line_item.save()
+                        order_line_item.save()        
+                        # Add purchased course to session
+                        if 'purchased_courses' not in request.session:
+                            request.session['purchased_courses'] = []
+                        request.session['purchased_courses'].append(order_line_item.product.id)
+                        request.session.modified = True
                     else:
                         for size, quantity in item_data['items_by_size'].items():
                             order_line_item = OrderLineItem(
