@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from .models import Category, Material
 from .forms import CategoryForm, MaterialForm
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.forms import modelformset_factory
 import random
 MaterialFormSet = modelformset_factory(Material, fields='__all__')
@@ -49,7 +50,7 @@ def category_detail(request, category_id):
 
     return render(request, 'products/material.html', context)
 
-
+@login_required
 def add_course(request):
     """ Add a category/course to the store """
     category_form = CategoryForm()
@@ -75,9 +76,13 @@ def add_course(request):
 
     return render(request, template, context)
 
-
+@login_required
 def add_material(request, category_id):
     """ Add a material to the online course """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+    
     category = get_object_or_404(Category, pk=category_id) 
     material_form = MaterialForm() 
     
@@ -102,9 +107,13 @@ def add_material(request, category_id):
 
     return render(request, template, context)
 
-
+@login_required
 def edit_course(request, category_id):
     """ Edit a course and its materials in the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+    
     category = get_object_or_404(Category, pk=category_id)
     materials = Material.objects.filter(category=category)
 
@@ -131,9 +140,13 @@ def edit_course(request, category_id):
 
     return render(request, template, context)
 
-
+@login_required
 def delete_course(request, category_id):
     """ Delete a course from the store """
+
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
     course = get_object_or_404(Category, pk=category_id)
     course.delete()
     messages.success(request, 'Course deleted!')
