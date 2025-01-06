@@ -6,19 +6,97 @@
 
 {% block content %}
 <div class="container d-flex flex-column align-items-center justify-content-center mt-3 min-vh-100">
-    <button class="btn btn-success my-3">
+
+    <div>
+        <h1 class="text-center my-1 text-danger home-title">About Disaster Ready - Germany</h1>
+    </div>
+    <button class="btn btn-success mt-3 mb-3">
         <a href="{% url 'categories' %}" class="text-white text-decoration-none">Explore Online Courses</a>
     </button>
     <div>
-        <h1 class="text-center my-5 text-danger home-title">About Disaster Ready</h1>
+        <em class="mt-2 text-center">Enhancing Emergency Preparedness Through Digital Learning</em>
+    </div>
+    <div class="p-5">
+        <p style="text-indent: 20px;">At Disaster Ready, our primary goal is to revolutionize emergency preparedness and response at the
+            municipality level through innovative digital learning solutions. We recognize that local governments and
+            communities are the first responders to any crisis, whether it be natural disasters, public health
+            emergencies, or unforeseen accidents. By equipping municipal leaders, responders, and citizens with
+            accessible, user-friendly digital resources, we aim to build resilient communities that can act swiftly and
+            effectively in times of need.</p>
+
+            <p style="text-indent: 20px;">Our platform offers i comprehensive resource and libraries tailored to the unique needs of municipalities.
+            We prioritize inclusivity and adaptability,
+            ensuring that even small or resource-constrained areas have access to the tools they need to strengthen
+            their disaster response frameworks.
+
+            Beyond just training, we foster collaboration and communication across municipalities. Our digital tools
+            connect local governments with neighboring regions, allowing for shared knowledge, mutual support, and
+            coordinated responses during emergencies.</p>
+            
+            <p style="text-indent: 20px;">By leveraging the power of digital learning, Disaster Ready is committed to empowering communities to take
+            charge of their safety. Together, we can mitigate risks, reduce vulnerabilities, and save lives when it
+            matters most. Join us in our mission to make every municipality disaster-ready.</p>
+            
     </div>
     <div>
-        <h3 class="text-center mt-5 text-danger home-subtitle"><span>Distance Learning</span> for <span>Disaster Risk Reduction in Germany</span></h3>
+        <em>Book online training with our experienced instructors</em>
     </div>
-    <div><em>Only online training tailored for municipalities</em></div>
-    <div class="text-center my-4">
-        <h3 class="logo-font my-3">{{STANDART_DISCOUNT_PERCENTAGE}} <i class="bi bi-percent"></i> discount for purchusing online courses over &euro;{{ DISCOUNT_THRESHOLD }}!</h3>
+    <div class="container d-flex flex-wrap justify-content-center mt-5 mb-4 gap-2">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Mike Voss</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Flood Events Vulnerability Analysis</h6>
+                <p class="card-text">Analyzing flood risks, assessing vulnerabilities, and developing strategies for
+                    effective disaster resilience and response</p>
+                <a href="#" class="card-link">Biography</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Loenardo Urban</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Societal Resilience and Heat Waves</h6>
+                <p class="card-text">Specializes in heat wave resilience, energy systems adaptation, and public safety
+                    strategies.</p>
+                <a href="#" class="card-link">Biography</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Martina Storm</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Humanitarian Aid and Logistics</h6>
+                <p class="card-text">Focuses on storm weather impacts, climate modeling, and sustainable urban planning
+                    solutions.</p>
+                <a href="#" class="card-link">Biography</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Miroslava Burn, PhD</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Health Impacts of Forest Fires</h6>
+                <p class="card-text">Expert in forest fire mitigation, ecological restoration, and wildfire community
+                    preparedness.</p>
+                <a href="#" class="card-link">Biography</a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <em class="mt-4">Disaster communication - some of recent public events</em>
+    </div>
+    <div class="mt-5">
+        <ul>
+            <li><a
+                    href="https://www.geo.fu-berlin.de/geog/fachrichtungen/anthrogeog/katastrophenforschung/aktuelles/news/20221006_Tagung_Transformationen-im-Bevoelkerungsschutz_de.html">Transformationen
+                    im Bevölkerungsschutz!?</a></li>
+            <li><a href="https://www.geo.fu-berlin.de/geog/fachrichtungen/anthrogeog/katastrophenforschung/aktuelles/news/20241204_INCREASE_Projekt_Meeting_Wuerzburg.html">INCREASE - Inklusives und integriertes Multi-Gefahren-Risikomanagement und Freiwilligenengagement zur Erhöhung sozialer Resilienz im Klimawandel</a></li>
+        
+            <li><a href="https://www.geo.fu-berlin.de/geog/fachrichtungen/anthrogeog/katastrophenforschung/aktuelles/news/20240726_RC21_Santiago.html">The politics and spaces of encounters: advancing dialogues between and within the Global North and the Global South</a></li>
+        </ul>
+    </div>
+
+
+    <div class="text-center text-danger my-4">
+        <h5 class="logo-font my-3">{{STANDART_DISCOUNT_PERCENTAGE}} <i class="bi bi-percent"></i> discount for
+            purchusing online courses over &euro;{{ DISCOUNT_THRESHOLD }}!</h6>
     </div>
 </div>
-{% endblock %}
-
+{% endblock %} 
