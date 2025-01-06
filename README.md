@@ -191,6 +191,13 @@ Considering the IC-nature of the project, the basic philosopy aplied in this pro
 - [MD 1](docs/images/Order%20Confirmation%20MD.png); [MD 2](docs/images/Order%20Confirmation%20MD%202.png); [MD 3](docs/images/Order%20Confirmation%20MD%203.png);
 - [LG 1](docs/images/Order%20Confirmation%20LG.png); [LG 2](docs/images/Order%20Confirmation%20LG%201.png);
 
+### Testing Checkout Unlocking Paid Courses
+
+- [Locked Course](docs/images/locked%20course.png); 
+- [Unlocked Course](docs/images/unlocked%20course.png);
+- [Unlocked Course Indicator](docs/images/unlocked%20course.png) - "Add this course to the bag" changes color and text to "Course Unlocked"
+
+
 ### Testing Form Data Cashing Template
 [Terminal](docs/images/form_data_cashing_terminal.png); [Template](docs/images/form_data_cashing_template.png);
 
@@ -267,8 +274,6 @@ The refactored code includes two templates: *add_products* and *add_material*:
 
 #### DELETE
 - [delete products form - **delete courses and materials - delete success**](docs/images/products%20form/delete%20course%20success%20button.png);
-
-
 
 
 ### About page
