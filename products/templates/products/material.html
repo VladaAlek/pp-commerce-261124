@@ -5,22 +5,9 @@
 <div class="container mt-5">
     <div class="text-center mb-4">
         <h1 class="display-5">{{ category.name }}s Materials</h1>
-        <div class="text-center flex-row head-section">
-            <div class="bg-danger material-logo-div">
-                <div class="col-3 my-1">
-                    {% if item.category.logo %}
-                    <img class="w-100" src="{{ item.category.logo.url }}" alt="{{ item.category.name}}"
-                        class="img-fluid ms-3" style="max-height: 30px;">>
-                    {% else %}
-                    <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.category.name}}"
-                        class="img-fluid ms-3" style="max-height: 30px;">
-                    {% endif %}
-                </div>
-            </div>
-            <div id="materials-subtitle-field">
-                <p class="lead text-muted text-white p-3 fs-4">{{ category.short_description }}</p>
-            </div>
-        </div>
+        <div id="materials-subtitle-field">
+            <p class="lead text-muted text-white fs-4 mb-0"><em>{{ category.short_description }}</em></p>
+        </div>       
         <form class="form" action="{% url 'add_to_bag' category.id %}" method="POST">
             {% csrf_token %}
             <div class="row">

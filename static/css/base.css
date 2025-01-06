@@ -63,6 +63,10 @@ body {
     text-align: center;
 }
 
+.material-logo-div {
+   
+}
+
 
 /* overlay for the categories page */
 
@@ -121,8 +125,13 @@ body {
 
   #materials-subtitle-field {
     background-color: black;
-    /*width: 50%;
-    margin: 0 auto;*/
+    width: 100%;
+    min-height: 70px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .material-buttons {
