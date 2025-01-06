@@ -232,6 +232,7 @@ Considering the IC-nature of the project, the basic philosopy aplied in this pro
 
 ### Products Form - Initial Development
 
+#### ADD
 - [Add products form - **Only category model values visible**](docs/images/products%20form/add%20products%20form%20only%20category%20model%20values.png);
 - [Add products form - **Category and Material models values visible**](docs/images/products%20form/add%20products%20form%20category%20and%20material%20models%20values%20.png) the shortcomming: short description value present two times;
 - [Add products form - **Category and Material models values visible**](docs/images/products%20form/add%20products%20material%20title.png) refactored code: short_description replaced with material_title value;
@@ -245,18 +246,28 @@ Considering the IC-nature of the project, the basic philosopy aplied in this pro
 - [Add products form - **rendering added course in categories template**](docs/images/products%20form/added%20course%20rendered%20in%20cagetories%20template.png);
 - [Add products form - **rendering added course in materials template**](docs/images/products%20form/added%20course%20rendered%20in%20materials%20template.png);
 - [Add products form - **Product management link in navbar functional**](docs/images/products%20form/Product%20management%20link%20in%20navbar%20functional.png);
-- [Edit products form - **rendering edit courses and materials**](docs/images/products%20form/edit%20courses%20and%20materials.png);
-- [Edit  products form - **edit courses and materials - success 1**](docs/images/products%20form/edit%20courses%20and%20materials%20success.png);
-- [Edit  products form - **edit courses and materials - success 2**](docs/images/products%20form/edit%20courses%20and%20materials%20success%202.png);
-- [Edit  products form - **edit courses and materials - error**](docs/images/products%20form/edit%20courses%20and%20materials%20error.png);
 
-### Products Form - After Refactoring code
+### Products Form - Code After Refactoring 
 
 The initial view *add_product* didnt allow to add the learning material content to the newly formed course in one template [**image**](docs/images/products%20form/bug%20adding%20course%20and%20material%20simultaniously%20impossible.png) because it was not created yet!
 The refactored code includes two templates: *add_products* and *add_material*:
 - [Add courses form - success](docs/images/products%20form/successfull%20added%20online%20course.png);
 - [Add learning material form - success](docs/images/products%20form/successfull%20added%20online%20material.png);
 - We could't made the forms failing, hence the 'error messages' have not been tested.
+
+
+#### EDIT
+- [Edit products form - **rendering edit courses and materials**](docs/images/products%20form/edit%20courses%20and%20materials.png);
+- [Edit products form - **edit courses and materials - success 1**](docs/images/products%20form/edit%20courses%20and%20materials%20success.png);
+- [Edit products form - **edit courses and materials - success 2**](docs/images/products%20form/edit%20courses%20and%20materials%20success%202.png);
+- [Edit products form - **edit courses and materials - error**](docs/images/products%20form/edit%20courses%20and%20materials%20error.png);
+- [Edit products form - **edit courses and materials - edit button 1**](docs/images/products%20form/test%20update%20course%20success%20button.png);
+- [Edit products form - **edit courses and materials - edit button 2**](docs/images/products%20form/test%20update%20course%20success%20button%202.png);
+- [Edit products form - **edit courses and materials - success**](docs/images/products%20form/test%20update%20course%20success%20button.png);
+
+#### DELETE
+- [delete products form - **delete courses and materials - delete success**](docs/images/products%20form/delete%20course%20success%20button.png);
+
 
 
 
