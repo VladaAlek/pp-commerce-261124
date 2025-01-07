@@ -33,7 +33,7 @@ CSRF_TRUSTED_ORIGINS = [
 ]
 
 ALLOWED_HOSTS = [
-    '8000-coral-harrier-tfa79yqc0yt.ws-eu117.gitpod.io',
+    '8000-coral-harrier-tfa79yqc0yt.ws-eu117.gitpod.io', '8000-coral-harrier-tfa79yqc0yt.ws-eu117.gitpod.io/'
 ]
 
 
