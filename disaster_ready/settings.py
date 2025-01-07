@@ -33,9 +33,10 @@ CSRF_TRUSTED_ORIGINS = [
 ]
 
 ALLOWED_HOSTS = [
-    'disaster-ready-germany-047aa8cb5814.herokuapp.com', '8000-coral-harrier-tfa79yqc0yt.ws-eu117.gitpod.io/'
+    'disaster-ready-germany-047aa8cb5814.herokuapp.com', 
+    'localhost',
+    '8000-coral-harrier-tfa79yqc0yt.ws-eu117.gitpod.io'
 ]
-
 
 # Application definition
 
