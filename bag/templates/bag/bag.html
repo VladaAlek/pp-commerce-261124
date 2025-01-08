@@ -63,16 +63,15 @@
                     {% endfor %}
                     <tr>
                         <td colspan="5" class="pt-5 text-end">
-                            <h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
-                            <h6>Discount: ${{ discount|floatformat:2 }}</h6>
-                            <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
+                            <h6><strong>Bag Total: <i class="bi bi-currency-euro"></i>{{ total|floatformat:2 }}</strong></h6>
+                            <h6>Discount: <i class="bi bi-currency-euro"></i>{{ discount|floatformat:2 }}</h6>
+                            <h4 class="mt-4"><strong>Grand Total: <i class="bi bi-currency-euro"></i>{{ grand_total|floatformat:2 }}</strong></h4>
                             {% if discount_delta > 0 %}
                             <p class="mb-1 text-danger">
                                 You could get <strong>{{ STANDART_DISCOUNT_PERCENTAGE }}</strong> <i
-                                    class="fa-solid fa-percent"></i> discount by spending just over <strong><i
-                                        class="fa-solid fa-dollar-sign"></i>
+                                    class="fa-solid fa-percent"></i> discount by spending just over <strong><i class="bi bi-currency-euro"></i>
                                     {{ DISCOUNT_TRESHOLD }}</strong>! <br>
-                                It takes only <strong><i class="fa-solid fa-dollar-sign"></i>
+                                It takes only <strong><i class="bi bi-currency-euro"></i>
                                     {{ discount_delta }}</strong> to reach this limit!
                             </p>
                             {% endif %}
