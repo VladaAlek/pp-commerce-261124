@@ -300,7 +300,18 @@ EXTERNAL SOURCES:
 
 4
 
-- Organisation Logo visible in the navbar
+- Organisation's Logo visible in the navbar
+
+5 
+
+- Originally, confirmation email was not delivered to the user / system doesn't raise anny error in the terminal
+- After deployment, it was possible to send **real confimation letters** [conf itsector success](docs/images/confirmation_mails/conf%20itsector%20success.png) and [conf itsector email](docs/images/confirmation_mails/conf%20itsector%20email.png);
+However, it was possible only after the registration was verified in the superuser's admin panel: [email primary and verified](docs/images/confirmation_mails/email%20primary%20and%20verified.png);
+
+*Registration Bugs Unresolved*
+
+Noticably, all emails have the primary status, which should not be the case. However, they don't have access to the management panel.
+Additionally, the regular registration flow was interrupted by this template: [conf itsector email bug](docs/images/confirmation_mails/conf%20itsector%20email%20bug.png). On the backend side, the accounts were formed only partially successvuly becauese the action in the admin panel was neccessary. Besides, the registration process was not visible on the fronend side.
 
 
 #### Unresolved Bug Issues
@@ -313,9 +324,7 @@ EXTERNAL SOURCES:
 
 - [Bug navbar links blocked when signin open](docs/images/bugs/bug_navbar_links_blocked_when_signin_open.png);
 
-3 
 
-- Confirmation email not delivered to the user / system doesn't raise anny error in the terminal
 
 
 ### Image's Sources
