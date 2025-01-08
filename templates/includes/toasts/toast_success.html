@@ -8,7 +8,7 @@
     <div class="toast-body bg-white">
         {{ message }}
     </div>
-    <div class="col-3 my-1">
+    <div class="col-3 my-1 ms-2" style="height: 30px; width: 30px;">
         {% if item.category.logo %}
         <img class="w-100" src="{{ item.category.logo.url }}" alt="{{ item.category.name}}">
         {% else %}
