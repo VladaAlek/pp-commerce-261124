@@ -278,8 +278,11 @@ The refactored code includes two templates: *add_products* and *add_material*:
 
 ### About page
 
-- [LG](docs/images/about_page_lg.png);
+- [Test](docs/images/error%20404%20documentation.png);
 
+### Error Page
+
+- [delete products form - **delete courses and materials - delete success**](docs/images/products%20form/delete%20course%20success%20button.png);
 
 
 ### Bugs
@@ -298,11 +301,16 @@ EXTERNAL SOURCES:
     - [Stack Overflow](https://stackoverflow.com/questions/67215329/why-am-i-getting-error-404-in-my-django-project-when-everything-seems-correct "Stack Overflow.com");
     - [Stack Overflow](https://stackoverflow.com/questions/68050309/why-do-i-get-an-404-error-in-part-4-of-the-django-tutorial-writing-you-first-dj "Stack Overflow.com");
 
-4
+4 
 
 - Organisation's Logo visible in the navbar
 
 5 
+
+minor repositioning of the logo in the toast messages
+[Original](docs/images/bugs/style%20images%20in%20the%20success%20messages.png);
+[Refactored](docs/images/bugs/style%20images%20in%20the%20success%20messages%20refactored.png);
+
 
 - Originally, confirmation email was not delivered to the user / system doesn't raise anny error in the terminal
 - After deployment, it was possible to send **real confimation letters** [conf itsector success](docs/images/confirmation_mails/conf%20itsector%20success.png) and [conf itsector email](docs/images/confirmation_mails/conf%20itsector%20email.png);
