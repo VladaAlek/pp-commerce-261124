@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: https://disaster-ready-germany-047aa8cb5814.herokuapp.com/sitemap.xml
