@@ -234,8 +234,39 @@ municipal workers with the latest skills for tackling natural disasters in Germa
                 {% endwith %}
             {% endfor %}
         </div>
-    {% endif %}
+  {% endif %}
 
+  {% block footerblock %}
+  <footer class="container-fluid py-5">
+    <div class="container">
+      <section class="footer">
+        <div class="row">
+          <div class="col-12 text-center mb-4">
+            <h2 class="text-uppercase">Stay in touch:</h2>
+            <hr class="mx-auto w-25">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6 mb-4 mb-md-0">
+            <h3>Social</h3>
+            <p>Keep up to date with all our latest offers</p>
+            <a href="#" target="_blank" class="text-decoration-none" rel="nofollow">
+              <i class="fab fa-facebook-square"></i> Follow us on Facebook!
+            </a>
+          </div>
+          <div class="col-12 col-md-6">
+            <h2>Subscribe!</h2>
+            <p>Get exclusive offers and discount codes by subscribing to our monthly newsletter</p>
+            <!-- Mailchimp signup form here -->
+          </div>
+        </div>
+      </section>
+    </div>
+  </footer>
+  
+  {% endblock %}
+    
+    
   {% block postloadjs %}
   <script>
     const toastElList = document.querySelectorAll('.toast')
