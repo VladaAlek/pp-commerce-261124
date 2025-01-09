@@ -1,10 +1,11 @@
 # Disaster Ready
 
 
-This e-commerce project is focused on providing a user with learning material in the **Disaster Risk Reduction** field. It is an increasingly popular, multidisciplinary research area between natural and social sciences. Its multi-faceted results are implemented in everyday confrontations with natural hazards by numerous practitioners across the globe. The need to disseminate practical and theoretical knowledge about **DRR** grows with rapid changes in the natural and social environment. Hence, there are numerous potential users of this course. For practical reasons, this time the project is limited to German-speaking countries *German, Austria and Switzerland*, the three countries that are exposed to *floods*, *stormy weather conditions*, *forest fires*, and *heat weaves* as the four most relevant natural disasters in this part of Europe.
+This e-commerce project is focused on providing a user with learning material in the **Disaster Risk Reduction** field. It is an increasingly popular, multidisciplinary research area between natural and social sciences. Its multi-faceted results are implemented in everyday confrontations with natural hazards by numerous practitioners across the globe. The need to disseminate practical and theoretical knowledge about **DRR** grows with rapid changes in the natural and social environment. Hence, there are numerous potential users of this course. For practical reasons, this time, the project is limited to German-speaking countries *German, Austria and Switzerland*, the three countries that are exposed to *floods*, *stormy weather conditions*, *forest fires*, and *heat weaves* as the four most relevant natural disasters in this part of Europe.
 
-
-Find out more about Disaster Ready E-Commerce Busines Strategy here: 
+Considering that the main users of the website's services will be municipality workers, this e-commerce platform is based on B2B principles.
+When customers pay for specific services, they get an unlimited approach. In this stage of development, the option of offering a test to the user is indicated but not fully implemented. The same statement applies to the foreseen feature of booking consulting services from team members. 
+Find out more about Disaster Ready E-Commerce Business Strategy here:  
 
 - [1](docs/images/busines_strategy/0001.png);
 - [2](docs/images/busines_strategy/0002.png);
@@ -13,6 +14,13 @@ Find out more about Disaster Ready E-Commerce Busines Strategy here:
 
 ### Type of commercial activity
 
+## E-commerce Marketing Strategy
+
+### Facebook Busines Page
+
+- [Link 09.01.2025](https://www.facebook.com/profile.php?id=61571470064318 "Disaster Ready Germany Facebook Busines Page")
+- [Facebook Busines Page Screenshot](docs/images/facebook%20busines%20page.png);
+
 ### Sites main structure
  - log in/log out - see more in the Authentication section below
  - navigation bar
@@ -20,13 +28,13 @@ Find out more about Disaster Ready E-Commerce Busines Strategy here:
  - landing page
  - all courses view
  - content of individual courses
- - course content managment as admin - See section Superuser's features bellow
+ - - course content management as Admin - See section Superuser's features below
  - profile page
  - money transfer component
 
 ## Navigation
 
-here are documented some of the major **navigation possibilities** provided to final user
+here are documented some of the major **navigation possibilities** provided to the final user
 
 - [Index Page](docs/images/navigation/navigation%20to%20index%20page.png);
 - [All Courses 1](docs/images/navigation/navigation%20all%20courses%20view%20LG.png);
@@ -41,7 +49,7 @@ here are documented some of the major **navigation possibilities** provided to f
 ## Superuser's features
 
 - Superuser can enter the **admin page**. There, it can monitor or adjust the 1. user's status, 2. content of the courses, 3. payment/ordering proccess. The CRUD operations are present.
-- Superuser has acces to the **product form** in which it can execute CRUD operations
+- Superuser has access to the **product form** in which it can execute CRUD operations
 
 ### Authentication
 - django-allauth==0.54.0
@@ -50,13 +58,13 @@ here are documented some of the major **navigation possibilities** provided to f
 - [testing "My Account" section 2](docs/images/loginTesting-2.png);
 - [testing "My Account" section 3](docs/images/loginTesting-3.png);
 
-**new feature:** only authenticated users are allowed to have access to page with the learning materials
+**new feature:** Only authenticated users are allowed to have access to a page with the learning materials
 
 ### Exploring and Selecting/Managing Courses
 
 Being informed about the courses offered in this project is crucial. Upon landing on the index page, the user can click the Explore Courses button. There, it can learn more about the basic structure of the *individual courses*. The basic logos are shown in the head section so that the particular courses are visually different from others. By clicking the Explore Course button, the page rendering the content of each course's *learning material* is visible. It is a combination of textual material and PDF and video material. In this stage of development, only the two latter are hidden from the user until the course fee is paid.  *Add this course to the bag" is centrally located and activates the *Bag* view.
 
-This page offers a tabular overview of selected courses, their quantity, price, and discount (if activated). By wish, the *remove* link allows the User to eliminate the undesired course from the bag. The logos of individual courses serve as links, too. Finally, the *Keep Exploring* link invites users to learn more about other courses and eventually add them to the shopping basket. The *Secure Checkout* button is at disposal to finalise the shopping activities.
+This page offers a tabular overview of selected courses, their quantity, price, and discount (if activated). By wish, the *remove* link allows the User to eliminate the undesired course from the bag. The logos of individual courses serve as links, too. Finally, the *Keep Exploring* link invites users to learn more about other courses and eventually add them to the shopping basket. button is available to finalize the shopping activities.
 
 The *Checkout page* consists of two major sections: 1: Order Summary, which provides the overview of the User's shopping selection, and 2: Checkout Form, which makes it possible for the User to enter personal data. They serve both the site administrator and the User as a confirmation that the digital learning service is provided to the desired customer. In cases where the User is a *Registered User*, most fields are prepopulated with the User's account data. The idea is to improve the UI. The same goal is achieved when the User selects the *Save this delivery information to my profile* checkout field. Not less important is that even in this stage, the User has the *Adjust Bag* at its disposal. The last feature is the self-explanatory outcome. The essential part of the form field is the payment window dedicated to credit card data.
 
@@ -64,14 +72,12 @@ The *Checkout page* consists of two major sections: 1: Order Summary, which prov
 ### *Seach Products Options in Navbar*  this task is not realised as it is a secondary project's feature
 
 ### Discount
-If more then 1500 euro are spent, 10% discount is offered on the index page. If this option is acitaved, the reduced price is visible in navabar, in the Shopping Bag anc Checkout templates, shopping confirmation details
+If more than 1500 euros are spent, a 10% discount is offered on the index page. If this option is activated, the reduced price is visible in Navabar, in the Shopping Bag and Checkout templates, shopping confirmation details.
 
 
-### Fotter
-
-- The *Footer* is present on majority pages, with the exception of the *Checkout* and *Form Page*. In the case of the latter, significan additional styling is required, which was not possible shortly before the website's release.
-This features contains the link to the *Facebook Busines Page* and subscription *Mailchimp*
-- Remark: Footer requires intensive additional styling
+The Footer is present on minority pages, with the exception of the Checkout and Form Page. In the latter, significant additional styling is required, which was impossible shortly before the website's release.
+This feature contains the link to the *Facebook Business Page* and subscription *Mailchimp*
+- Remark: The Footer requires intensive additional styling
 
 - [footer general view LG](docs/images/footer%20general%20view%20LG.png)
 - [footer general view SM](docs/images/footer%20general%20view%20SM.png)
@@ -96,7 +102,7 @@ This features contains the link to the *Facebook Busines Page* and subscription 
 
 #### Mockups
 
-Considering the IC-nature of the project, the basic philosopy aplied in this project is to delivere uniform, tabelar structure of how the data for individual courses or learning material is presented. The **general approach** is presented bellow:
+Considering the EC-nature of the project, the basic philosophy applied in this project is to deliver a uniform, tabular structure of how the data for individual courses or learning material is presented.
 
 - [SM](docs/images/mockup/mockup_SM-1.png);
 - [MD](docs/images/mockup/mockup_MD-1.png);
@@ -106,7 +112,10 @@ Considering the IC-nature of the project, the basic philosopy aplied in this pro
  - Python 3.2.0
  - Django 3.2.25
  - Bootstrap 5
- - Stripe
+ - Stripe - for secure finacial transactions
+ - Mailchimp - for User's subscriptions and mails services
+ - Amazon AWS S3 - to storage video data
+ - Heroku - to deploy the project
 
 ### Software Resources Used
 
@@ -116,23 +125,20 @@ Considering the IC-nature of the project, the basic philosopy aplied in this pro
 
 
 
-
-
-
 ## Software Resources Used
 
 - Git Version control was managed using Git, with commits executed via the Gitpod terminal and pushes directed to GitHub.
 - GitHub The project's code is stored on GitHub after being pushed from Git.
-- "Projects", "Milestones" and "Issues" functions inbeded in GitHub utilized to apply AGILE concepts
+- "Projects", "Milestones" and "Issues" functions embedded in GitHub utilised to apply AGILE concepts
 - [HEROKU](https://www.heroku.com/ "HEROKU cloud platform") used to deploy and manage the applications.
 
 ## Deployment
 
 - it was necessary to reestablish IDE (Gitpod) - [Django](docs/images/django_requirements_21_12_24.png); [Pillow](docs/images/pillow_requirements_21_12_24.png); [Allauth](docs/images/allauth_requirements_21_12_24.png);
-- 28. 12. 2024. Gitpod IDE became unfuctional - unpushed changes lost and reinstalling of requirements and reestablishment of the settings parameters was neccessary
-- 05. 01. 2025.  Gitpod IDE became unfuctional - new workspace opened, which might affect some features becauese it was not enough time to test and document all project's elements again
+- 28. 12. 2024. Gitpod IDE became unfunctional - unpushed changes were lost and reinstalling requirements and re-establishment of the settings parameters was necessary
+- 05. 01. 2025. Gitpod IDE became unfunctional - a new workspace opened, which might affect some features because there was not enough time to test and document all project's elements again
 
-### Testing Responsivness
+### Testing Responsiveness
 #### All Courses
  - testing ["Categories Page" XL and L](docs/images/testing_courses_lg.png);
  - testing [ "Categories Page" M](docs/images/testing_courses_md.png);
@@ -168,12 +174,12 @@ Considering the IC-nature of the project, the basic philosopy aplied in this pro
 ### Testing Toasts
 
 - [Add Course Toast](docs/images/Toast_Success_Add.png); [Add Course Toast SM](docs/images/toast_success_sm.png)
-- [Add Course Toast Bug](docs/images/Toast_Success_Add_Bug.png) Bad user experiance noticed: add course messege emerges multiple times
-- [Add Course Refactored Bug](docs/images/Toast_Warning_Twice.png) Good user experince requires to inform the user that he cannot add the same product two times
+- [Add Course Toast Bug](docs/images/Toast_Success_Add_Bug.png) Bad user experience noticed: add course message emerges multiple times
+- [Add Course Refactored Bug](docs/images/Toast_Warning_Twice.png) Good user experience requires informing the user that he cannot add the same product two times
 - [Warning Course Toast SM](docs/images/toast_warning_sm.png)
 - [Delete Course](docs/images/Toast_Warning_Delete.png); [Delete Course Toast SM](docs/images/toast_allert_sm.png)
 - message.error in the delete view was not tested
-- [external source material -seaching for the ID value in the Courses](https://stackoverflow.com/questions/59738782/check-if-id-in-string-exists-in-another-list)
+- [external source material - searching for the ID value in the Courses](https://stackoverflow.com/questions/59738782/check-if-id-in-string-exists-in-another-list)
 
 ### Testing Checkout Models and Admin Page
 - [Checkout Admin](docs/images/admin_order_view.png)
@@ -181,7 +187,7 @@ Considering the IC-nature of the project, the basic philosopy aplied in this pro
 - [Checkout Template Incomplete Rendering](docs/images/check_out_template_incomplete.png)
 - [Checkout Template Complete Rendering](docs/images/check_out_template_complete.png)
 
-### Checkout Responsivnes
+### Checkout Responsiveness
 - [Checkout SM 1](docs/images/check_out_template_SM_1.png); [Checkout SM 2](docs/images/check_out_template_SM_2.png)
 - [Checkout MD 1](docs/images/check_out_template_MD_1.png); [Checkout MD 2](docs/images/check_out_template_MD_2.png)
 - [Checkout LG](docs/images/check_out_template_LG.png)
@@ -213,7 +219,7 @@ Considering the IC-nature of the project, the basic philosopy aplied in this pro
 
 - [testing](docs/images/checkout_3d_security.png)
 
-### Testing Checkout Success Template Responsivness
+### Testing Checkout Success Template Responsiveness
 - [SM 1](docs/images/Order%20Confirmation%20SM.png); [SM 2](docs/images/Order%20Confirmation%20SM%202.png); [SM 3](docs/images/Order%20Confirmation%20SM%203.png);
 - [MD 1](docs/images/Order%20Confirmation%20MD.png); [MD 2](docs/images/Order%20Confirmation%20MD%202.png); [MD 3](docs/images/Order%20Confirmation%20MD%203.png);
 - [LG 1](docs/images/Order%20Confirmation%20LG.png); [LG 2](docs/images/Order%20Confirmation%20LG%201.png);
@@ -268,13 +274,13 @@ Considering the IC-nature of the project, the basic philosopy aplied in this pro
 
 #### ADD
 - [Add products form - **Only category model values visible**](docs/images/products%20form/add%20products%20form%20only%20category%20model%20values.png);
-- [Add products form - **Category and Material models values visible**](docs/images/products%20form/add%20products%20form%20category%20and%20material%20models%20values%20.png) the shortcomming: short description value present two times;
+- [Add products form - **Category and Material models values visible**](docs/images/products%20form/add%20products%20form%20category%20and%20material%20models%20values%20.png) the shortcoming: short description value present two times;
 - [Add products form - **Category and Material models values visible**](docs/images/products%20form/add%20products%20material%20title.png) refactored code: short_description replaced with material_title value;
 - [Add products form - **Category and Material models values visible - upper part**](docs/images/products%20form/add%20products%20form%20category%20and%20material%20models%20values%20upper%20part.png);
 - [Add products form - **Category and Material models values visible - lower part**](docs/images/products%20form/add%20products%20form%20category%20and%20material%20models%20values%20lower%20part.png);
-- [Add products form - **Responsivness SM**](docs/images/products%20form/add%20products%20form%20SM.png);
-- [Add products form - **Responsivness MD**](docs/images/products%20form/add%20products%20form%20MD.png);
-- [Add products form - **Responsivness LG**](docs/images/products%20form/add%20products%20form%20LG.png);
+- [Add products form - **Responsiveness SM**](docs/images/products%20form/add%20products%20form%20SM.png);
+- [Add products form - **Responsiveness MD**](docs/images/products%20form/add%20products%20form%20MD.png);
+- [Add products form - **Responsiveness LG**](docs/images/products%20form/add%20products%20form%20LG.png);
 - [Add products form - **success message**](docs/images/products%20form/add%20products%20success.png);
 - [Add products form - **error message**](docs/images/products%20form/add%20products%20error.png);
 - [Add products form - **rendering added course in categories template**](docs/images/products%20form/added%20course%20rendered%20in%20cagetories%20template.png);
@@ -287,7 +293,8 @@ The initial view *add_product* didnt allow to add the learning material content 
 The refactored code includes two templates: *add_products* and *add_material*:
 - [Add courses form - success](docs/images/products%20form/successfull%20added%20online%20course.png);
 - [Add learning material form - success](docs/images/products%20form/successfull%20added%20online%20material.png);
-- We could't made the forms failing, hence the 'error messages' have not been tested.
+- We couldn't make the forms fail. Hence, the 'error messages' have not been tested.
+
 
 
 #### EDIT
@@ -330,7 +337,7 @@ EXTERNAL SOURCES:
 
 4 
 
-- Organisation's Logo visible in the navbar
+- The organisation's Logo is visible in the Navbar
 
 5 
 
@@ -339,14 +346,14 @@ minor repositioning of the logo in the toast messages
 [Refactored](docs/images/bugs/style%20images%20in%20the%20success%20messages%20refactored.png);
 
 
-- Originally, confirmation email was not delivered to the user / system doesn't raise anny error in the terminal
-- After deployment, it was possible to send **real confimation letters** [conf itsector success](docs/images/confirmation_mails/conf%20itsector%20success.png) and [conf itsector email](docs/images/confirmation_mails/conf%20itsector%20email.png);
+- Originally, the confirmation email was not delivered to the user/system doesn't raise any error in the terminal
+- After deployment, it was possible to send **real confirmation letters** [conf itsector success] [conf itsector success](docs/images/confirmation_mails/conf%20itsector%20success.png) and [conf itsector email](docs/images/confirmation_mails/conf%20itsector%20email.png);
 However, it was possible only after the registration was verified in the superuser's admin panel: [email primary and verified](docs/images/confirmation_mails/email%20primary%20and%20verified.png);
 
 *Registration Bugs Unresolved*
 
-Noticably, all emails have the primary status, which should not be the case. However, they don't have access to the management panel.
-Additionally, the regular registration flow was interrupted by this template: [conf itsector email bug](docs/images/confirmation_mails/conf%20itsector%20email%20bug.png). On the backend side, the accounts were formed only partially successvuly becauese the action in the admin panel was neccessary. Besides, the registration process was not visible on the fronend side.
+Noticeably, all emails have the primary status, which should not be the case. However, they don't have access to the management panel.
+Additionally, the regular registration flow was interrupted by this template: [conf itsector email bug](docs/images/confirmation_mails/conf%20itsector%20email%20bug.png). On the backend side, the accounts were formed only partially successfully because the action in the admin panel was necessary. Besides, the registration process was not visible on the frontend side.
 
 
 #### Unresolved Bug Issues
@@ -357,7 +364,7 @@ Additionally, the regular registration flow was interrupted by this template: [c
 
 2 
 
-- [Bug navbar links blocked when signin open](docs/images/bugs/bug_navbar_links_blocked_when_signin_open.png);
+- [Bug navbar links blocked when sign in open](docs/images/bugs/bug_navbar_links_blocked_when_signin_open.png);
 
 
 
@@ -370,12 +377,7 @@ Keep this as a template
 [Next Only](docs/images/testing_allauth.png); [Prev Next](docs/images/testing_allauth.png); 
 
 ## Important Note
- - [Shopping Bag](https://github.com/users/VladaAlek/projects/16/) project not visible in the project`s repo
+ - [Shopping Bag](https://github.com/users/VladaAlek/projects/16/) **Project** not visible in the project`s repo
 
 
-## E-commerce Marketing Strategy
-
-### Facebook Busines Page
-
-- [Link 09.01.2025](https://www.facebook.com/profile.php?id=61571470064318 "Disaster Ready Germany Facebook Busines Page")
-- [Facebook Busines Page Screenshot](docs/images/facebook%20busines%20page.png);
+**Acknowledgements:** Oisin, Thomas, Rebecca, Sarah, Roman, Holly
