@@ -58,7 +58,7 @@
                 </div>
                 <!-- Subtotal -->
                 <div class="col-3 text-end">
-                    <p class="my-0">&#8364{{ item.product.price | floatformat:2 }}</p>
+                    <p class="my-0">&#8364;{{ item.product.price | floatformat:2 }}</p>
                 </div>
             </div>
             {% endfor %}
@@ -70,9 +70,9 @@
                     <p class="my-0">Grand Total:</p>
                 </div>
                 <div class="col-3">
-                    <p class="my-0">&#8364{{ total | floatformat:2 }}</p>
-                    <p class="my-0">&#8364{{ discount | floatformat:2 }}</p>
-                    <p class="my-0"><strong>&#8364{{ grand_total | floatformat:2 }}</strong></p>
+                    <p class="my-0">&#8364;{{ total | floatformat:2 }}</p>
+                    <p class="my-0">&#8364;{{ discount | floatformat:2 }}</p>
+                    <p class="my-0"><strong>&#8364;{{ grand_total | floatformat:2 }}</strong></p>
                 </div>
             </div>
         </div>
@@ -135,7 +135,7 @@
                         <span class="icon">
                             <i class="fas fa-exclamation-circle"></i>
                         </span>
-                        <span>Your card will be charged <strong>&#8364{{ grand_total | floatformat:2 }}</strong></span>
+                        <span>Your card will be charged <strong>&#8364;{{ grand_total | floatformat:2 }}</strong></span>
                     </p>
                 </div>
             </form>
