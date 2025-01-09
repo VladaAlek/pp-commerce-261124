@@ -349,5 +349,9 @@ Keep this as a template
  - [Shopping Bag](https://github.com/users/VladaAlek/projects/16/) project not visible in the project`s repo
 
 
+## E-commerce Marketing Strategy
 
-https://stackoverflow.com/questions/67215329/why-am-i-getting-error-404-in-my-django-project-when-everything-seems-correct
+### Facebook Busines Page
+
+- [Link 09.01.2025](https://www.facebook.com/profile.php?id=61571470064318 "Disaster Ready Germany Facebook Busines Page")
+- [Facebook Busines Page Screenshot](docs/images/facebook%20busines%20page.png);
