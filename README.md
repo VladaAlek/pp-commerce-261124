@@ -9,6 +9,7 @@ This e-commerce project is focused on providing a user with learning material in
 ### Sites main structure
  - log in/log out - see more in the Authentication section below
  - navigation bar
+ - footer
  - landing page
  - all courses view
  - content of individual courses
@@ -29,7 +30,6 @@ here are documented some of the major **navigation possibilities** provided to f
 - [Individual Course - Structure](docs/images/navigation/navigation%20to%20individual%20course%20structure%20page.png);
 - [Individual Course - Content](docs/images/navigation/);
 
-- **TODO** document all links by searching the link tags in templates
 
 ## Superuser's features
 
@@ -44,7 +44,7 @@ here are documented some of the major **navigation possibilities** provided to f
 - [testing "My Account" section 3](docs/images/loginTesting-3.png);
 
 
-### Exploring and Selecting/Manageing Courses
+### Exploring and Selecting/Managing Courses
 
 Being informed about the courses offered in this project is crucial. Upon landing on the index page, the user can click the Explore Courses button. There, it can learn more about the basic structure of the *individual courses*. The basic logos are shown in the head section so that the particular courses are visually different from others. By clicking the Explore Course button, the page rendering the content of each course's *learning material* is visible. It is a combination of textual material and PDF and video material. In this stage of development, only the two latter are hidden from the user until the course fee is paid.  *Add this course to the bag" is centrally located and activates the *Bag* view.
 
@@ -56,6 +56,14 @@ The *Checkout page* consists of two major sections: 1: Order Summary, which prov
 If more then 1500 euro are spent, 10% discount is offered on the index page. If this option is acitaved, the reduced price is visible in navabar, in the Shopping Bag anc Checkout templates, shopping confirmation details
 
 
+### Fotter
+
+- The *Footer* is present on majority pages, with the exception of the *Checkout* and *Form Page*. In the case of the latter, significan additional styling is required, which was not possible shortly before the website's release.
+This features contains the link to the *Facebook Busines Page* and subscription *Mailchimp*
+- Remark: Footer requires intensive additional styling
+
+- [footer general view LG](docs/images/footer%20general%20view%20LG.png)
+- [footer general view SM](docs/images/footer%20general%20view%20SM.png)
 
 ### Design Proces
 
