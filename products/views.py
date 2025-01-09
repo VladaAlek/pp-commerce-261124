@@ -33,7 +33,7 @@ def individual_category(request, category_id):
     return render(request, 'products/individual_category.html', context)
 
     
-
+@login_required
 def category_detail(request, category_id):
     """ A view to show the materials in a specific category """
     
@@ -50,7 +50,7 @@ def category_detail(request, category_id):
 
     return render(request, 'products/material.html', context)
 
-@login_required
+
 def add_course(request):
     """ Add a category/course to the store """
     category_form = CategoryForm()
@@ -76,7 +76,7 @@ def add_course(request):
 
     return render(request, template, context)
 
-@login_required
+
 def add_material(request, category_id):
     """ Add a material to the online course """
     if not request.user.is_superuser:
@@ -107,7 +107,7 @@ def add_material(request, category_id):
 
     return render(request, template, context)
 
-@login_required
+
 def edit_course(request, category_id):
     """ Edit a course and its materials in the store """
     if not request.user.is_superuser:
@@ -140,7 +140,7 @@ def edit_course(request, category_id):
 
     return render(request, template, context)
 
-@login_required
+
 def delete_course(request, category_id):
     """ Delete a course from the store """
 
