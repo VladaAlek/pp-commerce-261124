@@ -50,6 +50,7 @@ here are documented some of the major **navigation possibilities** provided to f
 - [testing "My Account" section 2](docs/images/loginTesting-2.png);
 - [testing "My Account" section 3](docs/images/loginTesting-3.png);
 
+**new feature:** only authenticated users are allowed to have access to page with the learning materials
 
 ### Exploring and Selecting/Managing Courses
 
@@ -58,6 +59,9 @@ Being informed about the courses offered in this project is crucial. Upon landin
 This page offers a tabular overview of selected courses, their quantity, price, and discount (if activated). By wish, the *remove* link allows the User to eliminate the undesired course from the bag. The logos of individual courses serve as links, too. Finally, the *Keep Exploring* link invites users to learn more about other courses and eventually add them to the shopping basket. The *Secure Checkout* button is at disposal to finalise the shopping activities.
 
 The *Checkout page* consists of two major sections: 1: Order Summary, which provides the overview of the User's shopping selection, and 2: Checkout Form, which makes it possible for the User to enter personal data. They serve both the site administrator and the User as a confirmation that the digital learning service is provided to the desired customer. In cases where the User is a *Registered User*, most fields are prepopulated with the User's account data. The idea is to improve the UI. The same goal is achieved when the User selects the *Save this delivery information to my profile* checkout field. Not less important is that even in this stage, the User has the *Adjust Bag* at its disposal. The last feature is the self-explanatory outcome. The essential part of the form field is the payment window dedicated to credit card data.
+
+
+### *Seach Products Options in Navbar*  this task is not realised as it is a secondary project's feature
 
 ### Discount
 If more then 1500 euro are spent, 10% discount is offered on the index page. If this option is acitaved, the reduced price is visible in navabar, in the Shopping Bag anc Checkout templates, shopping confirmation details
@@ -71,6 +75,11 @@ This features contains the link to the *Facebook Busines Page* and subscription 
 
 - [footer general view LG](docs/images/footer%20general%20view%20LG.png)
 - [footer general view SM](docs/images/footer%20general%20view%20SM.png)
+
+- [Mailchimp Success](docs/images/mailchimp%20success.png)
+- [Mailchimp All Emails](docs/images/mailchimp%20success%20audience.png)
+
+
 
 ### Design Proces
 
