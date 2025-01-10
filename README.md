@@ -16,6 +16,8 @@ Find out more about Disaster Ready E-Commerce Business Strategy here:
 
 ## E-commerce Marketing Strategy
 
+[Disaster Ready Germany SEO](https://drive.google.com/file/d/1z7MxM64oRXnc64d1jDV9fn02sncI2X6F/view?usp=drive_link "Disaster Ready Germany SEO")
+
 ### Facebook Busines Page
 
 - [Link 09.01.2025](https://www.facebook.com/profile.php?id=61571470064318 "Disaster Ready Germany Facebook Busines Page")
@@ -348,12 +350,11 @@ minor repositioning of the logo in the toast messages
 
 - Originally, the confirmation email was not delivered to the user/system doesn't raise any error in the terminal
 - After deployment, it was possible to send **real confirmation letters** [conf itsector success] [conf itsector success](docs/images/confirmation_mails/conf%20itsector%20success.png) and [conf itsector email](docs/images/confirmation_mails/conf%20itsector%20email.png);
-However, it was possible only after the registration was verified in the superuser's admin panel: [email primary and verified](docs/images/confirmation_mails/email%20primary%20and%20verified.png);
+However, it was possible only after the registration was verified in the superuser's admin panel: [email primary and verified](docs/images/confirmation_mails/email%20primary%20and%20verified.png). Later, the cases of [successful registration](docs/images/confirmation_mails/user%20registration%20confirmation%20email%20success.jpg);were documented, too. 
 
-*Registration Bugs Unresolved*
 
-Noticeably, all emails have the primary status, which should not be the case. However, they don't have access to the management panel.
-Additionally, the regular registration flow was interrupted by this template: [conf itsector email bug](docs/images/confirmation_mails/conf%20itsector%20email%20bug.png). On the backend side, the accounts were formed only partially successfully because the action in the admin panel was necessary. Besides, the registration process was not visible on the frontend side.
+During manual testing, a strange situation was noticed. Namely, all emails have the primary status, which should not be the case. However, they don't have access to the management panel.
+Additionally, the regular registration flow was interrupted by this template: [conf itsector email bug](docs/images/confirmation_mails/conf%20itsector%20email%20bug.png). On the backend side, the accounts were formed only partially successfully because the action in the admin panel was necessary. Besides, the registration process was not visible on the frontend side. 
 
 
 #### Unresolved Bug Issues

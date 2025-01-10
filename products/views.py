@@ -3,13 +3,10 @@ from .models import Category, Material
 from .forms import CategoryForm, MaterialForm
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth.decorators import user_passes_test
 from django.forms import modelformset_factory
 import random
 MaterialFormSet = modelformset_factory(Material, fields='__all__')
 
-def superuser_required(user):
-    return user.is_superuser
 
 def all_categories(request):
     """ A view to show all categories """
@@ -53,7 +50,7 @@ def category_detail(request, category_id):
 
     return render(request, 'products/material.html', context)
 
-@user_passes_test(superuser_required)
+
 def add_course(request):
     """ Add a category/course to the store """
     category_form = CategoryForm()
@@ -79,7 +76,7 @@ def add_course(request):
 
     return render(request, template, context)
 
-@user_passes_test(superuser_required)
+
 def add_material(request, category_id):
     """ Add a material to the online course """
     if not request.user.is_superuser:
@@ -110,7 +107,7 @@ def add_material(request, category_id):
 
     return render(request, template, context)
 
-@user_passes_test(superuser_required)
+
 def edit_course(request, category_id):
     """ Edit a course and its materials in the store """
     if not request.user.is_superuser:
@@ -143,7 +140,7 @@ def edit_course(request, category_id):
 
     return render(request, template, context)
 
-@user_passes_test(superuser_required)
+
 def delete_course(request, category_id):
     """ Delete a course from the store """
 
