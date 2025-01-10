@@ -350,7 +350,7 @@ minor repositioning of the logo in the toast messages
 
 - Originally, the confirmation email was not delivered to the user/system doesn't raise any error in the terminal
 - After deployment, it was possible to send **real confirmation letters** [conf itsector success] [conf itsector success](docs/images/confirmation_mails/conf%20itsector%20success.png) and [conf itsector email](docs/images/confirmation_mails/conf%20itsector%20email.png);
-However, it was possible only after the registration was verified in the superuser's admin panel: [email primary and verified](docs/images/confirmation_mails/email%20primary%20and%20verified.png). Later, the cases of [successful registration](docs/images/confirmation_mails/user%20registration%20confirmation%20email%20success.jpg);were documented, too. 
+However, it was possible only after the registration was verified in the superuser's admin panel: [email primary and verified](docs/images/confirmation_mails/email%20primary%20and%20verified.png). Later, the cases of [successful registration](docs/images/confirmation_mails/user%20registration%20confirmation%20email%20success.jpg);were documented, too. Due to the [technical problems](https://drive.google.com/file/d/1V25KQ9AYfhxnB9QPq1o-UwFOeAGrq7NS/view?usp=sharing "Gmail settings"), the Gmail account was not set to send confirmation mails. 
 
 
 During manual testing, a strange situation was noticed. Namely, all emails have the primary status, which should not be the case. However, they don't have access to the management panel.

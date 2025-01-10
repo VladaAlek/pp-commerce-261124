@@ -38,7 +38,8 @@
                 <div class="col-2 checkout-logo-container p-2">
                     <a href="{% url 'individual_category' category_id=item.product.id %}">
                         {% if item.product.logo %}
-                        <img class="w-100 checkout-logo-img" src="{{ item.product.logo.url }}" alt="{{ item.product.name }}">
+                        <img class="w-100 checkout-logo-img" src="{{ item.product.logo.url }}"
+                            alt="{{ item.product.name }}">
                         {% else %}
                         <img class="w-100" src="{{ MEDIA_URL }}logos/noimage.png" alt="{{ item.product.name }}">
                         {% endif %}
@@ -155,8 +156,8 @@
 {% endblock %}
 
 {% block postloadjs %}
-    {{ block.super }}
-    {{ stripe_public_key|json_script:"id_stripe_public_key" }}
-    {{ client_secret|json_script:"id_client_secret" }}
-    <script src="{% static 'checkout/js/stripe_elements.js' %}"></script>
+{{ block.super }}
+{{ stripe_public_key|json_script:"id_stripe_public_key" }}
+{{ client_secret|json_script:"id_client_secret" }}
+<script src="{% static 'checkout/js/stripe_elements.js' %}"></script>
 {% endblock %}
