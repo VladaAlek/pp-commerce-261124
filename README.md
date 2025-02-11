@@ -381,4 +381,4 @@ Keep this as a template
  - [Shopping Bag](https://github.com/users/VladaAlek/projects/16/) **Project** not visible in the project`s repo
 
 
-**Acknowledgements:** Oisin, Thomas, Rebecca, Sarah, Roman, Holly
+**Acknowledgements:** Oisin, Thomas, Rebecca, Sarah, Roman, Holly.
