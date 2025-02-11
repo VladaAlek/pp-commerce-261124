@@ -126,7 +126,6 @@ Considering the EC-nature of the project, the basic philosophy applied in this p
 - [Bootstrap](https://icons.getbootstrap.com/icons/currency-euro/ "Bootstrap")
 
 
-
 ## Software Resources Used
 
 - Git Version control was managed using Git, with commits executed via the Gitpod terminal and pushes directed to GitHub.
