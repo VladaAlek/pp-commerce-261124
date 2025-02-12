@@ -346,6 +346,16 @@ minor repositioning of the logo in the toast messages
 [Original](docs/images/bugs/style%20images%20in%20the%20success%20messages.png);
 [Refactored](docs/images/bugs/style%20images%20in%20the%20success%20messages%20refactored.png);
 
+6 
+
+The missing logo in the flood category caused broken links. After introducing an if item.product.log statement in the bag.html, the problem was solved. 
+Instead of the custom logo, the default logo has been rendered.
+
+[Missin Flood Logo in the "Shopping Bag"](docs/images/bugs/missing%20flood%20logo.png);
+[Missin Flood Logo in the "Checkout"](docs/images/bugs/missing%20flood%20logo%20checkout.png);
+
+
+
 
 - Originally, the confirmation email was not delivered to the user/system doesn't raise any error in the terminal
 - After deployment, it was possible to send **real confirmation letters** [conf itsector success] [conf itsector success](docs/images/confirmation_mails/conf%20itsector%20success.png) and [conf itsector email](docs/images/confirmation_mails/conf%20itsector%20email.png);
