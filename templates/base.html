@@ -124,14 +124,15 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
                 <li><a class="dropdown-item" href="{% url 'categories' %}">All Courses</a></li>
-                <li><a class="dropdown-item" href="{% url 'individual_category' category_id=1 %}">Floods</a></li>
-                <li><a class="dropdown-item" href="{% url 'individual_category' category_id=2 %}">Forest Fire</a></li>
-                <li><a class="dropdown-item" href="{% url 'individual_category' category_id=3 %}">Heat Wave</a></li>
-                <li><a class="dropdown-item" href="{% url 'individual_category' category_id=4 %}">Storm</a></li>
-              </ul>
-
+                {% for category in categories %}
+                    <li>
+                        <a class="dropdown-item" href="{% url 'individual_category' category_id=category.id %}">
+                            {{ category.friendly_name }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
             </li>
-
             <!-- Navigation Dropdown -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navigationDropdown" role="button"
