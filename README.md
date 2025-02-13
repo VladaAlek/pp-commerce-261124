@@ -354,7 +354,9 @@ Instead of the custom logo, the default logo has been rendered.
 [Missin Flood Logo in the "Shopping Bag"](docs/images/bugs/missing%20flood%20logo.png);
 [Missin Flood Logo in the "Checkout"](docs/images/bugs/missing%20flood%20logo%20checkout.png);
 
+7
 
+The ids for individual categories are created [dynamicaly](docs/images/bugs/dynamic%20creation%20of%20categories_id.png), preventing this [error](docs/images/bugs/404%20page%20not%20found%20floods.png).
 
 
 - Originally, the confirmation email was not delivered to the user/system doesn't raise any error in the terminal
