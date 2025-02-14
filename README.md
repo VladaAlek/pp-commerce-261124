@@ -139,6 +139,9 @@ Considering the EC-nature of the project, the basic philosophy applied in this p
 - 28. 12. 2024. Gitpod IDE became unfunctional - unpushed changes were lost and reinstalling requirements and re-establishment of the settings parameters was necessary
 - 05. 01. 2025. Gitpod IDE became unfunctional - a new workspace opened, which might affect some features because there was not enough time to test and document all project's elements again
 
+## Dealing with Logo Images
+ - The project's style in base.css is set to best suit the PNG image format. Hence, it is recommended that you use this format.
+
 ### Testing Responsiveness
 #### All Courses
  - testing ["Categories Page" XL and L](docs/images/testing_courses_lg.png);
