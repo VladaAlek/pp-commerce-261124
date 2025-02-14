@@ -18,10 +18,9 @@
                         <h2 class="mb-0">{{ category.name }}</h2>
                         {% if category.logo %}
                         <img class="w-100 all-categories-logo" src="{{ category.logo.url }}" alt="{{ category.name }}"
-                            class="img-fluid ms-3" style="max-height: 50px;">
+                            class="img-fluid ms-3" style="max-height: 50px; max-width: 50px;">
                         {% else %}
-                        <img class="w-100" src="{{ MEDIA_URL }}noimage.svg" alt="{{ category.name }}"
-                            class="img-fluid ms-3" style="max-height: 50px;">
+                        <img class="all-categories-logo" src="{{ MEDIA_URL }}noimage.svg" alt="{{ category.name }}">
                         {% endif %}
                     </div>
                     <p><strong>Difficulty Level:</strong> {{ category.difficulty_level }}</p>
