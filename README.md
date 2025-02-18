@@ -148,16 +148,17 @@ Considering the EC-nature of the project, the basic philosophy applied in this p
 - [Registration Form](docs/images/registration/sign_up_development.png); [Confirmation Email Sent](docs/images/registration/sign_up_development_1.png);
 [Registration Email Confirmed](docs/images/registration/sign_up_development_3.png); [Registration Success](docs/images/registration/sign_up_development_4.png);
 
-
 ### Production
 
-[Registration Form](docs/images/registration/sign_up_production.png); [Confirmation Email Sent](docs/images/registration/sign_up_production_1.png); 
+- [Registration Form](docs/images/registration/sign_up_production.png); [Confirmation Email Sent](docs/images/registration/sign_up_production_1.png); 
 [Email Content](docs/images/registration/sign_up_production_2.png); [Registration Email Confirmed](docs/images/registration/sign_up_production_3.png); 
 [Registration Success](docs/images/registration/sign_up_production_4.png); [Profile Page of the New User](docs/images/registration/sign_up_production_5.png); 
 [User Account in the Admin Panel](docs/images/registration/sign_up_production_6.png); 
 
+- [external source material - Django-AllAuth ACCOUNT_CONFIRM_EMAIL_ON_GET confusion](https://stackoverflow.com/questions/28248647/django-allauth-account-confirm-email-on-get-confusion)
 
 ### Testing Responsiveness
+
 #### All Courses
  - testing ["Categories Page" XL and L](docs/images/testing_courses_lg.png);
  - testing [ "Categories Page" M](docs/images/testing_courses_md.png);
