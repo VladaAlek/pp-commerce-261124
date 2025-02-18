@@ -41,6 +41,8 @@
                                 {% if item.product.logo %}
                                     class="img-fluid rounded bag-logo-div" src="{{ item.product.logo.url }}"
                                     alt="{{ item.product.name }} logo"></a>
+                                    {% else %}
+                                    <img class="img-fluid rounded bag-logo-div" src="{{ MEDIA_URL }}logos/leaf-solid.png" alt="{{ item.product.name }}">
                                 {% endif %}
                         </td>
                         <td class="py-3">
