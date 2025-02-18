@@ -1,14 +1,14 @@
 /* styling order summary*/
 
 
-.checkout-logo-container {
+.logo-style {
     background-color:rgb(25, 135, 84);
     width: 69px;
     height: 69px;
     cursor: pointer;
 }
 
-.checkout-logo-container:hover {
+.logo-style:hover {
     background-color:rgb(109, 143, 127);
 }
 .checkout-logo-img {

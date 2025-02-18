@@ -39,10 +39,10 @@
                         <td class="p-3 w-25">
                             <a href="{% url 'individual_category' category_id=item.product.id %}"><img
                                 {% if item.product.logo %}
-                                    class="img-fluid rounded bag-logo-div" src="{{ item.product.logo.url }}"
+                                    class="img-fluid rounded bag-logo-div logo-style" src="{{ item.product.logo.url }}"
                                     alt="{{ item.product.name }} logo">
                                     {% else %}
-                                    <img class="img-fluid rounded bag-logo-div" src="{{ MEDIA_URL }}logos/leaf-solid.png" alt="{{ item.product.name }}">
+                                    <img class="img-fluid rounded bag-logo-div logo-style" src="{{ MEDIA_URL }}logos/leaf-solid.png" alt="{{ item.product.name }}">
                                 {% endif %}
                             </a>
                         </td>

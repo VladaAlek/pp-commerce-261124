@@ -35,14 +35,12 @@
             {% for item in bag_items %}
             <div class="row mb-4 align-items-center p-1">
                 <!-- Logo -->
-                <div class="col-2 checkout-logo-container p-2">
+                <div class="col-2">
                     <a href="{% url 'individual_category' category_id=item.product.id %}">
-                        {% if item.product.logo %}
-                        <img class="w-100 checkout-logo-img" src="{{ item.product.logo.url }}"
-                            alt="{{ item.product.name }}">
-                        {% else %}
-                        <img class="w-100 checkout-logo-img" src="{{ MEDIA_URL }}logos/leaf-solid.png" alt="{{ item.product.name }}">
-                        {% endif %}
+                        <div class="logo-style">
+                            <img class="img-fluid rounded" src="{% if item.product.logo %}{{ item.product.logo.url }}{% else %}{{ MEDIA_URL }}logos/leaf-solid.png{% endif %}" 
+                                alt="{{ item.product.name }}">
+                        </div>
                     </a>
                 </div>
                 <!-- Item Details -->
