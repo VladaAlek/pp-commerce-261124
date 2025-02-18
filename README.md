@@ -142,6 +142,21 @@ Considering the EC-nature of the project, the basic philosophy applied in this p
 ## Dealing with Logo Images
  - The project's style in base.css is set to best suit the PNG image format. Hence, it is recommended that you use this format.
 
+## Manual Testing - User's Registration
+
+### Development
+- [Registration Form](docs/images/registration/sign_up_development.png); [Confirmation Email Sent](docs/images/registration/sign_up_development_1.png);
+[Registration Email Confirmed](docs/images/registration/sign_up_development_3.png); [Registration Success](docs/images/registration/sign_up_development_4.png);
+
+
+### Production
+
+[Registration Form](docs/images/registration/sign_up_production.png); [Confirmation Email Sent](docs/images/registration/sign_up_production_1.png); 
+[Email Content](docs/images/registration/sign_up_production_2.png); [Registration Email Confirmed](docs/images/registration/sign_up_production_3.png); 
+[Registration Success](docs/images/registration/sign_up_production_4.png); [Profile Page of the New User](docs/images/registration/sign_up_production_5.png); 
+[User Account in the Admin Panel](docs/images/registration/sign_up_production_6.png); 
+
+
 ### Testing Responsiveness
 #### All Courses
  - testing ["Categories Page" XL and L](docs/images/testing_courses_lg.png);
@@ -361,10 +376,9 @@ Instead of the custom logo, the default logo has been rendered.
 
 The ids for individual categories are created [dynamicaly](docs/images/bugs/dynamic%20creation%20of%20categories_id.png), preventing this [error](docs/images/bugs/404%20page%20not%20found%20floods.png).
 
+8 
+**registration of a new user** - please, consult *registration section* above
 
-- Originally, the confirmation email was not delivered to the user/system doesn't raise any error in the terminal
-- After deployment, it was possible to send **real confirmation letters** [conf itsector success] [conf itsector success](docs/images/confirmation_mails/conf%20itsector%20success.png) and [conf itsector email](docs/images/confirmation_mails/conf%20itsector%20email.png);
-However, it was possible only after the registration was verified in the superuser's admin panel: [email primary and verified](docs/images/confirmation_mails/email%20primary%20and%20verified.png). Later, the cases of [successful registration](docs/images/confirmation_mails/user%20registration%20confirmation%20email%20success.jpg);were documented, too. Due to the [technical problems](https://drive.google.com/file/d/1V25KQ9AYfhxnB9QPq1o-UwFOeAGrq7NS/view?usp=sharing "Gmail settings"), the Gmail account was not set to send confirmation mails. 
 
 
 During manual testing, a strange situation was noticed. Namely, all emails have the primary status, which should not be the case. However, they don't have access to the management panel.
