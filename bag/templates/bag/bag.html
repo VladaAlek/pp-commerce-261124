@@ -40,10 +40,11 @@
                             <a href="{% url 'individual_category' category_id=item.product.id %}"><img
                                 {% if item.product.logo %}
                                     class="img-fluid rounded bag-logo-div" src="{{ item.product.logo.url }}"
-                                    alt="{{ item.product.name }} logo"></a>
+                                    alt="{{ item.product.name }} logo">
                                     {% else %}
                                     <img class="img-fluid rounded bag-logo-div" src="{{ MEDIA_URL }}logos/leaf-solid.png" alt="{{ item.product.name }}">
                                 {% endif %}
+                            </a>
                         </td>
                         <td class="py-3">
                             <p class="my-0"><em>{{ item.product.name}}</em></p>
