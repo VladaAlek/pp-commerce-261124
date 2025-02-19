@@ -29,7 +29,11 @@
                     <p><strong>Estimated Time:</strong> {{ category.est_time }} learning hours</p>
                     <p><strong>Short Description:</strong> {{ category.short_description }}</p>
                     <p><strong>Find out more about {{ category.name }}s:</strong> {{ category.long_description }}</p>
-                    <p><strong>Test:</strong> {{ category.test }}</p>
+                    {% if category.test%}
+                    <p><strong>Test: </strong> <i class="bi bi-bookmark-check"></i></p>
+                    {% else%}
+                    <p><strong>Test: </strong> <i class="bi bi-bookmark-x"></i></p>
+                    {% endif %}
                     <div class="categories-price-date p-4">
                         <p><strong>Starting date:</strong> {{ category.starting_date }}</p>
                         <p><strong>Price:</strong> {{ category.price }} <svg xmlns="http://www.w3.org/2000/svg"
