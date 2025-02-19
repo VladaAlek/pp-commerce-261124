@@ -10,3 +10,18 @@
 .logo-style:hover {
     background-color:rgb(109, 143, 127) !important;
 }
+
+@media screen and (max-width: 520px) {  
+    .keep-shopping-btn {  
+        display: block;  
+        text-align: center;  
+        margin-bottom: 1rem;  
+    }  
+}
+
+@media screen and (max-width: 520px) {  
+    .keep-shopping-btn, .btn-dark {  
+        width: 100%;  
+    }  
+}
+
