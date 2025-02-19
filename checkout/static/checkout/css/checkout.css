@@ -6,13 +6,17 @@
     width: 69px;
     height: 69px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .logo-style:hover {
     background-color:rgb(109, 143, 127);
 }
 
-.checkout-logo-img {
+.logo-max-dimension {
     width: 60.98px;
     height: 60.98px;
 }

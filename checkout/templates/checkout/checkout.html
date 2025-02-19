@@ -38,7 +38,7 @@
                 <div class="col-2">
                     <a href="{% url 'individual_category' category_id=item.product.id %}">
                         <div class="logo-style">
-                            <img class="img-fluid rounded" src="{% if item.product.logo %}{{ item.product.logo.url }}{% else %}{{ MEDIA_URL }}logos/leaf-solid.png{% endif %}" 
+                            <img class="img-fluid rounded logo-max-dimension"src="{% if item.product.logo %}{{ item.product.logo.url }}{% else %}{{ MEDIA_URL }}logos/leaf-solid.png{% endif %}" 
                             alt="{{ item.product.name }}">
                         </div>
                     </a>
