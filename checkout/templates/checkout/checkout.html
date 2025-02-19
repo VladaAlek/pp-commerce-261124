@@ -39,7 +39,7 @@
                     <a href="{% url 'individual_category' category_id=item.product.id %}">
                         <div class="logo-style">
                             <img class="img-fluid rounded" src="{% if item.product.logo %}{{ item.product.logo.url }}{% else %}{{ MEDIA_URL }}logos/leaf-solid.png{% endif %}" 
-                                alt="{{ item.product.name }}">
+                            alt="{{ item.product.name }}">
                         </div>
                     </a>
                 </div>
