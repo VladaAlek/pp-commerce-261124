@@ -46,8 +46,28 @@
                     {% if request.user.is_superuser %}
                     <small class="ml-3">
                         <a href="{% url 'edit_course' category.id %}">Edit</a> |
-                        <a class="text-danger" href="{% url 'delete_course' category.id %}">Delete</a>
+                        <a href="{% url 'delete_course' category.id %}" class="text-danger" data-bs-toggle="modal" data-bs-target="#deleteModal-{{ category.id }}">
+                            Delete
+                        </a>
                     </small>
+                    <!--deletion modal-->
+                    <div class="modal fade" id="deleteModal-{{ category.id }}" tabindex="-1" aria-labelledby="deleteModalLabel-{{ category.id }}" aria-hidden="true" data-bs-backdrop="false">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="deleteModalLabel-{{ category.id }}">Confirm Deletion</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Are you sure you want to delete "<strong>{{ category.name }}</strong>"?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                    <a href="{% url 'delete_course' category.id %}" class="btn btn-danger">Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>     
                     {% endif %}
                     <div class="text-center">
                         <button class="btn btn-success mt-2">
