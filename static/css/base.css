@@ -18,7 +18,24 @@ body {
 }
 
 
+/*Footbar*/
+
+.foot-stl {
+ height: 4rem;
+}
+
+.a-color {
+    color: #FFFFFF;
+    text-shadow: 1px 1px 2px black;
+  }
+
+  .a-color:hover {
+    color: rgb(25, 135, 84);
+    font-weight: 200;
+  }
+
 /*H-elements on the index page*/ 
+
 .home-title,
 .categories-title {
     font-size: 90px;
