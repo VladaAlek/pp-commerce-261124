@@ -83,17 +83,18 @@ The *Checkout page* consists of two major sections: 1: Order Summary, which prov
 ### Discount
 If more than 1500 euros are spent, a 10% discount is offered on the index page. If this option is activated, the reduced price is visible in Navabar, in the Shopping Bag and Checkout templates, shopping confirmation details.
 
+## Footer
+This feature is present on almost all pages. This feature contains the link to the *Facebook Business Page*
 
-The Footer is present on minority pages, with the exception of the Checkout and Form Page. In the latter, significant additional styling is required, which was impossible shortly before the website's release.
-This feature contains the link to the *Facebook Business Page* and subscription *Mailchimp*
-- Remark: The Footer requires intensive additional styling
 
-- [footer general view LG](docs/images/footer%20general%20view%20LG.png)
-- [footer general view SM](docs/images/footer%20general%20view%20SM.png)
+- [footer general view LG](docs/images/)
+- [footer general view SM](docs/images/)
+
+
+## Mailchimp
 
 - [Mailchimp Success](docs/images/mailchimp%20success.png)
 - [Mailchimp All Emails](docs/images/mailchimp%20success%20audience.png)
-
 
 
 ### Design Proces
@@ -108,6 +109,11 @@ This feature contains the link to the *Facebook Business Page* and subscription 
 - [User Profile Model](docs/images/UserProfile_model.png) in **Profiles app**;
 
 - External Code Sources: [Crispy Bootstrap5 Documentation](https://django-bootstrap-v5.readthedocs.io/en/latest/installation.html "django-bootstrap-v5");  [Stack Overflow](https://stackoverflow.com/questions/71641974/implementing-django-bootstrap-crispy-forms-into-default-signup-login-pages "Stack Overflow.com")
+
+#### ERD
+- [ERD Category](docs/images/ERD%20Category.png) in **Products app**; 
+- [ERD Material](docs/images/ERD%20Material.png) in **Products app**; 
+- [ERD UserProfile](docs/images/ERD%20UserProfile.png) in **Profiles app**;
 
 #### Mockups
 
