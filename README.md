@@ -84,12 +84,11 @@ The *Checkout page* consists of two major sections: 1: Order Summary, which prov
 If more than 1500 euros are spent, a 10% discount is offered on the index page. If this option is activated, the reduced price is visible in Navabar, in the Shopping Bag and Checkout templates, shopping confirmation details.
 
 ## Footer
-This feature is present on almost all pages. This feature contains the link to the *Facebook Business Page*
+This feature is present on almost all pages. It contains the link to the [*Facebook Business Page*](docs/images/facebook%20busines%20page.png). Hover effect contributes to the interactivity UI experience. 
 
-
-- [footer general view LG](docs/images/)
-- [footer general view SM](docs/images/)
-
+- [footer general view SM](docs/images/footer_sm.png);
+- [footer general view LG](docs/images/footer_md.png);
+- [footer general view LG](docs/images/footer_1.png);
 
 ## Mailchimp
 
