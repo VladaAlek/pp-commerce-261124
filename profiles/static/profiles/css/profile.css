@@ -34,6 +34,13 @@ hr {
     gap: 20px;
 }
 
+@media (min-width: 539px) {
+    #mailchimp-header {
+        gap: 60px;
+    }
+}
+
+
 #subscribe-h2 {
     margin-top: 0 !important;
 }
@@ -51,4 +58,10 @@ hr {
     max-width: 90%; 
     margin: 0 auto; 
     padding-top: 8px;
+}
+
+#mce-EMAIL, #mce-FNAME, 
+#mce-LNAME, #mce-COMPANY,
+#mc-embedded-subscribe {
+    border-radius: 0 !important;
 }
