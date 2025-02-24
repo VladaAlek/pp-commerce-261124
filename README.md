@@ -60,6 +60,11 @@ here are documented some of the major **navigation possibilities** provided to t
 - [testing "My Account" section 2](docs/images/loginTesting-2.png);
 - [testing "My Account" section 3](docs/images/loginTesting-3.png);
 
+### Profile Page
+
+- This feature opens for logged users in the dropdown menu when clicking on the "my account" section in the navbar. The profile serves !!!!! add explanation later here
+
+
 **new feature:** Only authenticated users are allowed to have access to a page with the learning materials
 
 ### Exploring and Selecting/Managing Courses
@@ -92,6 +97,7 @@ This feature is present on almost all pages. It contains the link to the [*Faceb
 
 ## Mailchimp
 
+- User subscription is located on the Profile page. The user who shared data to form the profile is presumed to continue with this activity and subscribe to our periodical letter.
 - [Mailchimp Success](docs/images/mailchimp%20success.png)
 - [Mailchimp All Emails](docs/images/mailchimp%20success%20audience.png)
 
@@ -130,6 +136,7 @@ Considering the EC-nature of the project, the basic philosophy applied in this p
  - Mailchimp - for User's subscriptions and mails services
  - Amazon AWS S3 - to storage video data
  - Heroku - to deploy the project
+ - Mailchimp - for subsription letters 
 
 ### Software Resources Used
 
