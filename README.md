@@ -62,7 +62,7 @@ here are documented some of the major **navigation possibilities** provided to t
 
 ### Profile Page
 
-- This feature opens for logged users in the dropdown menu when clicking on the "my account" section in the navbar. The profile serves !!!!! add explanation later here
+- This feature is by default [locked](docs/images/profile%20page%20locked.png), and it [opens](docs/images/profile%20page%20unlocked.png) only for logged users in the dropdown menu when clicking on the "my account" section in the navbar. The profile page has a [dual puprose](docs/images/profile%20design.png). On the user's left side is a form to enter the user's delivery data and to confirm the identity. The right side provides the *Order History*. 
 
 
 **new feature:** Only authenticated users are allowed to have access to a page with the learning materials
@@ -98,6 +98,12 @@ This feature is present on almost all pages. It contains the link to the [*Faceb
 ## Mailchimp
 
 - User subscription is located on the Profile page. The user who shared data to form the profile is presumed to continue with this activity and subscribe to our periodical letter.
+
+#### Design
+
+- [SM](docs/images/profile%20page%20SM.png); [MD](docs/images/profile%20page%20MD.png); [LG](docs/images/profile%20page%20LG.png);
+
+#### Mailchimp Functionality Test
 - [Mailchimp Success](docs/images/mailchimp%20success.png)
 - [Mailchimp All Emails](docs/images/mailchimp%20success%20audience.png)
 
