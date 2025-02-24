@@ -17,7 +17,8 @@
     </div>
 
     <div class="row">
-        <div class="col-12 col-lg-6">
+        <!-- Default Delivery Information -->
+        <div class="col-12 col-lg-6 mb-4">
             <p class="text-muted">Default Delivery Information</p>
             <form class="mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form">
                 {% csrf_token %}
@@ -25,7 +26,9 @@
                 <button class="btn btn-dark rounded-0 text-uppercase float-end mb-3">Update Information</button>
             </form>
         </div>
-        <div class="col-12 col-lg-6">
+
+        <!-- Order History -->
+        <div class="col-12 col-lg-6 mb-4">
             <p class="text-muted">Order History</p>
             <div class="order-history table-responsive">
                 <table class="table table-sm table-borderless">
@@ -64,69 +67,78 @@
                 </table>
             </div>
         </div>
+
+        <!-- Subscription Form -->
         <div class="col-12">
             <hr>
-            <p>Get exclusive offers and discount codes by subscribing to our monthly newsletter</p>
-                                <div id="mc_embed_shell">
-                                    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css"
-                                        rel="stylesheet" type="text/css">
-                                    <div id="mc_embed_signup">
-                                        <form
-                                            action="https://herokuapp.us8.list-manage.com/subscribe/post?u=b2a8102f1176fc9a23b950bb3&amp;id=88d134c7f4&amp;f_id=003b36e0f0"
-                                            method="post" id="mc-embedded-subscribe-form"
-                                            name="mc-embedded-subscribe-form" class="validate" target="_blank">
-                                            <div id="mc_embed_signup_scroll mailchimp-h2-div">
-                                                <h2>Subscribe</h2>
-                                                <div class="indicates-required"><span class="asterisk">*</span> Required
-                                                    Field</div>
-                                                <div class="mc-field-group"><label for="mce-EMAIL">E-Mail-Adresse <span
-                                                            class="asterisk">*</span></label><input type="email"
-                                                        name="EMAIL" class="required email" id="mce-EMAIL" required=""
-                                                        value=""></div>
-                                                <div class="mc-field-group"><label for="mce-FNAME">Name </label><input
-                                                        type="text" name="FNAME" class=" text" id="mce-FNAME" value="">
-                                                </div>
-                                                <div class="mc-field-group"><label for="mce-LNAME">Surname
-                                                    </label><input type="text" name="LNAME" class=" text" id="mce-LNAME"
-                                                        value=""></div>
-                                                <div class="mc-field-group"><label for="mce-COMPANY">Company
-                                                    </label><input type="text" name="COMPANY" class=" text"
-                                                        id="mce-COMPANY" value=""></div>
-                                                <div id="mce-responses" class="clear foot">
-                                                    <div class="response" id="mce-error-response"
-                                                        style="display: none;"></div>
-                                                    <div class="response" id="mce-success-response"
-                                                        style="display: none;"></div>
-                                                </div>
-                                                <div aria-hidden="true" style="position: absolute; left: -5000px;">
-                                                    /* real people should not fill this in and expect good things - do
-                                                    not remove this or risk form bot signups */
-                                                    <input type="text" name="b_b2a8102f1176fc9a23b950bb3_88d134c7f4"
-                                                        tabindex="-1" value="">
-                                                </div>
-                                                <div class="optionalParent">
-                                                    <div class="clear foot">
-                                                        <input type="submit" name="subscribe" id="mc-embedded-subscribe"
-                                                            class="button" value="Subscribe">
-                                                        <p style="margin: 0px auto;"><a href="http://eepurl.com/i7x6cM"
-                                                                title="Mailchimp – Einfaches, schnelles E-Mail-Marketing"><span
-                                                                    style="display: inline-block; background-color: transparent; border-radius: 4px;"><img
-                                                                        class="refferal_badge"
-                                                                        src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg"
-                                                                        alt="Intuit Mailchimp"
-                                                                        style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
+            <div class="text-center">
+                <p>Get exclusive offers and discount codes by subscribing to our monthly newsletter</p>
+            </div>
+            <div id="mc_embed_shell">
+                <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+                <div id="mc_embed_signup">
+                    <form
+                        action="https://herokuapp.us8.list-manage.com/subscribe/post?u=b2a8102f1176fc9a23b950bb3&amp;id=88d134c7f4&amp;f_id=003b36e0f0"
+                        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                        target="_blank">
+                        <div id="mc_embed_signup_scroll mailchimp-h2-div">
+                            <div id="mailchimp-header">
+                                <h2 id="subscribe-h2">Subscribe</h2>
+                                <p style="margin: 0px auto;">
+                                    <a href="http://eepurl.com/i7x6cM"
+                                        title="Mailchimp – Einfaches, schnelles E-Mail-Marketing">
+                                        <span
+                                            style="display: inline-block; background-color: transparent; border-radius: 4px;">
+                                            <img class="refferal_badge"
+                                                src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg"
+                                                alt="Intuit Mailchimp"
+                                                style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;">
+                                        </span>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="indicates-required"><span class="asterisk">*</span> Required Field</div>
+                            <div class="mc-field-group">
+                                <label for="mce-EMAIL">E-Mail-Adresse <span class="asterisk">*</span></label>
+                                <input type="email" name="EMAIL" class="required email form-control" id="mce-EMAIL"
+                                    required="">
+                            </div>
+                            <div class="mc-field-group">
+                                <label for="mce-FNAME">Name</label>
+                                <input type="text" name="FNAME" class="text form-control" id="mce-FNAME">
+                            </div>
+                            <div class="mc-field-group">
+                                <label for="mce-LNAME">Surname</label>
+                                <input type="text" name="LNAME" class="text form-control" id="mce-LNAME">
+                            </div>
+                            <div class="mc-field-group">
+                                <label for="mce-COMPANY">Company</label>
+                                <input type="text" name="COMPANY" class="text form-control" id="mce-COMPANY">
+                            </div>
+                            <div id="mce-responses" class="clear foot">
+                                <div class="response" id="mce-error-response" style="display: none;"></div>
+                                <div class="response" id="mce-success-response" style="display: none;"></div>
+                            </div>
+                            <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                                <input type="text" name="b_b2a8102f1176fc9a23b950bb3_88d134c7f4" tabindex="-1" value="">
+                            </div>
+                            <div class="optionalParent">
+                                <div class="clear foot">
+                                    <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button"
+                                        value="Subscribe">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-        
-    {% endblock %}
+    </div>
+</div>
+{% endblock %}
 
 
-    {% block postloadjs %}
-    {{ block.super }}
-    <script type="text/javascript" src="{% static 'profiles/js/countryfield.js' %}"></script>
-    {% endblock %}
+{% block postloadjs %}
+{{ block.super }}
+<script type="text/javascript" src="{% static 'profiles/js/countryfield.js' %}"></script>
+{% endblock %}

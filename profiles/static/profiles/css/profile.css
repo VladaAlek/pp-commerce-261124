@@ -26,6 +26,29 @@ hr {
     background-color: rgb(25, 135, 84) !important; 
 }
 
+/* mailchimp */
+
+#mailchimp-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#subscribe-h2 {
+    margin-top: 0 !important;
+}
+
 .mailchimp-h2-div {
     padding-top: 1rem;
+}
+
+#mc_embed_shell {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+#mc_embed_signup {
+    max-width: 90%; 
+    margin: 0 auto; 
+    padding-top: 8px;
 }
