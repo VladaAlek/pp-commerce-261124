@@ -29,7 +29,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # 'DEVELOPMENT' in os.environ
 
@@ -40,7 +40,7 @@ CSRF_TRUSTED_ORIGINS = [
 ALLOWED_HOSTS = [
     'disaster-ready-germany-047aa8cb5814.herokuapp.com', 
     'localhost',
-    '8000-coral-harrier-tfa79yqc0yt.ws-eu117.gitpod.io'
+    '8000-coral-harrier-tfa79yqc0yt.ws-eu118.gitpod.io'
 ]
 
 

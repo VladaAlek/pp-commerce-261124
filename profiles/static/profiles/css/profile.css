@@ -19,3 +19,13 @@
 #id_default_country option:first-child {
     color: #aab7c4;
 }
+
+hr {
+    border: none !important; 
+    height: 2px !important; 
+    background-color: rgb(25, 135, 84) !important; 
+}
+
+.mailchimp-h2-div {
+    padding-top: 1rem;
+}

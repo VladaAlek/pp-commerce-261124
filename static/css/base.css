@@ -240,7 +240,11 @@ body {
 	color: #17a2b8; /* text-info */
 }
 
+ /*Profile Template*/
 
+ .subscription-title {
+    margin-top: 1rem;
+ }
 
  /*mailchimp*/
 
