@@ -335,10 +335,14 @@ Considering the EC-nature of the project, the basic philosophy applied in this p
 
 ### Products Form - Code After Refactoring 
 
-The initial view *add_product* didnt allow to add the learning material content to the newly formed course in one template [**image**](docs/images/products%20form/bug%20adding%20course%20and%20material%20simultaniously%20impossible.png) because it was not created yet!
+The initial view *add_product* didnt allow to add the learning material content to the newly formed course in one template [**image**](docs/images/products%20form/bug%20adding%20course%20and%20material%20simultaniously%20impossible.png) because the category was not created yet! 
 The refactored code includes two templates: *add_products* and *add_material*:
 - [Add courses form - success](docs/images/products%20form/successfull%20added%20online%20course.png);
 - [Add learning material form - success](docs/images/products%20form/successfull%20added%20online%20material.png);
+
+The templates stress that material can be added only after the category has been created.
+- [Course](docs/images/add%20category%20info.png);
+- [Material](docs/images/add%20material%20info.png);
 - We couldn't make the forms fail. Hence, the 'error messages' have not been tested.
 
 
