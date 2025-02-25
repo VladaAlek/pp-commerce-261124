@@ -44,6 +44,7 @@ here are documented some of the major **navigation possibilities** provided to t
 - [All Courses - Bag View](docs/images/navigation/navigation%20all%20courses%20from%20shopping%20bag%20view%20LG%203.png);
 - [All Courses - Individual Course](docs/images/navigation/navigation%20to%20all%20and%20individiual%20courses.png);
 - [All Courses - Dropping Menu](docs/images/navigation/navigation%20to%20all%20courses%20from%20Navigate%20dropping%20menu%20in%20the%20navbar.png);
+- [All Courses - Dropping Menu with refactored view](docs/images/individual%20category%20view%20refactored.png);
 - [Individual Course - Structure](docs/images/navigation/navigation%20to%20individual%20course%20structure%20page.png);
 - [Individual Course - Content](docs/images/navigation/);
 
