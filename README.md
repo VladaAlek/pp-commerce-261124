@@ -70,7 +70,19 @@ here are documented some of the major **navigation possibilities** provided to t
 
 ### Exploring and Selecting/Managing Courses
 
-Being informed about the courses offered in this project is crucial. Upon landing on the index page, users can click the Explore Courses button. There, it can learn more about the basic structure of the *individual courses*. The basic logos are shown in the head section so that the particular courses are visually different from others. The following values *Difficulty Level*, *Credits*, *Number of Lectures*, *Short Description*, *Estimated Time*, *Starting date* and *Price* are displayed textually on this level.  The value *Test* is indicated with the appropriate [icons](docs/images/test%20exist.png). Logged superusers can edit or delete the content of individual courses [edit or delete](docs/images/edit%20and%20delete%20course%20categories.png). However, this option is exclusively available to [superusers](docs/images/resticted%20edit%20.png). By choosing the edit option, the [form page](docs/images/edit%20form.png) to edit the course's content opens. The functionality is tested: [step 1](docs/images/edit%20flood%201.png); [step 2](docs/images/edit%20flood%203.png). After the change have been submitted, the [popup message](docs/images/edit%20flood%202.png) informs the user about the consequences of his last activity.
+Being informed about the courses offered in this project is crucial. 
+
+*Seach Courses* Options in Navbar allow for querying the learning material based on the search words coming from:
+
+ - [categories name 1](docs/images/search%20cat%201.png); [categories name 2](docs/images/search%20cat%202.png)
+ - [short description 1](docs/images/search%20short%201.png); [short description 2](docs/images/search%20short%202.png)
+ - [long descriptio 1](docs/images/search%20long%201.png); [long descriptio 2](docs/images/search%20long%202.png)
+ - Functionality tested in [development](docs/images/search%20development.png) stage, too.
+ 
+
+
+
+Upon landing on the index page, users can click the *Explore Courses* button. There, it can learn more about the basic structure of the *individual courses*. The basic logos are shown in the head section so that the particular courses are visually different from others. The following values *Difficulty Level*, *Credits*, *Number of Lectures*, *Short Description*, *Estimated Time*, *Starting date* and *Price* are displayed textually on this level.  The value *Test* is indicated with the appropriate [icons](docs/images/test%20exist.png). Logged superusers can edit or delete the content of individual courses [edit or delete](docs/images/edit%20and%20delete%20course%20categories.png). However, this option is exclusively available to [superusers](docs/images/resticted%20edit%20.png). By choosing the edit option, the [form page](docs/images/edit%20form.png) to edit the course's content opens. The functionality is tested: [step 1](docs/images/edit%20flood%201.png); [step 2](docs/images/edit%20flood%203.png). After the change have been submitted, the [popup message](docs/images/edit%20flood%202.png) informs the user about the consequences of his last activity.
 
 In order to prevent unintentional deletion, the safety net in the form of a deletion modal has been introduced: [step 1](docs/images/test%20deletion%20modal.png); [step 2](docs/images/test%20deletion%20modal%201.png). 
 
@@ -84,7 +96,6 @@ This page offers a tabular overview of selected courses, their quantity, price, 
 The *Checkout page* consists of two major sections: 1: Order Summary, which provides the overview of the User's shopping selection, and 2: Checkout Form, which makes it possible for the User to enter personal data. They serve both the site administrator and the User as a confirmation that the digital learning service is provided to the desired customer. In cases where the User is a *Registered User*, most fields are prepopulated with the User's account data. The idea is to improve the UI. The same goal is achieved when the User selects the *Save this delivery information to my profile* checkout field. Not less important is that even in this stage, the User has the *Adjust Bag* at its disposal. The last feature is the self-explanatory outcome. The essential part of the form field is the payment window dedicated to credit card data. Additionally, if categories logo is not availble, the projects  [logo](docs/images/project%20logo%20instead%20of%20category%20logo%20in%20checkout.png) will be rendered.
 
 
-### *Seach Products Options in Navbar*  this task is not realised as it is a secondary project's feature
 
 ### Discount
 If more than 1500 euros are spent, a 10% discount is offered on the index page. If this option is activated, the reduced price is visible in Navabar, in the Shopping Bag and Checkout templates, shopping confirmation details.
