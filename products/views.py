@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from .models import Category, Material
 from .forms import CategoryForm, MaterialForm
 from django.contrib import messages
+from django.db.models import Q
 from django.contrib.auth.decorators import login_required
 from django.forms import modelformset_factory
 import random
@@ -12,12 +13,28 @@ def all_categories(request):
     """ A view to show all categories """
 
     categories = Category.objects.all()
+    query = None
+
+    if request.GET:
+        if 'q' in request.GET:
+            query = request.GET['q']
+            if not query:
+                messages.error(request, "You didn't enter any search criteria!")
+                return redirect(reverse('categories'))
+
+            queries = Q(name__icontains=query) | Q(long_description__icontains=query) | Q(short_description__icontains=query)
+            products = categories.filter(queries)
+
+            if products.exists():
+                return redirect(reverse('individual_category', args=[products.first().id]))
 
     context = {
         'categories': categories,
+        'search_term': query,
     }
 
     return render(request, 'products/categories.html', context)
+
 
 
 def individual_category(request, category_id):

@@ -343,8 +343,8 @@ The refactored code includes two templates: *add_products* and *add_material*:
 The templates stress that material can be added only after the category has been created.
 - [Course](docs/images/add%20category%20info.png);
 - [Material](docs/images/add%20material%20info.png);
-- We couldn't make the forms fail. Hence, the 'error messages' have not been tested.
 
+- We couldn't make the forms fail. Hence, the 'error messages' have not been tested.
 
 
 #### EDIT
