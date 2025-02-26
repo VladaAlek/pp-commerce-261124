@@ -78,10 +78,9 @@ Being informed about the courses offered in this project is crucial.
  - [short description 1](docs/images/search%20short%201.png); [short description 2](docs/images/search%20short%202.png)
  - [long descriptio 1](docs/images/search%20long%201.png); [long descriptio 2](docs/images/search%20long%202.png)
  - Functionality tested in [development](docs/images/search%20development.png) stage, too.
+
+ The messages improve the UI by indicating that [no criteria have been entered](docs/images/search%20no%20criteria.png) in the search field or that [no categories found matching your search.](docs/images/seacht%20no%20match%20message.png)
  
-
-
-
 Upon landing on the index page, users can click the *Explore Courses* button. There, it can learn more about the basic structure of the *individual courses*. The basic logos are shown in the head section so that the particular courses are visually different from others. The following values *Difficulty Level*, *Credits*, *Number of Lectures*, *Short Description*, *Estimated Time*, *Starting date* and *Price* are displayed textually on this level.  The value *Test* is indicated with the appropriate [icons](docs/images/test%20exist.png). Logged superusers can edit or delete the content of individual courses [edit or delete](docs/images/edit%20and%20delete%20course%20categories.png). However, this option is exclusively available to [superusers](docs/images/resticted%20edit%20.png). By choosing the edit option, the [form page](docs/images/edit%20form.png) to edit the course's content opens. The functionality is tested: [step 1](docs/images/edit%20flood%201.png); [step 2](docs/images/edit%20flood%203.png). After the change have been submitted, the [popup message](docs/images/edit%20flood%202.png) informs the user about the consequences of his last activity.
 
 In order to prevent unintentional deletion, the safety net in the form of a deletion modal has been introduced: [step 1](docs/images/test%20deletion%20modal.png); [step 2](docs/images/test%20deletion%20modal%201.png). 
