@@ -20,13 +20,15 @@ def all_categories(request):
             query = request.GET['q']
             if not query:
                 messages.error(request, "You didn't enter any search criteria!")
-                return redirect(reverse('categories'))
+                return render(request, 'products/categories.html', {'categories': categories, 'search_term': query})
 
             queries = Q(name__icontains=query) | Q(long_description__icontains=query) | Q(short_description__icontains=query)
             products = categories.filter(queries)
 
             if products.exists():
                 return redirect(reverse('individual_category', args=[products.first().id]))
+            else:
+                messages.error(request, "No categories found matching your search.")
 
     context = {
         'categories': categories,
