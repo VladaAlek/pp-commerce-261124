@@ -67,6 +67,13 @@ body {
     margin-left: 1rem;
 }
 
+.equal-height {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100%;
+}
+
+
 /* one category template*/
 
 .individual-category-price-date {

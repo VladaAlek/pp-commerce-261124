@@ -197,8 +197,9 @@ Considering the EC-nature of the project, the basic philosophy applied in this p
 
 #### All Courses
  - testing ["Categories Page" XL and L](docs/images/testing_courses_lg.png);
- - testing [ "Categories Page" M](docs/images/testing_courses_md.png);
- - testing [ "Categories Page" SM](docs/images/testing_add_course_functionality_shopping_bag.png);
+ - testing ["Categories Page" M](docs/images/testing_courses_md.png);
+ - testing ["Categories Page" SM](docs/images/testing_add_course_functionality_shopping_bag.png);
+ - UI [unstyled](docs/images/categories%20unstyled.png); [styled](docs/images/categories%20styled.png);
 
  #### Individual Course
  - testing [ "Category Page" SM - 1](docs/images/responsivnes_individual_course_sm.png);
