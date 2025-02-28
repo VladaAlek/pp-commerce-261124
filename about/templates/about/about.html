@@ -10,9 +10,7 @@
     <div>
         <h1 class="text-center my-1 text-danger home-title">About Disaster Ready - Germany</h1>
     </div>
-    <button class="btn btn-success mt-3 mb-3">
-        <a href="{% url 'categories' %}" class="text-white text-decoration-none">Explore Online Courses</a>
-    </button>
+        <a href="/categories/" class="btn text-white text-decoration-none btn-success mt-3 mb-3">Explore Online Courses</a>
     <div class="text-center">
         <em class="mt-2 text-center">Enhancing Emergency Preparedness Through Digital Learning</em>
     </div>
@@ -103,7 +101,7 @@
 
     <div class="text-center text-danger my-4">
         <h5 class="logo-font my-3">{{STANDART_DISCOUNT_PERCENTAGE}} <i class="bi bi-percent"></i> discount for
-            purchusing online courses over &euro;{{ DISCOUNT_THRESHOLD }}!</h6>
+            purchusing online courses over &euro;{{ DISCOUNT_THRESHOLD }}!</h5>
     </div>
 </div>
 {% endblock %}
