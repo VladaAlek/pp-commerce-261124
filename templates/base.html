@@ -23,20 +23,21 @@
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,400;0,700;1,400&family=Urbanist:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="{% static 'css/base.css' %}">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   {% endblock %}
 
   {% block extra_css %}
   {% endblock %}
 
   {% block corejs %}
+  <!-- Load Bootstrap JavaScript properly -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-  </script>
+    </script>
   <!--Bootstrap JavaScript-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-  </script>
+    </script>
   <!-- Stripe -->
   <script src="https://js.stripe.com/v3/"></script>
   <!--fontassome kit-->
@@ -47,16 +48,16 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   {% endblock %}
 
-  <title>DisasterReadyOnline - Disaster Management Training for Municipal Workers in Germany{% block extra_title %}{% endblock %}
+  <title>DisasterReadyOnline - Disaster Management Training for Municipal Workers in Germany{% block extra_title %}{%endblock %}
   </title>
   <!-- Meta Description -->
   <meta name="description" content="Online training platform designed by experts to equip
   municipal workers in Germany with essential skills to tackle floods, storms, heat waves, and
   forest fires.">
   <!-- Keywords for SEO -->
-  <meta name="keywords" content="Disaster Management, Disaster Risk Reduction, DRR, Germany, Risk Management/management crisis
-  Climate Change and Resilience, Societal Resilience, Disaster Risk Reduction,Disaster Risk Assessment, Emergency 
-  Preparedness and Response, Community Resilience and Recovery,  Health Impacts of Disasters, Disaster Communication,
+  <meta name="keywords" content="Disaster Management, Disaster Risk Reduction, DRR, Germany, Risk Management, Crisis Management,
+  Climate Change and Resilience, Societal Resilience, Disaster Risk Assessment, Emergency 
+  Preparedness, Response, Community Resilience and Recovery,  Health Impacts of Disasters, Disaster Communication,
   Vulnerability Analysis, Technology in Disaster Management, Humanitarian Aid and Logistics, E-learning, 
   Virtual learning, Remote education, Distance learning, Blended learning, Online training, Web-based learning,
   Digital instruction, Municipal Worker Training, Flood Preparedness, Storm Response, Heat Wave Safety, 
@@ -84,61 +85,63 @@
 </head>
 
 <body>
-  
+
   {% block page_header %}
-  <body>
-    <!-- Top Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-      <div class="container-fluid d-flex">
-        <!-- Logo and Text -->
-        <a class="navbar-brand d-flex align-items-center" href="{% url 'home' %}">
-          <img src="{% static 'images/leaf-solid.svg' %}" alt="Logo" width="30" height="30"
-            class="d-inline-block align-top me-2">
-          <span>Disaster Ready</span>
-        </a>
 
-        <!-- Navbar Toggler for Mobile -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-          aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <!-- Top Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container-fluid d-flex">
+      <!-- Logo and Text -->
+      <a class="navbar-brand d-flex align-items-center" href="{% url 'home' %}">
+        <img src="{% static 'images/leaf-solid.svg' %}" alt="Logo" width="30" height="30"
+          class="d-inline-block align-top me-2">
+        <span>Disaster Ready</span>
+      </a>
 
-        <!-- Navbar Content -->
-        <div class="collapse navbar-collapse" id="navbarContent">
-          <ul class="navbar-nav ms-auto">
-            <!-- Categories Dropdown -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Courses
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
-                <li><a class="dropdown-item" href="{% url 'categories' %}">All Courses</a></li>
-                {% for category in categories %}
-                    <li>
-                        <a class="dropdown-item" href="{% url 'individual_category' category_id=category.id %}">
-                            {{ category.friendly_name }}
-                        </a>
-                    </li>
-                {% endfor %}
+      <!-- Navbar Toggler for Mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Content -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto">
+          <!-- Categories Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Courses
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
+              <li><a class="dropdown-item" href="{% url 'categories' %}">All Courses</a></li>
+              {% for category in categories %}
+              <li>
+                <a class="dropdown-item" href="{% url 'individual_category' category_id=category.id %}">
+                  {{ category.friendly_name }}
+                </a>
+              </li>
+              {% endfor %}
             </ul>
-            </li>
-            <!-- Navigation Dropdown -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navigationDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Navigate
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navigationDropdown">
-                <li><a class="dropdown-item" href="{% url 'home' %}">Home</a></li>
-                <li><a class="dropdown-item" href="{% url 'categories' %}">Courses</a></li>
-                <li><a class="dropdown-item" href="{% url 'about' %}">About Disaster Ready</a></li>
-              </ul>
-            </li>
+          </li>
+          <!-- Navigation Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navigationDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Navigate
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navigationDropdown">
+              <li><a class="dropdown-item" href="{% url 'home' %}">Home</a></li>
+              <li><a class="dropdown-item" href="{% url 'categories' %}">Courses</a></li>
+              <li><a class="dropdown-item" href="{% url 'about' %}">About Disaster Ready</a></li>
+            </ul>
+          </li>
 
-            <!-- Login/Logout Placeholder -->
+          <!-- Login/Logout Placeholder -->
+          <li>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-              <ul class="list-inline list-unstyled text-center text-lg-end my-0 d-flex flex-lg-row flex-column align-items-start">
+              <ul
+                class="list-inline list-unstyled text-center text-lg-end my-0 d-flex flex-lg-row flex-column align-items-start">
                 <!-- User Options Dropdown -->
                 <li class="list-inline-item dropdown">
                   <a class="text-black nav-link" href="#" id="user-options" data-bs-toggle="dropdown"
@@ -180,101 +183,100 @@
                 </li>
               </ul>
             </div>
-        </div>
+          </li>
       </div>
-    </nav>
 
-    <!-- Search Bar -->
-    <div class="bg-dark py-3 mb-5">
-      <div class="container text-center">
-        <form method="GET" action="{% url 'categories' %}" class="d-flex justify-content-center align-items-center">
-          <input class="form-control w-50 me-2" type="text" name='q' placeholder="Search content of categories"
-            aria-label="Search">
-          <button class="btn btn-outline-light" type="submit">
-            <i class="fa-solid fa-binoculars"></i>
-          </button>
-        </form>
-      </div>
     </div>
+  </nav>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  <!-- Search Bar -->
+  <div class="bg-dark py-3 mb-5">
+    <div class="container text-center">
+      <form method="GET" action="{% url 'categories' %}" class="d-flex justify-content-center align-items-center">
+        <input class="form-control w-50 me-2" type="text" name='q' placeholder="Search content of categories"
+          aria-label="Search">
+        <button class="btn btn-outline-light" type="submit">
+          <i class="fa-solid fa-binoculars"></i>
+        </button>
+      </form>
+    </div>
+  </div>
 
-  </html>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   {% endblock %}
 
   {% block content %}
   {% endblock %}
 
   {% if messages %}
-        <div class="message-container">
-            {% for message in messages %}
-                {% with message.level as level %}
-                    {% if level == 40 %}
-                        {% include 'includes/toasts/toast_error.html' %}
-                    {% elif level == 30 %}
-                        {% include 'includes/toasts/toast_warning.html' %}
-                    {% elif level == 25 %}
-                        {% include 'includes/toasts/toast_success.html' %}
-                    {% else %}
-                        {% include 'includes/toasts/toast_info.html' %}
-                    {% endif %}
-                {% endwith %}
-            {% endfor %}
-        </div>
+  <div class="message-container">
+    {% for message in messages %}
+    {% with message.level as level %}
+    {% if level == 40 %}
+    {% include 'includes/toasts/toast_error.html' %}
+    {% elif level == 30 %}
+    {% include 'includes/toasts/toast_warning.html' %}
+    {% elif level == 25 %}
+    {% include 'includes/toasts/toast_success.html' %}
+    {% else %}
+    {% include 'includes/toasts/toast_info.html' %}
+    {% endif %}
+    {% endwith %}
+    {% endfor %}
+  </div>
   {% endif %}
 
 
   {% block footerblock %}
-  <div class="d-flex justify-content-center align-items-center foot-stl"> 
-    <a href="https://www.facebook.com/profile.php?id=61571470064318" target="_blank" class="text-decoration-none fs-5 a-color" rel="nofollow">
-    <i class="fab fa-facebook-square"></i> Follow us on Facebook!
+  <div class="d-flex justify-content-center align-items-center foot-stl">
+    <a href="https://www.facebook.com/profile.php?id=61571470064318" target="_blank"
+      class="text-decoration-none fs-5 a-color" rel="nofollow" aria-label="Facebook Page">
+      <i class="fab fa-facebook-square" aria-label="Facebook"></i> Follow us on Facebook!
     </a>
   </div>
   {% endblock %}
 
-    
-    
+
+
   {% block postloadjs %}
   <script>
     const toastElList = document.querySelectorAll('.toast')
     const toastList = [...toastElList].map(toastEl => {
-          let toast = new bootstrap.Toast(toastEl)
-          toast.show();
-          console.log('execute toast');
-          return toast
-        })
+      let toast = new bootstrap.Toast(toastEl)
+      toast.show();
+      console.log('execute toast');
+      return toast
+    })
   </script>
 
   <!--mailchimp script-->
   <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
   <script type="text/javascript">
-    (function ($) {
-      window.fnames = new Array();
-      window.ftypes = new Array();
-      fnames[0] = 'EMAIL';
-      ftypes[0] = 'email';
-      fnames[1] = 'FNAME';
-      ftypes[1] = 'text';
-      fnames[2] = 'LNAME';
-      ftypes[2] = 'text';
-      fnames[6] = 'COMPANY';
-      ftypes[6] = 'text';
-      fnames[3] = 'ADDRESS';
-      ftypes[3] = 'address';
-      fnames[4] = 'PHONE';
-      ftypes[4] = 'phone';
-      fnames[5] = 'BIRTHDAY';
-      ftypes[5] = 'birthday';
-    }(jQuery));
+      (function ($) {
+        window.fnames = new Array();
+        window.ftypes = new Array();
+        fnames[0] = 'EMAIL';
+        ftypes[0] = 'email';
+        fnames[1] = 'FNAME';
+        ftypes[1] = 'text';
+        fnames[2] = 'LNAME';
+        ftypes[2] = 'text';
+        fnames[6] = 'COMPANY';
+        ftypes[6] = 'text';
+        fnames[3] = 'ADDRESS';
+        ftypes[3] = 'address';
+        fnames[4] = 'PHONE';
+        ftypes[4] = 'phone';
+        fnames[5] = 'BIRTHDAY';
+        ftypes[5] = 'birthday';
+      }(jQuery));
     var $mcj = jQuery.noConflict(true);
   </script>
-  </div>
-
+  
   {% endblock %}
 
 
-  
+
 </body>
 
 </html>
