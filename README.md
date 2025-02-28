@@ -393,11 +393,12 @@ The templates stress that material can be added only after the category has been
 - [add_material.html](docs/images/validation/validation%20add%20material.png);
 - [edit_products.html](docs/images/validation/validation%20edit.png);
 - [bag.html](docs/images/validation/validation%20bag.png);
-- [](docs/images/validation/validation%20base); ? add checkout pate
+- [checkout.html](docs/images/validation/validation%20checkout%20address%20method.png);
 - [checkout_success.html](docs/images/validation/validation%20checkout%20success.png);
 - [validation profile error.html](docs/images/validation/validation%20profile%20error.png). This error is most probably caused by the fact that validator doesn't have access to the private data.
 - [validation profile upload document method.html](docs/images/validation/validation%20profile%20file%20update.png). The errors in the report are caused by specificity of the Django syntax.
 - [about.html](docs/images/validation/validation%20about.png);
+- [error_404.html load file method](docs/images/validation/validation%20error%20page%20file%20upload.png); [error_404.html address method](docs/images/validation/validation%20error%20page%20file%20upload.png);
 
 ### Bugs
 #### Resolved Bug Issues
