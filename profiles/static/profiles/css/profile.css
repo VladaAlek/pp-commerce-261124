@@ -28,11 +28,24 @@ hr {
 
 /* mailchimp */
 
+
 #mailchimp-header {
     display: flex;
     align-items: center;
     gap: 20px;
 }
+
+#mailchimp-header p {
+    margin: 0; 
+    display: flex;
+    align-items: center;
+}
+
+#mailchimp-header img {
+    width: 220px;
+    height: 40px;
+}
+
 
 @media (min-width: 539px) {
     #mailchimp-header {
@@ -48,6 +61,8 @@ hr {
 .mailchimp-h2-div {
     padding-top: 1rem;
 }
+
+/* end of mailchimp */ 
 
 #mc_embed_shell {
     padding-bottom: 1rem;
