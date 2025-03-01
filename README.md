@@ -402,6 +402,14 @@ The templates stress that material can be added only after the category has been
 - [login.html](docs/images/validation/validation%20login.png);
 - [logout.html](docs/images/validation/validation%20logout.png);
 
+#### W3C CSS Validation Service
+
+- [project/static/base](docs/images/validation/css/validation%20css%20base.png);
+- [products/static/products.css](docs/images/validation/css/validation%20css%20products%20file.png);
+- [bag/static/bag.css](docs/images/validation/css/validation%20css%20bag%20file.png);
+- [checkout/static/checkout.css](docs/images/validation/css/validation%20css%20checkout%20file.png);
+- [profile/static/profile.css](docs/images/validation/css/validation%20css%20profile%20file.png);
+
 ### Bugs
 #### Resolved Bug Issues
 1
