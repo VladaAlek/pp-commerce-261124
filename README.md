@@ -399,6 +399,9 @@ The templates stress that material can be added only after the category has been
 - [validation profile upload document method.html](docs/images/validation/validation%20profile%20file%20update.png). The errors in the report are caused by specificity of the Django syntax.
 - [about.html](docs/images/validation/validation%20about.png);
 - [error_404.html load file method](docs/images/validation/validation%20error%20page%20file%20upload.png); [error_404.html address method](docs/images/validation/validation%20error%20page%20file%20upload.png);
+- [signup.html](docs/images/validation/validation%20signup.png);
+- [login.html](docs/images/validation/validation%20login.png);
+- [logout.html](docs/images/validation/validation%20logout.png);
 
 ### Bugs
 #### Resolved Bug Issues
