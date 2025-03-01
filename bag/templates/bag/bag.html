@@ -37,12 +37,12 @@
                     {% for item in bag_items %}
                     <tr>
                         <td class="p-3 w-25">
-                            <a href="{% url 'individual_category' category_id=item.product.id %}"><img
-                                {% if item.product.logo %}
-                                    class="img-fluid rounded bag-logo-div logo-style" src="{{ item.product.logo.url }}"
-                                    alt="{{ item.product.name }} logo">
-                                    {% else %}
-                                    <img class="img-fluid rounded bag-logo-div logo-style" src="{{ MEDIA_URL }}logos/leaf-solid.png" alt="{{ item.product.name }}">
+                            <a href="{% url 'individual_category' category_id=item.product.id %}"><img {% if
+                                    item.product.logo %} class="img-fluid rounded bag-logo-div logo-style"
+                                    src="{{ item.product.logo.url }}" alt="{{ item.product.name }} logo">
+                                {% else %}
+                                <img class="img-fluid rounded bag-logo-div logo-style"
+                                    src="{{ MEDIA_URL }}logos/leaf-solid.png" alt="{{ item.product.name }}">
                                 {% endif %}
                             </a>
                         </td>
@@ -70,13 +70,13 @@
                             <h6><strong>Bag Total: <i class="bi bi-currency-euro"></i>{{ total|floatformat:2 }}</strong>
                             </h6>
                             <h6>Discount: <i class="bi bi-currency-euro"></i>{{ discount|floatformat:2 }}</h6>
-                            <h4 class="mt-4"><strong>Grand Total: <i
-                                        class="bi bi-currency-euro"></i>{{ grand_total|floatformat:2 }}</strong></h4>
+                            <h4 class="mt-4"><strong>Grand Total: <i class="bi bi-currency-euro"></i>{{
+                                    grand_total|floatformat:2 }}</strong></h4>
                             {% if discount_delta > 0 %}
                             <p class="mb-1 text-danger">
                                 You could get <strong>{{ STANDART_DISCOUNT_PERCENTAGE }}</strong> <i
-                                    class="fa-solid fa-percent"></i> discount by spending just over 
-                                    <strong><i class="bi bi-currency-euro"></i> {{ DISCOUNT_TRESHOLD }}</strong>! <br>
+                                    class="fa-solid fa-percent"></i> discount by spending just over
+                                <strong><i class="bi bi-currency-euro"></i> {{ DISCOUNT_TRESHOLD }}</strong>! <br>
                                 It takes only <strong><i class="bi bi-currency-euro"></i>
                                     {{ discount_delta }}</strong> to reach this limit!
                             </p>
@@ -85,7 +85,8 @@
                     </tr>
                     <tr>
                         <td colspan="5" class="text-end">
-                            <a href="{% url 'categories' %}" class="btn btn-outline-dark rounded-0 btn-lg keep-shopping-btn">
+                            <a href="{% url 'categories' %}"
+                                class="btn btn-outline-dark rounded-0 btn-lg keep-shopping-btn">
                                 <span class="icon">
                                     <i class="fas fa-chevron-left"></i>
                                 </span>
@@ -99,7 +100,7 @@
                             </a>
                         </td>
                     </tr>
-                </table> 
+                </table>
             </div>
             {% else %}
             <p class="lead mb-5 empty-bag-notification">Your bag is empty.</p>
