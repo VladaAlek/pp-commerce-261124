@@ -124,11 +124,10 @@ This feature is present on almost all pages. It contains the link to the [*Faceb
 
 #### Models
 
-- [Category and Material models](docs/images/erd_category_material_models.png) in products app
-
-- [Checkout Order Model](docs/images/checkout_order_model.png) in checkout app;
-- [Checkout OrderLineItem_model Model](docs/images/checkout_OrderLineItem_model.png) in checkout app;
-- [Checkout OrderLineItem_model Model Refactoring](docs/images/checkout_OrderLineItem_model_refactoring.png) in **Checkout app**;
+- [Category and Material models](docs/images/erd_category_material_models.png) in **Products app**;
+- [Checkout Order Model](docs/images/checkout_order_model.png) in **Checkout app**;
+- [Checkout OrderLineItem model](docs/images/checkout_OrderLineItem_model.png) in **Checkout app**;
+- [Checkout OrderLineItem model Refactoring](docs/images/checkout_OrderLineItem_model_refactoring.png) in **Checkout app**;
 - [User Profile Model](docs/images/UserProfile_model.png) in **Profiles app**;
 
 - External Code Sources: [Crispy Bootstrap5 Documentation](https://django-bootstrap-v5.readthedocs.io/en/latest/installation.html "django-bootstrap-v5");  [Stack Overflow](https://stackoverflow.com/questions/71641974/implementing-django-bootstrap-crispy-forms-into-default-signup-login-pages "Stack Overflow.com")
