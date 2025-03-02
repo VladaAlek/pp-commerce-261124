@@ -137,6 +137,8 @@ This feature is present on almost all pages. It contains the link to the [*Faceb
 - [ERD Category](docs/images/ERD%20Category.png) in **Products app**; 
 - [ERD Material](docs/images/ERD%20Material.png) in **Products app**; 
 - [ERD UserProfile](docs/images/ERD%20UserProfile.png) in **Profiles app**;
+- [ERD Order](docs/images/model_order.png) in **Checkout**;
+- [ERD OrderLineItem](docs/images/model_order_line_item.png) in **Checkout**;
 
 #### Mockups
 
