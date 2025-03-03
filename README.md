@@ -4,7 +4,10 @@
 This e-commerce project is focused on providing a user with learning material in the **Disaster Risk Reduction** field. It is an increasingly popular, multidisciplinary research area between natural and social sciences. Its multi-faceted results are implemented in everyday confrontations with natural hazards by numerous practitioners across the globe. The need to disseminate practical and theoretical knowledge about **DRR** grows with rapid changes in the natural and social environment. Hence, there are numerous potential users of this course. For practical reasons, this time, the project is limited to German-speaking countries *German, Austria and Switzerland*, the three countries that are exposed to *floods*, *stormy weather conditions*, *forest fires*, and *heat weaves* as the four most relevant natural disasters in this part of Europe.
 
 Considering that the main users of the website's services will be municipality workers, this e-commerce platform is based on B2B principles.
-When customers pay for specific services, they get an unlimited approach. In this stage of development, the option of offering a test to the user is indicated but not fully implemented. The same statement applies to the foreseen feature of booking consulting services from team members. 
+When customers pay for specific services, they get an unlimited approach. In this stage of development, the option of offering a test to the user is indicated but not fully implemented. The same statement applies to the foreseen feature of booking consulting services from team members. It should be available on the *About* page.
+
+### Types of commercial activities
+
 Find out more about Disaster Ready E-Commerce Business Strategy here:  
 
 - [1](docs/images/busines_strategy/0001.png);
@@ -12,7 +15,6 @@ Find out more about Disaster Ready E-Commerce Business Strategy here:
 - [3](docs/images/busines_strategy/0003.png);
 - [4](docs/images/busines_strategy/0004.png);
 
-### Type of commercial activity
 
 ## E-commerce Marketing Strategy
 
@@ -30,13 +32,14 @@ Find out more about Disaster Ready E-Commerce Business Strategy here:
  - landing page
  - all courses view
  - content of individual courses
- - - course content management as Admin - See section Superuser's features below
+ - course content management as Admin - See section Superuser's features below
  - profile page
  - money transfer component
+- About page
 
 ## Navigation
 
-here are documented some of the major **navigation possibilities** provided to the final user
+Here are documented some of the major **navigation possibilities** provided to the final user
 
 - [Index Page](docs/images/navigation/navigation%20to%20index%20page.png);
 - [All Courses 1](docs/images/navigation/navigation%20all%20courses%20view%20LG.png);
@@ -48,11 +51,10 @@ here are documented some of the major **navigation possibilities** provided to t
 - [Individual Course - Structure](docs/images/navigation/navigation%20to%20individual%20course%20structure%20page.png);
 - [Individual Course - Content](docs/images/navigation/);
 
-
 ## Superuser's features
 
 - Superuser can enter the **admin page**. There, it can monitor or adjust the 1. user's status, 2. content of the courses, 3. payment/ordering proccess. The CRUD operations are present.
-- Superuser has access to the **product form** in which it can execute CRUD operations
+- Superuser has access to the **product form** in which it can execute CRUD operations.
 
 ### Authentication
 - django-allauth==0.54.0
@@ -63,10 +65,8 @@ here are documented some of the major **navigation possibilities** provided to t
 
 ### Profile Page
 
-- This feature is by default [locked](docs/images/profile%20page%20locked.png), and it [opens](docs/images/profile%20page%20unlocked.png) only for logged users in the dropdown menu when clicking on the "my account" section in the navbar. The [user's name](docs/images/users%20name%20on%20the%20profile%20page.png) is rendered in the welcome message to make the navigation easier. The profile page has a [dual puprose](docs/images/profile%20design.png). On the user's left side is a form to enter the user's delivery data and to confirm the identity. The right side provides the *Order History*. 
+This feature is by default [locked](docs/images/profile%20page%20locked.png), and it [opens](docs/images/profile%20page%20unlocked.png) only for logged users in the dropdown menu when clicking on the "my account" section in the navbar. The [user's name](docs/images/users%20name%20on%20the%20profile%20page.png) is rendered in the welcome message to make the navigation easier. The profile page has a [dual puprose](docs/images/profile%20design.png). On the user's left side is a form to enter the user's delivery data and to confirm the identity. The right side provides the *Order History*. 
 
-
-**new feature:** Only authenticated users are allowed to have access to a page with the learning materials
 
 ### Exploring and Selecting/Managing Courses
 
@@ -79,7 +79,7 @@ Being informed about the courses offered in this project is crucial.
  - [long descriptio 1](docs/images/search%20long%201.png); [long descriptio 2](docs/images/search%20long%202.png)
  - Functionality tested in [development](docs/images/search%20development.png) stage, too.
 
- The messages improve the UI by indicating that [no criteria have been entered](docs/images/search%20no%20criteria.png) in the search field or that [no categories found matching your search.](docs/images/seacht%20no%20match%20message.png)
+ The messages improve the UI by indicating that [no criteria have been entered](docs/images/search%20no%20criteria.png) in the search field or that [no categories found matching your search.](docs/images/seacht%20no%20match%20message.png).
  
 Upon landing on the index page, users can click the *Explore Courses* button. There, it can learn more about the basic structure of the *individual courses*. The basic logos are shown in the head section so that the particular courses are visually different from others. The following values *Difficulty Level*, *Credits*, *Number of Lectures*, *Short Description*, *Estimated Time*, *Starting date* and *Price* are displayed textually on this level.  The value *Test* is indicated with the appropriate [icons](docs/images/test%20exist.png). Logged superusers can edit or delete the content of individual courses [edit or delete](docs/images/edit%20and%20delete%20course%20categories.png). However, this option is exclusively available to [superusers](docs/images/resticted%20edit%20.png). By choosing the edit option, the [form page](docs/images/edit%20form.png) to edit the course's content opens. The functionality is tested: [step 1](docs/images/edit%20flood%201.png); [step 2](docs/images/edit%20flood%203.png). After the change have been submitted, the [popup message](docs/images/edit%20flood%202.png) informs the user about the consequences of his last activity.
 
@@ -88,9 +88,11 @@ In order to prevent unintentional deletion, the safety net in the form of a dele
 The deletion of the part of the database is indicated by [message deleted](docs/images/message%20deleted.png) 
 info in the popup field, too [Source code](https://getbootstrap.com/docs/4.1/components/modal/ "Bootstrap Modal Documentation").
 
-By clicking the **Explore Course button**, the page rendering the content of each course's *learning material* is visible. It is a combination of textual material and PDF and video material. In this stage of development, only the two latter are hidden from the user until the course fee is paid.  *Add this course to the bag" is centrally located and activates the *Bag* view.
+**new feature:** Only authenticated users are allowed to have access to a page with the learning materials.
 
-This page offers a tabular overview of selected courses, their quantity, price, and discount (if activated). By wish, the *remove* link allows the User to eliminate the undesired course from the bag. The logos of individual courses serve as links, too. If categories logo is not availble, the projects  [logo](docs/images/bag_project_logo_display.png) will be rendered. Finally, the *Keep Exploring* link invites users to learn more about other courses and eventually add them to the shopping basket. button is available to finalize the shopping activities.
+By clicking the **Explore Course button**, the page rendering the content of each course's *learning material* is visible. It is a combination of textual material and PDF and video material. In this stage of development, only the two latter are hidden from the user until the course fee is paid.  *Add this course to the bag"* is centrally located and activates the *Bag* view.
+
+This page offers a tabular overview of selected courses, their quantity, price, and discount (if activated). By wish, the *remove* link allows the User to eliminate the undesired course from the bag. The logos of individual courses serve as links to individual categories view, too. This feature maket it easier to grasp the better overview of the connections between the course overview and its content. If categories logo is not availble, the projects  [logo](docs/images/bag_project_logo_display.png) will be rendered. Finally, the *Keep Exploring* link invites users to learn more about other courses and eventually add them to the shopping basket. At the lover end of the page, a button is available to finalize the shopping activities.
 
 The *Checkout page* consists of two major sections: 1: Order Summary, which provides the overview of the User's shopping selection, and 2: Checkout Form, which makes it possible for the User to enter personal data. They serve both the site administrator and the User as a confirmation that the digital learning service is provided to the desired customer. In cases where the User is a *Registered User*, most fields are prepopulated with the User's account data. The idea is to improve the UI. The same goal is achieved when the User selects the *Save this delivery information to my profile* checkout field. Not less important is that even in this stage, the User has the *Adjust Bag* at its disposal. The last feature is the self-explanatory outcome. The essential part of the form field is the payment window dedicated to credit card data. Additionally, if categories logo is not availble, the projects  [logo](docs/images/project%20logo%20instead%20of%20category%20logo%20in%20checkout.png) will be rendered.
 
