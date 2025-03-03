@@ -98,6 +98,8 @@ The *Checkout page* consists of two major sections: 1: Order Summary, which prov
 
 The essential part of the form field is the payment window dedicated to credit card data. Upon successful payment the [message](docs/images/email%20in%20production%201.png) will indicate the number of the order, as well as the [email](docs/images/email%20in%20production%202.png) ([Gmail View](docs/images/email%20in%20production%203.png)) where the order details are going to be sent ([test in development stage](docs/images/email%20in%20development.png)). 
 
+The icons locked or unlocked in appropriate colours are rendered on the categories page depending on the [purchase status](docs/images/locked_unlocked.png).
+
 *About Page* begins with a centered heading **About Disaster Ready - Germany** and a call-to-action button for exploring online courses. The main content includes an introductory section describing the platform’s mission to enhance emergency preparedness through digital learning. Below this, a instructor profile cards present experts specializing in various disaster-related fields, including dummy links to instructor's profiles. An additional section highlights recent public events related to disaster communication. At a very end, a promotional message offers a tempting discount on online courses.
 
 ### Discount
