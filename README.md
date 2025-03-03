@@ -94,7 +94,9 @@ By clicking the **Explore Course button**, the page rendering the content of eac
 
 This page offers a tabular overview of selected courses, their quantity, price, and discount (if activated). By wish, the *remove* link allows the User to eliminate the undesired course from the bag. The logos of individual courses serve as links to individual categories view, too. This feature maket it easier to grasp the better overview of the connections between the course overview and its content. If categories logo is not availble, the projects  [logo](docs/images/bag_project_logo_display.png) will be rendered. Finally, the *Keep Exploring* link invites users to learn more about other courses and eventually add them to the shopping basket. At the lover end of the page, a button is available to finalize the shopping activities.
 
-The *Checkout page* consists of two major sections: 1: Order Summary, which provides the overview of the User's shopping selection, and 2: Checkout Form, which makes it possible for the User to enter personal data. They serve both the site administrator and the User as a confirmation that the digital learning service is provided to the desired customer. In cases where the User is a *Registered User*, most fields are prepopulated with the User's account data. The idea is to improve the UI. The same goal is achieved when the User selects the *Save this delivery information to my profile* checkout field. Not less important is that even in this stage, the User has the *Adjust Bag* at its disposal. The last feature is the self-explanatory outcome. The essential part of the form field is the payment window dedicated to credit card data. Additionally, if categories logo is not availble, the projects  [logo](docs/images/project%20logo%20instead%20of%20category%20logo%20in%20checkout.png) will be rendered.
+The *Checkout page* consists of two major sections: 1: Order Summary, which provides the overview of the User's shopping selection, and 2: Checkout Form, which makes it possible for the User to enter personal data. They serve both the site administrator and the User as a confirmation that the digital learning service is provided to the desired customer. In cases where the User is a *Registered User*, most fields are prepopulated with the User's account data. The idea is to improve the UI. The same goal is achieved when the User selects the *Save this delivery information to my profile* checkout field. Not less important is that even in this stage, the User has the *Adjust Bag* at its disposal. The last feature is the self-explanatory outcome.  Additionally, if categories logo is not availble, the projects  [logo](docs/images/project%20logo%20instead%20of%20category%20logo%20in%20checkout.png) will be rendered.
+
+The essential part of the form field is the payment window dedicated to credit card data. Upon successful payment the [message](docs/images/email%20in%20production%201.png) will indicate the number of the order, as well as the [email](docs/images/email%20in%20production%202.png) ([Gmail View](docs/images/email%20in%20production%203.png)) where the order details are going to be sent ([test in development stage](docs/images/email%20in%20development.png)). 
 
 *About Page* begins with a centered heading **About Disaster Ready - Germany** and a call-to-action button for exploring online courses. The main content includes an introductory section describing the platform’s mission to enhance emergency preparedness through digital learning. Below this, a instructor profile cards present experts specializing in various disaster-related fields, including dummy links to instructor's profiles. An additional section highlights recent public events related to disaster communication. At a very end, a promotional message offers a tempting discount on online courses.
 
@@ -157,7 +159,7 @@ Considering the EC-nature of the project, the basic philosophy applied in this p
  - Mailchimp - for User's subscriptions and mails services
  - Amazon AWS S3 - to storage video data
  - Heroku - to deploy the project
- - Mailchimp - for subsription letters 
+ 
 
 ### Software Resources Used
 
@@ -476,21 +478,11 @@ The ids for individual categories are created [dynamicaly](docs/images/bugs/dyna
 **registration of a new user** - please, consult *registration section* above
 
 
-
-During manual testing, a strange situation was noticed. Namely, all emails have the primary status, which should not be the case. However, they don't have access to the management panel.
-Additionally, the regular registration flow was interrupted by this template: [conf itsector email bug](docs/images/confirmation_mails/conf%20itsector%20email%20bug.png). On the backend side, the accounts were formed only partially successfully because the action in the admin panel was necessary. Besides, the registration process was not visible on the frontend side. 
-
-
 #### Unresolved Bug Issues
 
 1
 
-- [Added courses not rendering corectly](docs/images/bugs/bug_added%20courses%20not%20rendering%20corectly.png);
-
-2 
-
 - [Bug navbar links blocked when sign in open](docs/images/bugs/bug_navbar_links_blocked_when_signin_open.png);
-
 
 
 

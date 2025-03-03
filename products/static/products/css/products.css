@@ -1,3 +1,15 @@
 .add-product-hr {
     border-top: 1px solid red;
 }
+
+/*all categories*/
+
+.unlocked-icon {
+    color: rgb(25, 135, 84);
+    font-size: 1.5rem;
+}
+
+.locked-icon {
+    color: red;
+    font-size: 1.5rem;
+}

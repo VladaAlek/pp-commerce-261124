@@ -2,7 +2,9 @@
 {% load static %}
 
 
-
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'products/css/products.css' %}">
+{% endblock %}
 
 
 {% block content %}
@@ -23,6 +25,13 @@
                         <img class="all-categories-logo" src="{{ MEDIA_URL }}noimage.svg" alt="{{ category.name }}">
                         {% endif %}
                     </div>
+                    <div>
+                        {% if category.id in purchased_courses %}
+                        <span class="unlocked-icon"><i class="bi bi-unlock"></i></span>
+                        {% else %}
+                        <span class="locked-icon"><i class="bi bi-lock"></i></span>
+                        {% endif %}
+                    </div> 
                     <p><strong>Difficulty Level:</strong> {{ category.difficulty_level }}</p>
                     <p><strong>Credits:</strong> {{ category.credits }}</p>
                     <p><strong>Number of Lectures:</strong> {{ category.number_of_lectures }}</p>
