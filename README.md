@@ -98,12 +98,21 @@ The *Checkout page* consists of two major sections: 1: Order Summary, which prov
 
 The essential part of the form field is the payment window dedicated to credit card data. Upon successful payment the [message](docs/images/email%20in%20production%201.png) will indicate the number of the order, as well as the [email](docs/images/email%20in%20production%202.png) ([Gmail View](docs/images/email%20in%20production%203.png)) where the order details are going to be sent ([test in development stage](docs/images/email%20in%20development.png)). 
 
-The icons locked or unlocked in appropriate colours are rendered on the categories page depending on the [purchase status](docs/images/locked_unlocked.png).
-
-*About Page* begins with a centered heading **About Disaster Ready - Germany** and a call-to-action button for exploring online courses. The main content includes an introductory section describing the platform’s mission to enhance emergency preparedness through digital learning. Below this, a instructor profile cards present experts specializing in various disaster-related fields, including dummy links to instructor's profiles. An additional section highlights recent public events related to disaster communication. At a very end, a promotional message offers a tempting discount on online courses.
+The icons **locked** or **unlocked** in appropriate colours of red or green are rendered on the categories page depending on the [purchase status](docs/images/locked_unlocked.png).
 
 ### Discount
-If more than 1500 euros are spent, a 10% discount is offered on the index page, too. If this option is activated, the reduced price is visible in Navabar, in the [Shopping Bag](docs/images/discount_bag.png) and [shopping confirmation details](docs/images/discount_checkout_success.png). The later is located in the *Profile page*.*
+If more than 1500 euros are spent, a 10% discount is offered on the index page, too. If this option is activated, the reduced price is visible in Navabar, whiler in the [Shopping Bag](docs/images/discount_bag.png) and [shopping confirmation details](docs/images/discount_checkout_success.png) the amount of saved money is indicated. The later is located in the *Profile page*.*
+
+*About Page* begins with a centered heading **About Disaster Ready - Germany** and one more call-to-action button for exploring online courses. The main content includes an introductory section describing the platform’s mission to enhance emergency preparedness through digital learning. Below this, a instructor profile cards present experts specializing in various disaster-related fields, including dummy links to instructor's profiles. As mentioned earlier in this text, this would be an ideal place to add *make an appoitment* feature in the further stages of the project's development. An additional section highlights recent public events related to disaster communication. At a very end, a promotional message offers a tempting discount on online courses.
+
+## Mailchimp
+
+- User subscription is located on the *Profile page*. The user who shared data to form the profile is presumed to continue with this activity and subscribe to our periodical letter.
+
+
+#### Mailchimp Design and Responsivness
+
+- [SM](docs/images/profile%20page%20SM.png); [MD](docs/images/profile%20page%20MD.png); [LG](docs/images/profile%20page%20LG.png);
 
 
 ## Footer
@@ -113,18 +122,9 @@ This feature is present on almost all pages. It contains the link to the [*Faceb
 - [footer general view LG](docs/images/footer_md.png);
 - [footer general view LG](docs/images/footer_1.png);
 
-## Mailchimp
+### Error Page
 
-- User subscription is located on the Profile page. The user who shared data to form the profile is presumed to continue with this activity and subscribe to our periodical letter.
-
-#### Design
-
-- [SM](docs/images/profile%20page%20SM.png); [MD](docs/images/profile%20page%20MD.png); [LG](docs/images/profile%20page%20LG.png);
-
-#### Mailchimp Functionality Test
-- [Mailchimp Success](docs/images/mailchimp%20success.png)
-- [Mailchimp All Emails](docs/images/mailchimp%20success%20audience.png)
-
+- [Test](docs/images/error%20404%20documentation.png);
 
 ### Design Proces
 
@@ -378,13 +378,6 @@ The templates stress that material can be added only after the category has been
 #### DELETE
 - [delete products form - **delete courses and materials - delete success**](docs/images/products%20form/delete%20course%20success%20button.png);
 
-
-### About page
-
-- [Test](docs/images/error%20404%20documentation.png);
-
-### Error Page
-
 - [delete products form - **delete courses and materials - delete success**](docs/images/products%20form/delete%20course%20success%20button.png);
 
 ###  Validation
@@ -418,6 +411,7 @@ The templates stress that material can be added only after the category has been
 - [profile/static/profile.css](docs/images/validation/css/validation%20css%20profile%20file.png);
 
  #### [Pythonium Linter Service](https://pythonium.net/linter)
+
  - **Project Level** [views](docs/images/pythonium/project_views.png); [URLs](docs/images/pythonium/project_URLs.png); [ASGI](docs/images/pythonium/project_ASGI.png); [WSGI](docs/images/pythonium/project_WSGI.png); [settings](docs/images/pythonium/project_settings.png);
 
  - **About App** [views](docs/images/pythonium/about_view.png); [URLs](docs/images/pythonium/about%20URLs.png);
@@ -460,13 +454,13 @@ EXTERNAL SOURCES:
 
 5 
 
-minor repositioning of the logo in the toast messages
+- minor repositioning of the logo in the toast messages
 [Original](docs/images/bugs/style%20images%20in%20the%20success%20messages.png);
 [Refactored](docs/images/bugs/style%20images%20in%20the%20success%20messages%20refactored.png);
 
 6 
 
-The missing logo in the flood category caused broken links. After introducing an if item.product.log statement in the bag.html, the problem was solved. 
+- The missing logo in the flood category caused broken links. After introducing an if item.product.log statement in the bag.html, the problem was solved. 
 Instead of the custom logo, the default logo has been rendered.
 
 [Missin Flood Logo in the "Shopping Bag"](docs/images/bugs/missing%20flood%20logo.png);
@@ -474,7 +468,7 @@ Instead of the custom logo, the default logo has been rendered.
 
 7
 
-The ids for individual categories are created [dynamicaly](docs/images/bugs/dynamic%20creation%20of%20categories_id.png), preventing this [error](docs/images/bugs/404%20page%20not%20found%20floods.png).
+- The IDs for individual categories are created [dynamicaly](docs/images/bugs/dynamic%20creation%20of%20categories_id.png), preventing this [error](docs/images/bugs/404%20page%20not%20found%20floods.png).
 
 8 
 **registration of a new user** - please, consult *registration section* above
@@ -491,9 +485,6 @@ The ids for individual categories are created [dynamicaly](docs/images/bugs/dyna
 ### Image's Sources
  - [Flickr.com](https://www.flickr.com/photos/apfelauge/25528764266/in/photolist-ETTAd3-aruDcd-oybpY8-ars18K-ars1Sr-ars1qM-arrZ2e-arrZeB-arrZpV-ars1ye-aruDB3-arrYTK-aruD1A-2kypz9o-aruE9b-eHdPys-2kxmpUV-98weQw-9aL4ZS-98t6mT-2n6BFgN-2qhpUcR-9a6i7e-rGaTjQ-dFkWsU-ahaC5Z-eBNHfs-5sEf1V-6aFqEa-2nURaUe-7Qxk4N-2kxMii3-4NXPkq-4NXY91-4NXQMA-4NYfnC-4NXSyE-4NY3jU-4NU8rH-JkiUrD-QhphK4-4NY8um-4NY8Sh-4NY4iC-4NTA6K-4NTU7H-i8tXAS-4NXTYY-4NTTLr-4NXXk1/ "flickr.com")
  
-
-Keep this as a template
-[Next Only](docs/images/testing_allauth.png); [Prev Next](docs/images/testing_allauth.png); 
 
 ## Important Note
  - [Shopping Bag](https://github.com/users/VladaAlek/projects/16/) **Project** not visible in the project`s repo
