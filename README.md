@@ -98,7 +98,9 @@ The *Checkout page* consists of two major sections: 1: Order Summary, which prov
 
 The essential part of the form field is the payment window dedicated to credit card data. Upon successful payment the [message](docs/images/email%20in%20production%201.png) will indicate the number of the order, as well as the [email](docs/images/email%20in%20production%202.png) ([Gmail View](docs/images/email%20in%20production%203.png)) where the order details are going to be sent ([test in development stage](docs/images/email%20in%20development.png)). 
 
-The icons **locked** or **unlocked** in appropriate colours of red or green are rendered on the categories page depending on the [purchase status](docs/images/locked_unlocked.png).
+The data about purchased courses is stored in profiles/models/PurchasedCourse model/database. This ensures that unlogged users don't lose access to purchased courses.
+
+The icons **locked** or **unlocked** in appropriate colours of red or green are rendered on the [categories purchase status](docs/images/locked_unlocked.png) - [categories purchase status restyled](docs/images/locked_unlocked%20categories.png) and [individual_categor purchase status](docs/images/locked_unlocked%20ind%20category.png).
 
 ### Discount
 If more than 1500 euros are spent, a 10% discount is offered on the index page, too. If this option is activated, the reduced price is visible in Navabar, whiler in the [Shopping Bag](docs/images/discount_bag.png) and [shopping confirmation details](docs/images/discount_checkout_success.png) the amount of saved money is indicated. The later is located in the *Profile page*.*
