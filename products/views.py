@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from .models import Category, Material
+from profiles.models import PurchasedCourse
 from .forms import CategoryForm, MaterialForm
 from django.contrib import messages
 from django.db.models import Q
@@ -62,9 +63,15 @@ def category_detail(request, category_id):
     # Get all materials under the category
     materials = Material.objects.filter(category=category)
 
+    # Check if the user has purchased the course
+    purchased_courses = []
+    if request.user.is_authenticated:
+        purchased_courses = PurchasedCourse.objects.filter(user=request.user).values_list('course_id', flat=True)
+
     context = {
         'category': category,
         'materials': materials,
+        'purchased_courses': purchased_courses,
     }
 
     return render(request, 'products/material.html', context)

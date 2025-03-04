@@ -5,7 +5,7 @@ from django.conf import settings
 from .forms import OrderForm
 from .models import Order, OrderLineItem
 from products.models import Category
-from profiles.models import UserProfile
+from profiles.models import UserProfile, PurchasedCourse
 from profiles.forms import UserProfileForm
 from bag.contexts import bag_contents
 
@@ -154,6 +154,10 @@ def checkout_success(request, order_number):
         # Attach the user's profile to the order
         order.user_profile = profile
         order.save()
+
+        # Store purchased courses in PurchasedCourse model
+        for item in order.lineitems.all():
+            PurchasedCourse.objects.get_or_create(user=request.user, course=item.product)
 
         # Save the user's info
         if save_info:

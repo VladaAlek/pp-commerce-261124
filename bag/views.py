@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, HttpResponse, reverse, get_object
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from products.models import Category
+from profiles.models import PurchasedCourse
 
 
 def view_bag(request):
@@ -18,7 +19,19 @@ def add_to_bag(request, item_id):
     redirect_url = request.POST.get('redirect_url')
     bag = request.session.get('bag', {})
     message_shown = request.session.get('message_shown', {})
-    purchased_courses = request.session.get('purchased_courses', [])
+
+    # getting purchased courses from the database
+    if request.user.is_authenticated:
+        purchased_courses = PurchasedCourse.objects.filter(user=request.user).values_list('course_id', flat=True)
+    else:
+        purchased_courses = []
+
+    # preventing adding the course if already exists in the database
+
+    if item_id in purchased_courses:
+        message.warning(request, f'You have alredy purchased {category.name}')
+        return redirect(redirect_url)
+
 
     if item_id in bag:
         bag[item_id] += quantity
