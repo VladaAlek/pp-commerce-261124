@@ -16,6 +16,10 @@ def all_categories(request):
     categories = Category.objects.all()
     query = None
 
+    purchased_courses = []
+    if request.user.is_authenticated:
+        purchased_courses = PurchasedCourse.objects.filter(user=request.user).values_list('course_id', flat=True)
+
     if request.GET:
         if 'q' in request.GET:
             query = request.GET['q']
@@ -34,6 +38,8 @@ def all_categories(request):
     context = {
         'categories': categories,
         'search_term': query,
+        'purchased_courses': purchased_courses,
+
     }
 
     return render(request, 'products/categories.html', context)
@@ -46,8 +52,13 @@ def individual_category(request, category_id):
     # Get the category
     category = get_object_or_404(Category, pk=category_id)
 
+    purchased_courses = []
+    if request.user.is_authenticated:
+        purchased_courses = PurchasedCourse.objects.filter(user=request.user).values_list('course_id', flat=True)
+
     context = {
         'category': category,
+        'purchased_courses': purchased_courses,
     }
 
     return render(request, 'products/individual_category.html', context)
