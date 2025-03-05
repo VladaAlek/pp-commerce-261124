@@ -6,10 +6,20 @@
 
 .unlocked-icon {
     color: rgb(25, 135, 84);
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 
 .locked-icon {
     color: red;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+}
+
+.test-icon-green {
+    color: rgb(25, 135, 84);
+    font-size: 1rem;
+}
+
+.test-icon-red {
+    color: red;
+    font-size: 1rem;
 }

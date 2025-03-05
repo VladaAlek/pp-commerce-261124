@@ -43,9 +43,12 @@
         <p><strong>Find out more about {{ category.name }}s:</strong> {{ category.long_description }}</p>
     </div>
     <div class="mb-2">
-        <p><strong>Test:</strong> {{ category.test }}</p>
+        {% if category.test%}
+        <p class="test-icon-green"><strong>Test: </strong> <i class="bi bi-bookmark-check"></i></p>
+        {% else%}
+        <p class="test-icon-red"><strong>Test: </strong> <i class="bi bi-bookmark-x"></i></p>
+        {% endif %}
     </div>
-
     <div class="individual-category-price-date p-4">
         <p><strong>Starting date:</strong> {{ category.starting_date }}</p>
         <p><strong>Price:</strong> {{ category.price }}
