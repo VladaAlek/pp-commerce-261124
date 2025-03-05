@@ -5,21 +5,21 @@
 /*all categories and individual category*/
 
 .unlocked-icon {
-    color: rgb(25, 135, 84);
-    font-size: 2.5rem;
+    color: rgb(25, 135, 84) !important;
+    font-size: 2.5rem !important;
 }
 
 .locked-icon {
-    color: red;
-    font-size: 2.5rem;
+    color: red !important;
+    font-size: 2.5rem !important;
 }
 
 .test-icon-green {
-    color: rgb(25, 135, 84);
-    font-size: 1rem;
+    color: rgb(25, 135, 84) !important;
+    font-size: 1rem !important;
 }
 
 .test-icon-red {
-    color: red;
-    font-size: 1rem;
+    color: red !important;
+    font-size: 1rem !important;
 }
