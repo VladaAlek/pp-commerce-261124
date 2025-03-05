@@ -11,7 +11,32 @@ body {
     font-family: 'Lato';
 }
 
+/*Navbar styling*/ 
+
+.custom-black {
+    color: black !important;
+}
+
+
+/*Footbar*/
+
+.foot-stl {
+ height: 4rem;
+ margin-bottom: 2rem;
+}
+
+.a-color {
+    color: #FFFFFF;
+    text-shadow: 1px 1px 2px black;
+  }
+
+  .a-color:hover {
+    color: rgb(25, 135, 84);
+    font-weight: 200;
+  }
+
 /*H-elements on the index page*/ 
+
 .home-title,
 .categories-title {
     font-size: 90px;
@@ -21,6 +46,53 @@ body {
     font-size: 35px;
 }
 
+.discount-border-line {
+    border: 1px solid red;
+}
+
+/*all categories template*/
+
+.courses-title {
+    height: 106px;
+}
+
+.categories-price-date {
+    background-color: gainsboro;
+    width: inherit;
+    padding-left: 5px !important;
+}
+
+.all-categories-logo {
+    width: 100%;
+    max-height: 50px;
+    margin-left: 1rem;
+}
+
+.equal-height {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100%;
+}
+
+
+/* one category template*/
+
+.individual-category-price-date {
+    background-color: gainsboro;
+}
+
+.course-overview-content {
+    opacity: 0.9;
+}
+
+
+/* Material.html */
+
+.purchase-divs {
+    width: 117px;
+    padding: 8px;
+    text-align: center;
+}
 
 
 /* overlay for the categories page */
@@ -32,10 +104,162 @@ body {
 	left: 0;
 	position: fixed;
 	opacity: 0.2;
-	z-index: -1;*/
+	z-index: -1;
 }
 
-/*media queries*/
+/* bag */
+
+.bag-logo-div {
+    width: 46px;
+    height: 46px;
+    background-color: rgb(25, 135, 84);
+}
+
+.container {
+    background-color: rgb(223, 223, 223);
+    opacity: 0.9;
+}
+
+
+.remove-item {
+    text-decoration: none;
+}
+
+.remove-item:hover {
+    color: rgb(25, 135, 84) !important;
+    cursor: pointer;
+}
+
+.empty-bag-notification {
+    color: red
+}
+
+.bag-row {
+    min-height: 300px;
+}
+
+/*materials page*/
+
+
+.head-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 50%;
+  }
+
+  #materials-subtitle-field {
+    background-color: black;
+    width: 100%;
+    min-height: 70px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.material-buttons {
+    width: 113px;
+}
+
+.material-logo-div {
+    width: auto;
+    height: auto;
+}
+
+
+
+
+/*toast messages*/
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
+/*Allauth form formatting*/
+
+.allauth-form-inner-content p {
+    margin-top: 1.5rem; /* mt-4 */
+    color: #6c757d; /* text-secondary */
+}
+
+.allauth-form-inner-content input {
+    border-color: #000;
+    border-radius: 0;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #aab7c4;
+}
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+	/* btn */
+	display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #000;
+    border: 1px solid #000;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0;
+
+    /* standard bootstrap btn transitions */
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {	
+	color: #fff;
+    background-color: #222;
+    border-color: #222;
+}
+
+.allauth-form-inner-content a {
+	color: #17a2b8; /* text-info */
+}
+
+ /*Profile Template*/
+
+ .subscription-title {
+    margin-top: 1rem;
+ }
+
+ /*mailchimp*/
+
+ #mc_embed_signup {
+    background:#fff;  
+    /*false;*/
+    clear:left;
+    font:14px Helvetica,Arial,sans-serif;
+    width: 600px;
+}
+
 
 /*media queries index.html*/
 

@@ -1,0 +1,82 @@
+.order-history {
+    max-height: 416px; 
+    overflow-y: auto;
+}
+
+#profile-update-form .form-control {
+    color: #000;
+}
+
+#profile-update-form input::placeholder {
+    color: #aab7c4;
+}
+
+#id_default_country,
+#id_default_country option:not(:first-child) {
+    color: #000;
+}
+
+#id_default_country option:first-child {
+    color: #aab7c4;
+}
+
+hr {
+    border: none !important; 
+    height: 2px !important; 
+    background-color: rgb(25, 135, 84) !important; 
+}
+
+/* mailchimp */
+
+
+#mailchimp-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#mailchimp-header p {
+    margin: 0; 
+    display: flex;
+    align-items: center;
+}
+
+#mailchimp-header img {
+    width: 220px;
+    height: 40px;
+}
+
+
+@media (min-width: 539px) {
+    #mailchimp-header {
+        gap: 60px;
+    }
+}
+
+
+#subscribe-h2 {
+    margin-top: 0 !important;
+}
+
+.mailchimp-h2-div {
+    padding-top: 1rem;
+}
+
+/* end of mailchimp */ 
+
+#mc_embed_shell {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+#mc_embed_signup {
+    max-width: 90%; 
+    margin: 0 auto; 
+    padding-top: 8px;
+}
+
+#mce-EMAIL, #mce-FNAME, 
+#mce-LNAME, #mce-COMPANY,
+#mc-embedded-subscribe {
+    border-radius: 0 !important;
+}
