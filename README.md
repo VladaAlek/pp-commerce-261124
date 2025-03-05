@@ -1,9 +1,9 @@
 # Disaster Ready
 
 
-This e-commerce project is focused on providing a user with learning material in the **Disaster Risk Reduction** field. It is an increasingly popular, multidisciplinary research area between natural and social sciences. Its multi-faceted results are implemented in everyday confrontations with natural hazards by numerous practitioners across the globe. The need to disseminate practical and theoretical knowledge about **DRR** grows with rapid changes in the natural and social environment. Hence, there are numerous potential users of this course. For practical reasons, this time, the project is limited to German-speaking countries *German, Austria and Switzerland*, the three countries that are exposed to *floods*, *stormy weather conditions*, *forest fires*, and *heat weaves* as the four most relevant natural disasters in this part of Europe.
+This e-commerce project is focused on providing a user with learning material in the **Disaster Risk Reduction** field. It is an increasingly popular, multidisciplinary research area between natural and social sciences. Its multi-faceted results are implemented in everyday confrontations with natural hazards by numerous practitioners across the globe. The need to disseminate practical and theoretical knowledge about **DRR** grows with rapid changes in the natural and social environment. Hence, there are numerous potential users of this course. For practical reasons, this time, the project is limited to German-speaking countries, *Germany, Austria and Switzerland*, the three countries exposed to *floods*, *stormy weather conditions*, *forest fires*, and *heat weaves* as the four most relevant natural disasters in this part of Europe.
 
-Considering that the main users of the website's services will be municipality workers, this e-commerce platform is based on B2B principles.
+Considering that the website's main users will be municipality workers, this e-commerce platform is based on B2B principles.
 When customers pay for specific services, they get an unlimited approach. In this stage of development, the option of offering a test to the user is indicated but not fully implemented. The same statement applies to the foreseen feature of booking consulting services from team members. It should be available on the *About* page.
 
 ### Types of commercial activities
@@ -20,10 +20,10 @@ Find out more about Disaster Ready E-Commerce Business Strategy here:
 
 [Disaster Ready Germany SEO](https://drive.google.com/file/d/1z7MxM64oRXnc64d1jDV9fn02sncI2X6F/view?usp=drive_link "Disaster Ready Germany SEO")
 
-### Facebook Busines Page
+### Facebook Business Page
 
-- [Link 09.01.2025](https://www.facebook.com/profile.php?id=61571470064318 "Disaster Ready Germany Facebook Busines Page")
-- [Facebook Busines Page Screenshot](docs/images/facebook%20busines%20page.png);
+- [Link 09.01.2025](https://www.facebook.com/profile.php?id=61571470064318 "Disaster Ready Germany Facebook Business Page")
+- [Facebook Business Page Screenshot](docs/images/facebook%20busines%20page.png);
 
 ### Sites main structure
  - log in/log out - see more in the Authentication section below
@@ -47,14 +47,14 @@ Here are documented some of the major **navigation possibilities** provided to t
 - [All Courses - Bag View](docs/images/navigation/navigation%20all%20courses%20from%20shopping%20bag%20view%20LG%203.png);
 - [All Courses - Individual Course](docs/images/navigation/navigation%20to%20all%20and%20individiual%20courses.png);
 - [All Courses - Dropping Menu](docs/images/navigation/navigation%20to%20all%20courses%20from%20Navigate%20dropping%20menu%20in%20the%20navbar.png);
-- [All Courses - Dropping Menu with refactored view](docs/images/individual%20category%20view%20refactored.png);
+- [All Courses - Dropping Menu with a Refactored View](docs/images/individual%20category%20view%20refactored.png);
 - [Individual Course - Structure](docs/images/navigation/navigation%20to%20individual%20course%20structure%20page.png);
 - [Individual Course - Content](docs/images/navigation/);
 
 ## Superuser's features
 
-- Superuser can enter the **admin page**. There, it can monitor or adjust the 1. user's status, 2. content of the courses, 3. payment/ordering proccess. The CRUD operations are present.
-- Superuser has access to the **product form** in which it can execute CRUD operations.
+- The superuser can enter the **admin page**. It can monitor or adjust the 1. user's status, 2. course content, and 3. payment/ordering process. The CRUD operations are present.
+- The Superuser has access to the **product form** to execute CRUD operations.
 
 ### Authentication
 - django-allauth==0.54.0
@@ -65,47 +65,47 @@ Here are documented some of the major **navigation possibilities** provided to t
 
 ### Profile Page
 
-This feature is by default [locked](docs/images/profile%20page%20locked.png), and it [opens](docs/images/profile%20page%20unlocked.png) only for logged users in the dropdown menu when clicking on the "my account" section in the navbar. The [user's name](docs/images/users%20name%20on%20the%20profile%20page.png) is rendered in the welcome message to make the navigation easier. The profile page has a [dual puprose](docs/images/profile%20design.png). On the user's left side is a form to enter the user's delivery data and to confirm the identity. The right side provides the *Order History*. 
+This feature is by default [locked](docs/images/profile%20page%20locked.png), and it [opens](docs/images/profile%20page%20unlocked.png) only for logged users in the dropdown menu when clicking on the "my account" section in the Navbar. The [user's name](docs/images/users%20name%20on%20the%20profile%20page.png) is rendered in the welcome message to make navigation easier. The profile page has a [dual puprose](docs/images/profile%20design.png). On the user's left side is a form to enter the user's delivery data and to confirm the identity. This information can be changed/corrected/adjusted by clicking the **update information** button. The [message](docs/images/update%20profile.png) is present to indicate the changes in the profile's data. The right side provides the *Order History*. 
 
 
 ### Exploring and Selecting/Managing Courses
 
 Being informed about the courses offered in this project is crucial. 
 
-*Seach Courses* Options in Navbar allow for querying the learning material based on the search words coming from:
+The *Seach Courses* Options in Navbar allow for querying the learning material based on the search words coming from:
 
  - [categories name 1](docs/images/search%20cat%201.png); [categories name 2](docs/images/search%20cat%202.png)
  - [short description 1](docs/images/search%20short%201.png); [short description 2](docs/images/search%20short%202.png)
  - [long descriptio 1](docs/images/search%20long%201.png); [long descriptio 2](docs/images/search%20long%202.png)
- - Functionality tested in [development](docs/images/search%20development.png) stage, too.
+ - Functionality was tested in the [development](docs/images/search%20development.png) stage, too.
 
  The messages improve the UI by indicating that [no criteria have been entered](docs/images/search%20no%20criteria.png) in the search field or that [no categories found matching your search.](docs/images/seacht%20no%20match%20message.png).
  
-Upon landing on the index page, users can click the *Explore Courses* button. There, it can learn more about the basic structure of the *individual courses*. The basic logos are shown in the head section so that the particular courses are visually different from others. The following values *Difficulty Level*, *Credits*, *Number of Lectures*, *Short Description*, *Estimated Time*, *Starting date* and *Price* are displayed textually on this level.  The value *Test* is indicated with the appropriate [icons](docs/images/test%20exist.png) in specific colors to raise the users attention on this feature (**note:** the same feature present on the [individual course view](docs/images/test exist individual category.png)). Logged superusers can edit or delete the content of individual courses [edit or delete](docs/images/edit%20and%20delete%20course%20categories.png). However, this option is exclusively available to [superusers](docs/images/resticted%20edit%20.png). By choosing the edit option, the [form page](docs/images/edit%20form.png) to edit the course's content opens. The functionality is tested: [step 1](docs/images/edit%20flood%201.png); [step 2](docs/images/edit%20flood%203.png). After the change have been submitted, the [popup message](docs/images/edit%20flood%202.png) informs the user about the consequences of his last activity.
+Upon landing on the index page, users can click the *Explore Courses* button. There, it can learn more about the basic structure of the *individual courses*. The basic logos are shown in the head section so that the particular courses are visually different from others. The following values: *Difficulty Level*, *Credits*, *Number of Lectures*, *Short Description*, *Estimated Time*, *Starting date* and *Price* are displayed textually on this level.  The value *Test* is indicated with the appropriate [icons](docs/images/test%20exist.png) in specific colors to raise the user's attention on this feature (**note:** the same feature present on the [individual course view](docs/images/test exist individual category.png)). Logged superusers can edit or delete the content of individual courses [edit or delete](docs/images/edit%20and%20delete%20course%20categories.png). However, this option is exclusively available to [superusers](docs/images/resticted%20edit%20.png). By choosing the edit option, the [form page](docs/images/edit%20form.png) to edit the course's content opens. The functionality is tested: [step 1](docs/images/edit%20flood%201.png); [step 2](docs/images/edit%20flood%203.png). After the change has been submitted, the [popup message](docs/images/edit%20flood%202.png) informs the user about the consequences of his last activity.
 
-In order to prevent unintentional deletion, the safety net in the form of a deletion modal has been introduced: [step 1](docs/images/test%20deletion%20modal.png); [step 2](docs/images/test%20deletion%20modal%201.png). 
+To prevent unintentional deletion, a safety net in the form of a deletion modal has been introduced: [step 1](docs/images/test%20deletion%20modal.png); [step 2](docs/images/test%20deletion%20modal%201.png). 
 
-The deletion of the part of the database is indicated by [message deleted](docs/images/message%20deleted.png) 
+The deletion of the part of a database is indicated by [message deleted](docs/images/message%20deleted.png) 
 info in the popup field, too [Source code](https://getbootstrap.com/docs/4.1/components/modal/ "Bootstrap Modal Documentation").
 
-**new feature:** Only authenticated users are allowed to have access to a page with the learning materials.
+**New feature:** Only authenticated users can access a page with the learning materials.
 
 By clicking the **Explore Course button**, the page rendering the content of each course's *learning material* is visible. It is a combination of textual material and PDF and video material. In this stage of development, only the two latter are hidden from the user until the course fee is paid.  *Add this course to the bag"* is centrally located and activates the *Bag* view.
 
-This page offers a tabular overview of selected courses, their quantity, price, and discount (if activated). By wish, the *remove* link allows the User to eliminate the undesired course from the bag. The logos of individual courses serve as links to individual categories view, too. This feature maket it easier to grasp the better overview of the connections between the course overview and its content. If categories logo is not availble, the projects  [logo](docs/images/bag_project_logo_display.png) will be rendered. Finally, the *Keep Exploring* link invites users to learn more about other courses and eventually add them to the shopping basket. At the lover end of the page, a button is available to finalize the shopping activities.
+This page offers a tabular overview of selected courses, their quantity, price, and discount (if activated). By wish, the *remove* link allows the User to eliminate the undesired course from the bag. The logos of individual courses serve as links to individual categories view, too. This feature makes it easier to understand the connections between the course overview and its content. If the category logo is unavailable, the project's  [logo](docs/images/bag_project_logo_display.png) will be rendered. Finally, the *Keep Exploring* link invites users to learn more about other courses and eventually add them to the shopping basket. At the lower end of the page, a button is available to finalize the shopping activities.
 
-The *Checkout page* consists of two major sections: 1: Order Summary, which provides the overview of the User's shopping selection, and 2: Checkout Form, which makes it possible for the User to enter personal data. They serve both the site administrator and the User as a confirmation that the digital learning service is provided to the desired customer. In cases where the User is a *Registered User*, most fields are prepopulated with the User's account data. The idea is to improve the UI. The same goal is achieved when the User selects the *Save this delivery information to my profile* checkout field. Not less important is that even in this stage, the User has the *Adjust Bag* at its disposal. The last feature is the self-explanatory outcome.  Additionally, if categories logo is not availble, the projects  [logo](docs/images/project%20logo%20instead%20of%20category%20logo%20in%20checkout.png) will be rendered.
+The *Checkout page* consists of two major sections: 1: Order Summary, which provides the overview of the User's shopping selection, and 2: Checkout Form, which makes it possible for the User to enter personal data. They serve both the site administrator and the User as a confirmation that the digital learning service is provided to the desired customer. In cases where the User is a *Registered User*, most fields are prepopulated with the User's account data. The idea is to improve the UI. The same goal is achieved when the User selects *Save this delivery information* in the My Profile checkout field. Not less important is that even in this stage, the User has the *Adjust Bag* at its disposal. The last feature is the self-explanatory outcome.  Additionally, if the categories logo is not availble, the projects  [logo](docs/images/project%20logo%20instead%20of%20category%20logo%20in%20checkout.png) will be rendered.
 
 The essential part of the form field is the payment window dedicated to credit card data. Upon successful payment the [message](docs/images/email%20in%20production%201.png) will indicate the number of the order, as well as the [email](docs/images/email%20in%20production%202.png) ([Gmail View](docs/images/email%20in%20production%203.png)) where the order details are going to be sent ([test in development stage](docs/images/email%20in%20development.png)). 
 
-The data about purchased courses is stored in profiles/models/PurchasedCourse model/database. This ensures that unlogged users don't lose access to purchased courses.
+The data about purchased courses is stored in profiles/models/PurchasedCourse model/database. This feature ensures that unlogged users do not lose access to purchased courses.
 
 The icons **locked** or **unlocked** in appropriate colours of red or green are rendered on the [categories purchase status](docs/images/locked_unlocked.png) - [categories purchase status restyled](docs/images/locked_unlocked%20categories.png) and [individual_categor purchase status](docs/images/locked_unlocked%20ind%20category.png).
 
 ### Discount
-If more than 1500 euros are spent, a 10% discount is offered on the index page, too. If this option is activated, the reduced price is visible in Navabar, whiler in the [Shopping Bag](docs/images/discount_bag.png) and [shopping confirmation details](docs/images/discount_checkout_success.png) the amount of saved money is indicated. The later is located in the *Profile page*.*
+If more than 1500 euros are spent, a 10% discount is offered on the index page, too. If this option is activated, the reduced price is visible in Navabar, while in the [Shopping Bag](docs/images/discount_bag.png) and [shopping confirmation details](docs/images/discount_checkout_success.png) the amount of saved money is indicated. The later is located on the *Profile page*.*
 
-*About Page* begins with a centered heading **About Disaster Ready - Germany** and one more call-to-action button for exploring online courses. The main content includes an introductory section describing the platform’s mission to enhance emergency preparedness through digital learning. Below this, a instructor profile cards present experts specializing in various disaster-related fields, including dummy links to instructor's profiles. As mentioned earlier in this text, this would be an ideal place to add *make an appoitment* feature in the further stages of the project's development. An additional section highlights recent public events related to disaster communication. At a very end, a promotional message offers a tempting discount on online courses.
+*About Page* begins with a centred heading **About Disaster Ready - Germany** and another call-to-action button for exploring online courses. The main content includes an introductory section describing the platform’s mission to enhance emergency preparedness through digital learning. Below this, a instructor profile cards present experts specializing in various disaster-related fields, including dummy links to instructor's profiles. As mentioned earlier in this text, this would be an ideal place to add *Make an Appoitment* feature in the further stages of the project's development. An additional section highlights recent public events related to disaster communication. At a very end, a promotional message offers a tempting discount on online courses.
 
 ## Mailchimp
 
@@ -132,12 +132,12 @@ This feature is present on almost all pages. It contains the link to the [*Faceb
 
 #### Models
 
-- [Category and Material models](docs/images/erd_category_material_models.png) in **Products app**;
-- [Checkout Order Model](docs/images/checkout_order_model.png) in **Checkout app**;
-- [Checkout OrderLineItem model](docs/images/checkout_OrderLineItem_model.png) in **Checkout app**;
-- [Checkout OrderLineItem model Refactoring](docs/images/checkout_OrderLineItem_model_refactoring.png) in **Checkout app**;
-- [User Profile Model](docs/images/UserProfile_model.png) in **Profiles app**;
-- [PurchasedCourse Profile Model](docs/images/model_purchased_course.png) in **Profiles app**;
+- [Category and Material models](docs/images/erd_category_material_models.png) in the **Products app**;
+- [Checkout Order Model](docs/images/checkout_order_model.png) in the **Checkout app**;
+- [Checkout OrderLineItem model](docs/images/checkout_OrderLineItem_model.png) in the **Checkout app**;
+- [Checkout OrderLineItem model Refactoring](docs/images/checkout_OrderLineItem_model_refactoring.png) in the **Checkout app**;
+- [User Profile Model](docs/images/UserProfile_model.png) in the **Profiles app**;
+- [PurchasedCourse Profile Model](docs/images/model_purchased_course.png) in the **Profiles app**;
 
 - External Code Sources: [Crispy Bootstrap5 Documentation](https://django-bootstrap-v5.readthedocs.io/en/latest/installation.html "django-bootstrap-v5");  [Stack Overflow](https://stackoverflow.com/questions/71641974/implementing-django-bootstrap-crispy-forms-into-default-signup-login-pages "Stack Overflow.com")
 
@@ -162,8 +162,8 @@ Considering the EC-nature of the project, the basic philosophy applied in this p
  - Django 3.2.25
  - Bootstrap 5
  - Stripe - for secure finacial transactions
- - Mailchimp - for User's subscriptions and mails services
- - Amazon AWS S3 - to storage video data
+ - Mailchimp - for User's subscriptions and mail services
+ - Amazon AWS S3 - to store video data
  - Heroku - to deploy the project
  
 
@@ -179,13 +179,13 @@ Considering the EC-nature of the project, the basic philosophy applied in this p
 - Git Version control was managed using Git, with commits executed via the Gitpod terminal and pushes directed to GitHub.
 - GitHub The project's code is stored on GitHub after being pushed from Git.
 - "Projects", "Milestones" and "Issues" functions embedded in GitHub utilised to apply AGILE concepts
-- [HEROKU](https://www.heroku.com/ "HEROKU cloud platform") used to deploy and manage the applications.
+- [HEROKU](https://www.heroku.com/ "HEROKU cloud platform") is used to deploy and manage the applications.
 
 ## Deployment
 
 - it was necessary to reestablish IDE (Gitpod) - [Django](docs/images/django_requirements_21_12_24.png); [Pillow](docs/images/pillow_requirements_21_12_24.png); [Allauth](docs/images/allauth_requirements_21_12_24.png);
 - 28. 12. 2024. Gitpod IDE became unfunctional - unpushed changes were lost and reinstalling requirements and re-establishment of the settings parameters was necessary
-- 05. 01. 2025. Gitpod IDE became unfunctional - a new workspace opened, which might affect some features because there was not enough time to test and document all project's elements again
+- 05. 01. 2025. Gitpod IDE became unfunctional - a new workspace opened, which might affect some features because there was not enough time to test and document all the project's elements again.
 
 ## Dealing with Logo Images
  - The project's style in base.css is set to best suit the PNG image format. Hence, it is recommended that you use this format.
@@ -243,11 +243,11 @@ Considering the EC-nature of the project, the basic philosophy applied in this p
 ### Testing Toasts
 
 - [Add Course Toast](docs/images/Toast_Success_Add.png); [Add Course Toast SM](docs/images/toast_success_sm.png)
-- [Add Course Toast Bug](docs/images/Toast_Success_Add_Bug.png) Bad user experience noticed: add course message emerges multiple times
+- [Add Course Toast Bug](docs/images/Toast_Success_Add_Bug.png) Bad user experience noticed: add course message emerges multiple times.
 - [Add Course Refactored Bug](docs/images/Toast_Warning_Twice.png) Good user experience requires informing the user that he cannot add the same product two times
 - [Warning Course Toast SM](docs/images/toast_warning_sm.png)
 - [Delete Course](docs/images/Toast_Warning_Delete.png); [Delete Course Toast SM](docs/images/toast_allert_sm.png)
-- message.error in the delete view was not tested
+- message.error in the delete view was not tested.
 - [external source material - searching for the ID value in the Courses](https://stackoverflow.com/questions/59738782/check-if-id-in-string-exists-in-another-list)
 
 ### Testing Checkout Models and Admin Page
@@ -278,7 +278,7 @@ Considering the EC-nature of the project, the basic philosophy applied in this p
 ### Checkout Payment Form Data
 - [testing Payment Form Data Template](docs/images/checkout_success.png)
 - [testing Payment Form Data Stripe](docs/images/checkout_success_stripe_developers.png)
-- [testing Payment Form Data Stripe Deteils](docs/images/checkout_success_stripe_developers_details.png)
+- [testing Payment Form Data Stripe Details](docs/images/checkout_success_stripe_developers_details.png)
 - [testing Payment Form Data Terminal](docs/images/checkout_terminal.png)
 - [testing Payment Form Data Admin](docs/images/checkout_admin.png)
 - [testing Payment Form Data Admin Changed Order](docs/images/checkout_admin_changed_order.png)
@@ -297,7 +297,7 @@ Considering the EC-nature of the project, the basic philosophy applied in this p
 
 - [Locked Course](docs/images/locked%20course.png); 
 - [Unlocked Course](docs/images/unlocked%20course.png);
-- [Unlocked Course Indicator](docs/images/unlocked%20course.png) - "Add this course to the bag" changes color and text to "Course Unlocked"
+- [Unlocked Course Indicator](docs/images/unlocked%20course.png) - "Add this course to the bag" changes color and text to "Course Unlocked".
 
 
 ### Testing Form Data Cashing Template
@@ -354,11 +354,11 @@ Considering the EC-nature of the project, the basic philosophy applied in this p
 - [Add products form - **error message**](docs/images/products%20form/add%20products%20error.png);
 - [Add products form - **rendering added course in categories template**](docs/images/products%20form/added%20course%20rendered%20in%20cagetories%20template.png);
 - [Add products form - **rendering added course in materials template**](docs/images/products%20form/added%20course%20rendered%20in%20materials%20template.png);
-- [Add products form - **Product management link in navbar functional**](docs/images/products%20form/Product%20management%20link%20in%20navbar%20functional.png);
+- [Add products form - **Product management link in Navbar functional**](docs/images/products%20form/Product%20management%20link%20in%20navbar%20functional.png);
 
 ### Products Form - Code After Refactoring 
 
-The initial view *add_product* didnt allow to add the learning material content to the newly formed course in one template [**image**](docs/images/products%20form/bug%20adding%20course%20and%20material%20simultaniously%20impossible.png) because the category was not created yet! 
+The initial view *add_product* didn't allow to add the learning material content to the newly formed course in one template [**image**](docs/images/products%20form/bug%20adding%20course%20and%20material%20simultaniously%20impossible.png) because the category was not created yet! 
 The refactored code includes two templates: *add_products* and *add_material*:
 - [Add courses form - success](docs/images/products%20form/successfull%20added%20online%20course.png);
 - [Add learning material form - success](docs/images/products%20form/successfull%20added%20online%20material.png);
@@ -472,26 +472,26 @@ Instead of the custom logo, the default logo has been rendered.
 
 7
 
-- The IDs for individual categories are created [dynamicaly](docs/images/bugs/dynamic%20creation%20of%20categories_id.png), preventing this [error](docs/images/bugs/404%20page%20not%20found%20floods.png).
+- The IDs for individual categories are created [dynamically](docs/images/bugs/dynamic%20creation%20of%20categories_id.png), preventing this [error](docs/images/bugs/404%20page%20not%20found%20floods.png).
 
 8 
-**registration of a new user** - please, consult *registration section* above
+**registration of a new user** - please consult *registration section* above.
 
 
 #### Unresolved Bug Issues
 
 1
 
-- [Bug navbar links blocked when sign in open](docs/images/bugs/bug_navbar_links_blocked_when_signin_open.png);
+- [Bug Navbar links blocked when sign in open](docs/images/bugs/bug_navbar_links_blocked_when_signin_open.png);
 
 
 
 ### Image's Sources
- - [Flickr.com](https://www.flickr.com/photos/apfelauge/25528764266/in/photolist-ETTAd3-aruDcd-oybpY8-ars18K-ars1Sr-ars1qM-arrZ2e-arrZeB-arrZpV-ars1ye-aruDB3-arrYTK-aruD1A-2kypz9o-aruE9b-eHdPys-2kxmpUV-98weQw-9aL4ZS-98t6mT-2n6BFgN-2qhpUcR-9a6i7e-rGaTjQ-dFkWsU-ahaC5Z-eBNHfs-5sEf1V-6aFqEa-2nURaUe-7Qxk4N-2kxMii3-4NXPkq-4NXY91-4NXQMA-4NYfnC-4NXSyE-4NY3jU-4NU8rH-JkiUrD-QhphK4-4NY8um-4NY8Sh-4NY4iC-4NTA6K-4NTU7H-i8tXAS-4NXTYY-4NTTLr-4NXXk1/ "flickr.com")
+ - [Flickr.com](https://www.flickr.com/photos/apfelauge/25528764266/in/photolist-ETTAd3-aruDcd-oybpY8-ars18K-ars1Sr-ars1qM-arrZ2e-arrZeB-arrZpV-ars1ye-aruDB3-arrYTK-aruD1A-2kypz9o-aruE9b-eHdPys-2kxmpUV-98weQw-9aL4ZS-98t6mT-2n6BFgN-2qhpUcR-9a6i7e-rGaTjQ-dFkWsU-ahaC5Z-eBNHfs-5sEf1V-6aFqEa-2nURaUe-7Qxk4N-2kxMii3-4NXPkq-4NXY91-4NXQMA-4NYfnC-4NXSyE-4NY3jU-4NU8rH-JkiUrD-QhphK4-4NY8um-4NY8Sh-4NY4iC-4NTA6K-4NTU7H-i8tXAS-4NXTYY-4NTTLr-4NXXk1/ "flickr.com").
  
 
 ## Important Note
- - [Shopping Bag](https://github.com/users/VladaAlek/projects/16/) **Project** not visible in the project`s repo
+ - [Shopping Bag](https://github.com/users/VladaAlek/projects/16/) **Project** is not visible in the project`s repo.
 
 
 **Acknowledgements:** Oisin, Thomas, Rebecca, Sarah, Roman, Holly.
