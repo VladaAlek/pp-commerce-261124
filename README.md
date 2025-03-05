@@ -137,6 +137,7 @@ This feature is present on almost all pages. It contains the link to the [*Faceb
 - [Checkout OrderLineItem model](docs/images/checkout_OrderLineItem_model.png) in **Checkout app**;
 - [Checkout OrderLineItem model Refactoring](docs/images/checkout_OrderLineItem_model_refactoring.png) in **Checkout app**;
 - [User Profile Model](docs/images/UserProfile_model.png) in **Profiles app**;
+- [PurchasedCourse Profile Model](docs/images/model_purchased_course.png) in **Profiles app**;
 
 - External Code Sources: [Crispy Bootstrap5 Documentation](https://django-bootstrap-v5.readthedocs.io/en/latest/installation.html "django-bootstrap-v5");  [Stack Overflow](https://stackoverflow.com/questions/71641974/implementing-django-bootstrap-crispy-forms-into-default-signup-login-pages "Stack Overflow.com")
 
@@ -144,6 +145,7 @@ This feature is present on almost all pages. It contains the link to the [*Faceb
 - [ERD Category](docs/images/ERD%20Category.png) in **Products app**; 
 - [ERD Material](docs/images/ERD%20Material.png) in **Products app**; 
 - [ERD UserProfile](docs/images/ERD%20UserProfile.png) in **Profiles app**;
+- [ERD PurchasedCourse](docs/images/erd_purchased_course) in **Profiles app**;
 - [ERD Order](docs/images/model_order.png) in **Checkout**;
 - [ERD OrderLineItem](docs/images/model_order_line_item.png) in **Checkout**;
 
