@@ -161,6 +161,7 @@ Considering the EC-nature of the project, the basic philosophy applied in this p
  - Python 3.2.0
  - Django 3.2.25
  - Bootstrap 5
+ - MySQL in the developmnet stage and Postgress in the production stage
  - Stripe - for secure finacial transactions
  - Mailchimp - for User's subscriptions and mail services
  - Amazon AWS S3 - to store video data
