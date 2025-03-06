@@ -50,6 +50,8 @@ Here are documented some of the major **navigation possibilities** provided to t
 - [All Courses - Dropping Menu with a Refactored View](docs/images/individual%20category%20view%20refactored.png);
 - [Individual Course - Structure](docs/images/navigation/navigation%20to%20individual%20course%20structure%20page.png);
 - [Individual Course - Content](docs/images/navigation/);
+- [**Navigate Drop-down Menu** in the Navbar with links to *Home*, *Courses*, *About Disaster Research* and *Subscribe* links](docs/images/subscribe%20link.png);
+
 
 ## Superuser's features
 
