@@ -193,7 +193,13 @@ Considering the EC-nature of the project, the basic philosophy applied in this p
 ## Dealing with Logo Images
  - The project's style in base.css is set to best suit the PNG image format. Hence, it is recommended that you use this format.
 
-## Manual Testing - User's Registration
+## Automated Testing
+
+**Profiles App**
+- [test_forms.py](docs/images/test%20profiles%20test_forms.png) - *test_form_is_valid* passed, because it was populated with correct arguments. The test *test_form_missing_required_fields* was deliberately designed to fail bacauese of the false assertion that profile_form.is_valid().
+
+
+ - User's Registration
 
 ### Development
 - [Registration Form](docs/images/registration/sign_up_development.png); [Confirmation Email Sent](docs/images/registration/sign_up_development_1.png);
