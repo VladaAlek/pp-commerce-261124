@@ -65,6 +65,11 @@ Here are documented some of the major **navigation possibilities** provided to t
 - [testing "My Account" section 2](docs/images/loginTesting-2.png);
 - [testing "My Account" section 3](docs/images/loginTesting-3.png);
 
+## Authentication Visual indicators in the Navbar
+
+- [Icon the User is **Blocked**](docs/images/my%20account%20locked%20navbar.png);
+- [Icon the User is **Unblocked**](docs/images/my%20account%20unlocked%20navbar.png);
+
 ### Profile Page
 
 This feature is by default [locked](docs/images/profile%20page%20locked.png), and it [opens](docs/images/profile%20page%20unlocked.png) only for logged users in the dropdown menu when clicking on the "my account" section in the Navbar. The [user's name](docs/images/users%20name%20on%20the%20profile%20page.png) is rendered in the welcome message to make navigation easier. The profile page has a [dual puprose](docs/images/profile%20design.png). On the user's left side is a form to enter the user's delivery data and to confirm the identity. This information can be changed/corrected/adjusted by clicking the **update information** button. The [message](docs/images/update%20profile.png) is present to indicate the changes in the profile's data. The right side provides the *Order History*. 
