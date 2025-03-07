@@ -201,9 +201,10 @@ Considering the EC-nature of the project, the basic philosophy applied in this p
 **Products App**
 - [test profiles test_forms](docs/images/test_category_form_valid_data.png) - *passed*, because it was populated with correct arguments.
 - [test_category_form_missing_required_fields](docs/images/test_category_form_missing_required_fields.png) - *passed*, because it was deliberately designed to fail bacauese of the false assertion that profile_form.is_valid().
-- [TestProductViews (category_detail)](docs/images/test_product_views.png):
+- [Test products views (test_views for **category_detail**)](docs/images/test_product_views.png):
 - test_render_individual_category_page_for_authenticated_user - *passed* becauese the user was authenticated; 
 - test_render_individual_category_page_for_unauthenticated_user - *failed* authenticated user could access the rendered content;
+- [Test products views (test_add_category_view for: **add_course**](docs/images/test_add_course_successful.png). Test passed because the post_data was field with the correct data (exception: course_logo was left out of the database)
 
 ## Manual Testing
 
