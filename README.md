@@ -3,7 +3,7 @@
 
 This e-commerce project is focused on providing a user with learning material in the **Disaster Risk Reduction** field. It is an increasingly popular, multidisciplinary research area between natural and social sciences. Its multi-faceted results are implemented in everyday confrontations with natural hazards by numerous practitioners across the globe. The need to disseminate practical and theoretical knowledge about **DRR** grows with rapid changes in the natural and social environment. Hence, there are numerous potential users of this course. For practical reasons, this time, the project is limited to German-speaking countries, *Germany, Austria and Switzerland*, the three countries exposed to *floods*, *stormy weather conditions*, *forest fires*, and *heat weaves* as the four most relevant natural disasters in this part of Europe.
 
-Considering that the website's main users will be municipality workers, this e-commerce platform is based on B2B principles.
+Considering that the website's primary users will be municipality workers, this e-commerce platform is based on B2B principles.
 When customers pay for specific services, they get an unlimited approach. In this stage of development, the option of offering a test to the user is indicated but not fully implemented. The same statement applies to the foreseen feature of booking consulting services from team members. It should be available on the *About* page.
 
 ### Types of commercial activities
@@ -25,11 +25,11 @@ Find out more about Disaster Ready E-Commerce Business Strategy here:
 - [Link 09.01.2025](https://www.facebook.com/profile.php?id=61571470064318 "Disaster Ready Germany Facebook Business Page")
 - [Facebook Business Page Screenshot](docs/images/facebook%20busines%20page.png);
 
-### Sites main structure
+### Site's main structure
  - log in/log out - see more in the Authentication section below
- - navigation bar
- - footer
- - landing page
+ - Navigation bar
+ - Footer
+ - Landing page
  - all courses view
  - content of individual courses
  - course content management as Admin - See section Superuser's features below
@@ -50,7 +50,7 @@ Here are documented some of the major **navigation possibilities** provided to t
 - [All Courses - Dropping Menu with a Refactored View](docs/images/individual%20category%20view%20refactored.png);
 - [Individual Course - Structure](docs/images/navigation/navigation%20to%20individual%20course%20structure%20page.png);
 - [Individual Course - Content](docs/images/navigation/);
-- [**Navigate Drop-down Menu** in the Navbar with links to *Home*, *Courses*, *About Disaster Research* and *Subscribe* links](docs/images/subscribe%20link.png);
+- [**Navigate Dropdown Menu** in the Navbar with links to *Home*, *Courses*, *About Disaster Research* and *Subscribe* links](docs/images/subscribe%20link.png);
 
 
 ## Superuser's features
@@ -72,7 +72,7 @@ Here are documented some of the major **navigation possibilities** provided to t
 
 ### Profile Page
 
-This feature is by default [locked](docs/images/profile%20page%20locked.png), and it [opens](docs/images/profile%20page%20unlocked.png) only for logged users in the dropdown menu when clicking on the "my account" section in the Navbar. The [user's name](docs/images/users%20name%20on%20the%20profile%20page.png) is rendered in the welcome message to make navigation easier. The profile page has a [dual puprose](docs/images/profile%20design.png). On the user's left side is a form to enter the user's delivery data and to confirm the identity. This information can be changed/corrected/adjusted by clicking the **update information** button. The [message](docs/images/update%20profile.png) is present to indicate the changes in the profile's data. The right side provides the *Order History*. 
+This feature is by default [locked](docs/images/profile%20page%20locked.png), and it [opens](docs/images/profile%20page%20unlocked.png) only for logged users in the Dropdown menu when clicking on the "my account" section in the Navbar. The [user's name](docs/images/users%20name%20on%20the%20profile%20page.png) is rendered in the welcome message to make navigation easier. The profile page has a [dual pupose](docs/images/profile%20design.png). On the user's left side is a form to enter the user's delivery data confirm the identity. This information can be changed/corrected/adjusted by clicking the **update information** button. The [message](docs/images/update%20profile.png) is present to indicate the changes in the profile's data. The right side provides the *Order History*. 
 
 
 ### Exploring and Selecting/Managing Courses
@@ -90,7 +90,7 @@ The *Seach Courses* Options in Navbar allow for querying the learning material b
  
 Upon landing on the index page, users can click the *Explore Courses* button. There, it can learn more about the basic structure of the *individual courses*. The basic logos are shown in the head section so that the particular courses are visually different from others. The following values: *Difficulty Level*, *Credits*, *Number of Lectures*, *Short Description*, *Estimated Time*, *Starting date* and *Price* are displayed textually on this level.  The value *Test* is indicated with the appropriate [icons](docs/images/test%20exist.png) in specific colors to raise the user's attention on this feature (**note:** the same feature present on the [individual course view](docs/images/test exist individual category.png)). Logged superusers can edit or delete the content of individual courses [edit or delete](docs/images/edit%20and%20delete%20course%20categories.png). However, this option is exclusively available to [superusers](docs/images/resticted%20edit%20.png). By choosing the edit option, the [form page](docs/images/edit%20form.png) to edit the course's content opens. The functionality is tested: [step 1](docs/images/edit%20flood%201.png); [step 2](docs/images/edit%20flood%203.png). After the change has been submitted, the [popup message](docs/images/edit%20flood%202.png) informs the user about the consequences of his last activity.
 
-To prevent unintentional deletion, a safety net in the form of a deletion modal has been introduced: [step 1](docs/images/test%20deletion%20modal.png); [step 2](docs/images/test%20deletion%20modal%201.png). 
+In order to prevent unintentional deletion, a safety net in the form of a deletion modal has been introduced: [step 1](docs/images/test%20deletion%20modal.png); [step 2](docs/images/test%20deletion%20modal%201.png). 
 
 The deletion of the part of a database is indicated by [message deleted](docs/images/message%20deleted.png) 
 info in the popup field, too [Source code](https://getbootstrap.com/docs/4.1/components/modal/ "Bootstrap Modal Documentation").
@@ -101,25 +101,25 @@ By clicking the **Explore Course button**, the page rendering the content of eac
 
 This page offers a tabular overview of selected courses, their quantity, price, and discount (if activated). By wish, the *remove* link allows the User to eliminate the undesired course from the bag. The logos of individual courses serve as links to individual categories view, too. This feature makes it easier to understand the connections between the course overview and its content. If the category logo is unavailable, the project's  [logo](docs/images/bag_project_logo_display.png) will be rendered. Finally, the *Keep Exploring* link invites users to learn more about other courses and eventually add them to the shopping basket. At the lower end of the page, a button is available to finalize the shopping activities.
 
-The *Checkout page* consists of two major sections: 1: Order Summary, which provides the overview of the User's shopping selection, and 2: Checkout Form, which makes it possible for the User to enter personal data. They serve both the site administrator and the User as a confirmation that the digital learning service is provided to the desired customer. In cases where the User is a *Registered User*, most fields are prepopulated with the User's account data. The idea is to improve the UI. The same goal is achieved when the User selects *Save this delivery information* in the My Profile checkout field. The last feature is the self-explanatory outcome. Not less important is that even in this stage, the User has the *Adjust Bag* at its disposal. It will lead him to the bag page, where it is possible to delete the unwanted courses from the shopping bag. Additionally, if the categories logo is not availble, the projects  [logo](docs/images/project%20logo%20instead%20of%20category%20logo%20in%20checkout.png) will be rendered.
+The *Checkout page* consists of two major sections: 1: Order Summary, which provides the overview of the User's shopping selection, and 2: Checkout Form, which makes it possible for the User to enter personal data. They serve both the site administrator and the User as a confirmation that the digital learning service is provided to the desired customer. In cases where the User is a *Registered User*, most fields are prepopulated with the User's account data. The idea is to improve the UI. The same goal is achieved when the User selects *Save this delivery information* in the My Profile checkout field. The last feature is the self-explanatory outcome. Not less important is that even in this stage, the User has the *Adjust Bag* at its disposal. It will lead him to the bag page, where it is possible to delete the unwanted courses from the shopping bag. Additionally, if the categories logo is not available, the projects  [logo](docs/images/project%20logo%20instead%20of%20category%20logo%20in%20checkout.png) will be rendered.
 
-The essential part of the form field is the payment window dedicated to credit card data. Upon successful payment the [message](docs/images/email%20in%20production%201.png) will indicate the number of the order, as well as the [email](docs/images/email%20in%20production%202.png) ([Gmail View](docs/images/email%20in%20production%203.png)) where the order details are going to be sent ([test in development stage](docs/images/email%20in%20development.png)). 
+The essential part of the form field is the payment window dedicated to credit card data. Upon successful payment, the [message](docs/images/email%20in%20production%201.png) will indicate the number of the order, as well as the [email](docs/images/email%20in%20production%202.png) ([Gmail View](docs/images/email%20in%20production%203.png)) to which the order details will to be sent ([test in development stage](docs/images/email%20in%20development.png)). 
 
 The data about purchased courses is stored in profiles/models/PurchasedCourse model/database. This feature ensures that unlogged users do not lose access to purchased courses.
 
 The icons **locked** or **unlocked** in appropriate colours of red or green are rendered on the [categories purchase status](docs/images/locked_unlocked.png) - [categories purchase status restyled](docs/images/locked_unlocked%20categories.png) and [individual_categor purchase status](docs/images/locked_unlocked%20ind%20category.png).
 
 ### Discount
-If more than 1500 euros are spent, a 10% discount is offered on the index page, too. If this option is activated, the reduced price is visible in Navabar, while in the [Shopping Bag](docs/images/discount_bag.png) and [shopping confirmation details](docs/images/discount_checkout_success.png) the amount of saved money is indicated. The later is located on the *Profile page*.*
+If more than 1500 euros are spent, a 10% discount is offered on the index page, too. If this option is activated, the reduced price is visible in Navabar, while in the [Shopping Bag](docs/images/discount_bag.png) and [shopping confirmation details](docs/images/discount_checkout_success.png) the amount of saved money is indicated. The latter is located on the *Profile page*.*
 
-*About Page* begins with a centred heading **About Disaster Ready - Germany** and another call-to-action button for exploring online courses. The main content includes an introductory section describing the platform’s mission to enhance emergency preparedness through digital learning. Below this, a instructor profile cards present experts specializing in various disaster-related fields, including dummy links to instructor's profiles. As mentioned earlier in this text, this would be an ideal place to add *Make an Appoitment* feature in the further stages of the project's development. An additional section highlights recent public events related to disaster communication. At a very end, a promotional message offers a tempting discount on online courses.
+*About Page* begins with a centred heading **About Disaster Ready - Germany** and another call-to-action button for exploring online courses. The main content includes an introductory section describing the platform’s mission to enhance emergency preparedness through digital learning. Below this, instructor profile cards present experts specializing in various disaster-related fields, including dummy links to instructor's profiles. As mentioned earlier in this text, this would be an ideal place to add *Make an Appointment* feature in the further stages of the project's development. An additional section highlights recent public events related to disaster communication. At the very end, a promotional message offers a tempting discount on online courses.
 
 ## Mailchimp
 
 - User subscription is located on the *Profile page*. The user who shared data to form the profile is presumed to continue with this activity and subscribe to our periodical letter.
 
 
-#### Mailchimp Design and Responsivness
+#### Mailchimp Design and Responsiveness
 
 - [SM](docs/images/profile%20page%20SM.png); [MD](docs/images/profile%20page%20MD.png); [LG](docs/images/profile%20page%20LG.png);
 
@@ -127,9 +127,9 @@ If more than 1500 euros are spent, a 10% discount is offered on the index page, 
 ## Footer
 This feature is present on almost all pages. It contains the link to the [*Facebook Business Page*](docs/images/facebook%20busines%20page.png). Hover effect contributes to the interactivity UI experience. 
 
-- [footer general view SM](docs/images/footer_sm.png);
-- [footer general view LG](docs/images/footer_md.png);
-- [footer general view LG](docs/images/footer_1.png);
+- [Footer general view SM](docs/images/footer_sm.png);
+- [Footer general view LG](docs/images/footer_md.png);
+- [Footer general view LG](docs/images/footer_1.png);
 
 ### Error Page
 
@@ -158,7 +158,7 @@ This feature is present on almost all pages. It contains the link to the [*Faceb
 
 #### Mockups
 
-Considering the EC-nature of the project, the basic philosophy applied in this project is to deliver a uniform, tabular structure of how the data for individual courses or learning material is presented.
+Considering the EC nature of the project, the basic philosophy applied in this project is to deliver a uniform, tabular structure of how the data for individual courses or learning material is presented.
 
 - [SM](docs/images/mockup/mockup_SM-1.png);
 - [MD](docs/images/mockup/mockup_MD-1.png);
@@ -168,7 +168,7 @@ Considering the EC-nature of the project, the basic philosophy applied in this p
  - Python 3.2.0
  - Django 3.2.25
  - Bootstrap 5
- - MySQL in the developmnet stage and Postgress in the production stage
+ - MySQL in the development stage and Postgress in the production stage
  - Stripe - for secure finacial transactions
  - Mailchimp - for User's subscriptions and mail services
  - Amazon AWS S3 - to store video data
@@ -186,12 +186,12 @@ Considering the EC-nature of the project, the basic philosophy applied in this p
 
 - Git Version control was managed using Git, with commits executed via the Gitpod terminal and pushes directed to GitHub.
 - GitHub The project's code is stored on GitHub after being pushed from Git.
-- "Projects", "Milestones" and "Issues" functions embedded in GitHub utilised to apply AGILE concepts
+- "Projects", "Milestones" and "Issues" functions embedded in GitHub utilised to apply AGILE concepts.
 - [HEROKU](https://www.heroku.com/ "HEROKU cloud platform") is used to deploy and manage the applications.
 
 ## Deployment
 
-- it was necessary to reestablish IDE (Gitpod) - [Django](docs/images/django_requirements_21_12_24.png); [Pillow](docs/images/pillow_requirements_21_12_24.png); [Allauth](docs/images/allauth_requirements_21_12_24.png);
+- It was necessary to reestablish IDE (Gitpod) - [Django](docs/images/django_requirements_21_12_24.png); [Pillow](docs/images/pillow_requirements_21_12_24.png); [Allauth](docs/images/allauth_requirements_21_12_24.png);
 - 28. 12. 2024. Gitpod IDE became unfunctional - unpushed changes were lost and reinstalling requirements and re-establishment of the settings parameters was necessary
 - 05. 01. 2025. Gitpod IDE became unfunctional - a new workspace opened, which might affect some features because there was not enough time to test and document all the project's elements again.
 
@@ -201,15 +201,15 @@ Considering the EC-nature of the project, the basic philosophy applied in this p
 ## Automated Testing
 
 **Profiles App**
-- [test_forms.py](docs/images/test%20profiles%20test_forms.png) - *test_form_is_valid* passed, because it was populated with correct arguments. The test *test_form_missing_required_fields* was deliberately designed to fail bacauese of the false assertion that profile_form.is_valid().
+- [test_forms.py](docs/images/test%20profiles%20test_forms.png) - *test_form_is_valid* passed because it was populated with correct arguments. The test *test_form_missing_required_fields* was deliberately designed to fail because of the false assertion that profile_form.is_valid().
 
 **Products App**
 - [test profiles test_forms](docs/images/test_category_form_valid_data.png) - *passed*, because it was populated with correct arguments.
-- [test_category_form_missing_required_fields](docs/images/test_category_form_missing_required_fields.png) - *passed*, because it was deliberately designed to fail bacauese of the false assertion that profile_form.is_valid().
+- [test_category_form_missing_required_fields](docs/images/test_category_form_missing_required_fields.png) - *passed* because it was deliberately designed to fail bacauese of the false assertion that profile_form.is_valid().
 - [Test products views (test_views for **category_detail**)](docs/images/test_product_views.png):
-- test_render_individual_category_page_for_authenticated_user - *passed* becauese the user was authenticated; 
+- test_render_individual_category_page_for_authenticated_user - *passed* because the user was authenticated; 
 - test_render_individual_category_page_for_unauthenticated_user - *failed* authenticated user could access the rendered content;
-- [Test products views (test_add_category_view for: **add_course**](docs/images/test_add_course_successful.png). Test passed because the post_data was field with the correct data (exception: course_logo was left out of the database)
+- [Test products views (test_add_category_view for: **add_course**](docs/images/test_add_course_successful.png). Test passed because the post_data has fields with the correct data (exception: course_logo was left out of the database)
 
 ## Manual Testing
 
@@ -381,7 +381,7 @@ Considering the EC-nature of the project, the basic philosophy applied in this p
 
 ### Products Form - Code After Refactoring 
 
-The initial view *add_product* didn't allow to add the learning material content to the newly formed course in one template [**image**](docs/images/products%20form/bug%20adding%20course%20and%20material%20simultaniously%20impossible.png) because the category was not created yet! 
+The initial view *add_product* allow to add of the learning material content to the newly formed course in one template [**image**](docs/images/products%20form/bug%20adding%20course%20and%20material%20simultaniously%20impossible.png) because the category was not created yet! 
 The refactored code includes two templates: *add_products* and *add_material*:
 - [Add courses form - success](docs/images/products%20form/successfull%20added%20online%20course.png);
 - [Add learning material form - success](docs/images/products%20form/successfull%20added%20online%20material.png);
@@ -422,7 +422,7 @@ The templates stress that material can be added only after the category has been
 - [checkout.html](docs/images/validation/validation%20checkout%20address%20method.png);
 - [checkout_success.html](docs/images/validation/validation%20checkout%20success.png);
 - [validation profile error.html](docs/images/validation/validation%20profile%20error.png). This error is most probably caused by the fact that validator doesn't have access to the private data.
-- [validation profile upload document method.html](docs/images/validation/validation%20profile%20file%20update.png). The errors in the report are caused by specificity of the Django syntax.
+- [validation profile upload document method.html](docs/images/validation/validation%20profile%20file%20update.png). The errors in the report are caused by the specificity of the Django syntax.
 - [about.html](docs/images/validation/validation%20about.png);
 - [error_404.html load file method](docs/images/validation/validation%20error%20page%20file%20upload.png); [error_404.html address method](docs/images/validation/validation%20error%20page%20file%20upload.png);
 - [signup.html](docs/images/validation/validation%20signup.png);
@@ -498,7 +498,7 @@ Instead of the custom logo, the default logo has been rendered.
 - The IDs for individual categories are created [dynamically](docs/images/bugs/dynamic%20creation%20of%20categories_id.png), preventing this [error](docs/images/bugs/404%20page%20not%20found%20floods.png).
 
 8 
-**registration of a new user** - please consult *registration section* above.
+**registration of a new user** - please consult the *registration section* above.
 
 
 #### Unresolved Bug Issues
