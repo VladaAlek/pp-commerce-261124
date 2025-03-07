@@ -198,6 +198,12 @@ Considering the EC-nature of the project, the basic philosophy applied in this p
 **Profiles App**
 - [test_forms.py](docs/images/test%20profiles%20test_forms.png) - *test_form_is_valid* passed, because it was populated with correct arguments. The test *test_form_missing_required_fields* was deliberately designed to fail bacauese of the false assertion that profile_form.is_valid().
 
+**Products App**
+- [test profiles test_forms](docs/images/test_category_form_valid_data.png) - *passed* passed, because it was populated with correct arguments.
+- [test_category_form_missing_required_fields](docs/images/test_category_form_missing_required_fields.png) - *passed*, because it was deliberately designed to fail bacauese of the false assertion that profile_form.is_valid().
+
+
+## Manual Testing
 
  - User's Registration
 

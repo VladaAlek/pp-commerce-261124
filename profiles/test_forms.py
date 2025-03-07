@@ -15,9 +15,9 @@ class TestUserProfileForm(TestCase):
             'default_prev_user': 'Previous User',
         }
         profile_form = UserProfileForm(form_data)
-        self.assertTrue(profile_form.is_valid())
+        self.assertTrue(profile_form.is_valid(), msg='Form is not valid')
 
     def test_form_missing_required_fields(self):
         profile_form = UserProfileForm({})
-        self.assertFalse(profile_form.is_valid())
+        self.assertFalse(profile_form.is_valid(), msg='Form is valid')
         
