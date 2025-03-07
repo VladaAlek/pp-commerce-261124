@@ -17,7 +17,9 @@ body {
     color: black !important;
 }
 
-
+.user-logo i {
+    font-size: 2rem;
+}
 /*Footbar*/
 
 .foot-stl {
